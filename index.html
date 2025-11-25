@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Imobiliária Praia Brava - Luxo e Exclusividade</title>
+
+    <!-- Google Fonts: Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <style>
+      :root {
+        --primary-orange: #ff6600;
+        --primary-orange-hover: #e65c00;
+        --dark-navy: #0b1c2e;
+        --text-gray: #666;
+        --light-bg: #f8f9fa;
+      }
+
+      body {
+        font-family: "Montserrat", sans-serif;
+        color: #333;
+        overflow-x: hidden;
+      }
+
+      /* Utilitários de Cores */
+      .text-orange {
+        color: var(--primary-orange) !important;
+      }
+      .bg-navy {
+        background-color: var(--dark-navy) !important;
+        color: white;
+      }
+      .text-navy {
+        color: var(--dark-navy) !important;
+      }
+
+      /* Botões Customizados */
+      .btn-orange {
+        background-color: var(--primary-orange);
+        color: white;
+        border: none;
+        font-weight: 600;
+        text-transform: uppercase;
+        padding: 10px 25px;
+        transition: all 0.3s ease;
+      }
+      .btn-orange:hover {
+        background-color: var(--primary-orange-hover);
+        color: white;
+        transform: translateY(-2px);
+      }
+
+      /* 1. Header / Hero Section */
+      .hero-section {
+        background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2073&auto=format&fit=crop");
+        background-size: cover;
+        background-position: center;
+        height: 80vh; /* Altura considerável */
+        min-height: 600px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .hero-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(
+          to bottom,
+          rgba(11, 28, 46, 0.4),
+          rgba(11, 28, 46, 0.7)
+        );
+        z-index: 1;
+      }
+
+      .hero-content {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+      }
+
+      .hero-title {
+        font-weight: 800;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        font-size: 3rem;
+      }
+
+      .search-box-container {
+        background: rgba(255, 255, 255, 0.95);
+        padding: 25px;
+        border-radius: 8px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        margin-top: 40px;
+      }
+      .form-control::placeholder {
+        color: white !important;
+        opacity: 0.8;
+      }
+
+      .form-select option {
+        background-color: rgba(24, 25, 41, 0.863) !important;
+        color: white !important;
+      }
+
+      /* Para compatibilidade com diferentes navegadores */
+      .form-control::-webkit-input-placeholder {
+        color: white !important;
+        opacity: 0.8;
+      }
+
+      .form-control::-moz-placeholder {
+        color: white !important;
+        opacity: 0.8;
+      }
+
+      .form-control:-ms-input-placeholder {
+        color: white !important;
+        opacity: 0.8;
+      }
+
+      .form-control::-ms-input-placeholder {
+        color: white !important;
+        opacity: 0.8;
+      }
+      .form-select:hover {
+        background-color: rgba(255, 255, 255, 0.1) !important;
+        cursor: pointer !important;
+      }
+      /* Estilo para quando o select está aberto */
+      .form-select:focus {
+        background-color: rgba(255, 255, 255, 0.1) !important;
+        color: white !important;
+      }
+      .custom-white-chevron {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='white' fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
+        background-repeat: no-repeat;
+        background-position: right 0.75rem center;
+        background-size: 16px 12px;
+      }
+      /* 2. Cards de Categorias */
+      .category-card {
+        height: 350px;
+        border-radius: 8px;
+        overflow: hidden;
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        transition: transform 0.3s;
+        cursor: pointer;
+      }
+      .category-card:hover {
+        transform: scale(1.02);
+      }
+      .category-overlay {
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 20px;
+      }
+      .check-list li {
+        font-size: 0.9rem;
+        margin-bottom: 5px;
+        color: #ddd;
+      }
+      .check-list i {
+        color: var(--primary-orange);
+        margin-right: 8px;
+      }
+
+      /* 3 e 4. Cards de Imóveis */
+      .linkResize{
+        transition: transform 0.3s;
+      }
+      .linkResize:hover {
+        transform: scale(1.2);
+      }
+      .property-card {
+        border: none;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        transition: transform 0.3s;
+        background: #fff;
+        height: 100%;
+      }
+      .property-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      }
+      .property-img-wrapper {
+        height: 250px;
+        overflow: hidden;
+        position: relative;
+      }
+      .property-img-wrapper img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .price-tag {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--dark-navy);
+      }
+      .property-icons span {
+        font-size: 0.85rem;
+        color: var(--text-gray);
+        margin-right: 15px;
+        display: inline-flex;
+        align-items: center;
+      }
+      .property-icons i {
+        margin-right: 5px;
+        color: var(--primary-orange);
+      }
+
+      /* Seção Escura (Exclusivos) */
+      .section-dark .price-tag {
+        color: var(--primary-orange);
+      }
+      .section-dark .property-icons span {
+        color: #aaa;
+      }
+      .section-dark .card-body {
+        background: #1a2c40;
+        color: white;
+      }
+      .section-dark h5 {
+        color: white;
+      }
+      .section-dark .property-card {
+        border: 1px solid #2c3e50;
+      }
+
+      /* 6. CTA Boxes Inferiores */
+      .cta-box {
+        height: 300px;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .cta-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(11, 28, 46, 0.6);
+        transition: background 0.3s;
+      }
+      .cta-box:hover .cta-overlay {
+        background: rgba(11, 28, 46, 0.4);
+      }
+      .cta-content {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        color: white;
+      }
+
+      /* 7. Footer */
+      footer a {
+        color: #aaa;
+        text-decoration: none;
+        transition: color 0.2s;
+      }
+      footer a:hover {
+        color: var(--primary-orange);
+      }
+      .social-icons a {
+        font-size: 1.2rem;
+        margin-right: 15px;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-navy sticky-top py-3">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">
+          <i class="fa-solid fa-gem text-orange me-2"></i>SUPREMO<span
+            class="text-orange"
+            >IMÓVEIS</span
+          >
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#imoveis">Imóveis</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#lancamentos">Lançamentos</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+          </ul>
+          <a href="#" class="btn btn-orange ms-lg-3 btn-sm">Anuncie</a>
+        </div>
+      </div>
+    </nav>
+
+    <header class="hero-section">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content text-center">
+        <h1 class="hero-title text-white mb-3">
+          Imóveis na Praia Brava<br />e Fazenda em Itajaí
+        </h1>
+        <p class="text-white lead mb-4">
+          Encontre o luxo e o conforto que você merece.
+        </p>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-12 mb-5">
+            <div
+              class="search-box-container bg-opacity-50 p-4 rounded-3"
+              style="background-color: rgba(24, 25, 41, 0.76)"
+            >
+              <form class="row g-3 align-items-end">
+                <div class="col-md-4 col-lg-2 text-start">
+                  <label class="form-label fw-bold small text-white">
+                    <i class="fa-solid fa-house me-2" style="color: #fd7e14"></i
+                    >Tipos
+                  </label>
+                  <select
+                    class="form-select border-0 text-white custom-white-chevron"
+                    style="background-color: rgba(255, 255, 255, 0)"
+                  >
+                    <option>Comprar</option>
+                    <option>Alugar</option>
+                  </select>
+                </div>
+                <div class="col-md-4 col-lg-2 text-start">
+                  <label class="form-label fw-bold small text-white">
+                    <i
+                      class="fa-solid fa-location-dot me-2"
+                      style="color: #fd7e14"
+                    ></i
+                    >Cidades
+                  </label>
+                  <select
+                    class="form-select border-0 text-white custom-white-chevron"
+                    style="background-color: rgba(255, 255, 255, 0)"
+                  >
+                    <option>Aracaju</option>
+                    <option>São Paulo</option>
+                    <option>Itajaí</option>
+                  </select>
+                </div>
+                <div class="col-md-4 col-lg-2 text-start">
+                  <label class="form-label fw-bold small text-white">
+                    <i
+                      class="fa-solid fa-map-pin me-2"
+                      style="color: #fd7e14"
+                    ></i
+                    >Bairros
+                  </label>
+                  <select
+                    class="form-select border-0 text-white custom-white-chevron"
+                    style="background-color: rgba(255, 255, 255, 0)"
+                  >
+                    <option>Farolândia</option>
+                    <option>Aruana</option>
+                    <option>Eduardo Gomes</option>
+                  </select>
+                </div>
+                <div class="col-md-4 col-lg-2 text-start">
+                  <label class="form-label fw-bold small text-white">
+                    <i
+                      class="fa-solid fa-dollar-sign me-2"
+                      style="color: #fd7e14"
+                    ></i
+                    >Valor
+                  </label>
+                  <select
+                    class="form-select border-0 text-white custom-white-chevron"
+                    style="background-color: rgba(255, 255, 255, 0)"
+                  >
+                    <option value="">Todos os valores</option>
+                    <option value="500000">Até R$ 500 mil</option>
+                    <option value="1000000">Até R$ 1 milhão</option>
+                    <option value="1500000">Até R$ 1,5 milhão</option>
+                    <option value="2000000">Até R$ 2 milhões</option>
+                    <option value="2500000">Até R$ 2,5 milhões</option>
+                    <option value="3000000">Até R$ 3 milhões</option>
+                    <option value="3500000">Até R$ 3,5 milhões</option>
+                  </select>
+                </div>
+                <div class="col-md-4 col-lg-2 text-start">
+                  <label class="form-label fw-bold small text-white">
+                    <i
+                      class="fa-solid fa-magnifying-glass me-2"
+                      style="color: #fd7e14"
+                    ></i
+                    >O que você busca?
+                  </label>
+                  <input
+                    type="text"
+                    class="form-control formControl border-0 text-white"
+                    style="background-color: rgba(255, 255, 255, 0)"
+                    placeholder="Ex: Vista mar, 3 quartos..."
+                  />
+                </div>
+                <div class="col-md-4 col-lg-2">
+                  <button type="button" class="btn btn-orange w-100 py-2 px-2">
+                    <i class="fa-solid fa-magnifying-glass me-2"></i>Buscar
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="py-5 bg-light" id="imoveis">
+      <div class="container">
+        <div class="row mb-4">
+          <div class="col-12 text-center">
+            <h2 class="fw-bold text-navy">Conheça nossos imóveis</h2>
+            <div class="d-flex justify-content-center">
+              <div
+                style="
+                  width: 50px;
+                  height: 3px;
+                  background: var(--primary-orange);
+                "
+              ></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <!-- card 1 -->
+          <div class="col-md-4">
+            <div
+              class="category-card"
+              style="
+                background-image: url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1000&auto=format&fit=crop');
+              "
+            >
+              <div class="category-overlay">
+                <h4 class="text-white fw-bold">Apartamentos</h4>
+                <ul class="list-unstyled check-list">
+                  <li>
+                    <i class="fa-solid fa-check"></i> Vista definitiva para o
+                    mar
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i> Alto padrão de acabamento
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i> Áreas de lazer completas
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- card2 -->
+          <div class="col-md-4">
+            <div
+              class="category-card"
+              style="
+                background-image: url('https://plus.unsplash.com/premium_photo-1694475117121-0c14f8ddf7bb?q=80&w=680&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+              "
+            >
+              <div class="category-overlay">
+                <h4 class="text-white fw-bold">Casas em Condomínio</h4>
+                <ul class="list-unstyled check-list">
+                  <li><i class="fa-solid fa-check"></i> Segurança 24 horas</li>
+                  <li><i class="fa-solid fa-check"></i> Privacidade total</li>
+                  <li><i class="fa-solid fa-check"></i> Espaço para família</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- card3 -->
+          <div class="col-md-4">
+            <div
+              class="category-card"
+              style="
+                background-image: url('https://images.unsplash.com/photo-1613977257363-707ba9348227?q=80&w=1000&auto=format&fit=crop');
+              "
+            >
+              <div class="category-overlay">
+                <h4 class="text-white fw-bold">Coberturas</h4>
+                <ul class="list-unstyled check-list">
+                  <li><i class="fa-solid fa-check"></i> Terraço privativo</li>
+                  <li><i class="fa-solid fa-check"></i> Piscina exclusiva</li>
+                  <li><i class="fa-solid fa-check"></i> Melhor localização</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5" id="lancamentos">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <h2 class="fw-bold text-navy mb-0">Destaques</h2>
+          <a href="#" class="text-orange  fw-bold text-decoration-none linkResize " 
+            >Ver todos <i class="fa-solid fa-arrow-right"></i
+          ></a>
+        </div>
+
+        <div class="row g-4">
+          <!-- imv 1 -->
+          <div class="col-md-4">
+            <div class="card property-card">
+              <div class="property-img-wrapper">
+                <span
+                  class="badge bg-primary position-absolute top-0 start-0 m-3"
+                  >Venda</span
+                >
+                <img
+                  src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=1000&auto=format&fit=crop"
+                  alt="Imóvel"
+                />
+              </div>
+              <div class="card-body">
+                <h3 class="price-tag">R$ 2.400.000</h3>
+                <h5 class="card-title fw-bold">Brava Beach Internacional</h5>
+                <p class="text-muted small">Praia Brava, Itajaí</p>
+                <hr />
+                <div class="property-icons d-flex justify-content-between">
+                  <span><i class="fa-solid fa-bed"></i> 3</span>
+                  <span><i class="fa-solid fa-bath"></i> 4</span>
+                  <span><i class="fa-solid fa-car"></i> 2</span>
+                  <span><i class="fa-solid fa-ruler-combined"></i> 145m²</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- imv 2 -->
+          <div class="col-md-4">
+            <div class="card property-card">
+              <div class="property-img-wrapper">
+                <span
+                  class="badge bg-primary position-absolute top-0 start-0 m-3"
+                  >Venda</span
+                >
+                <img
+                  src="https://images.unsplash.com/photo-1631049307379-e96858bda538?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Imóvel"
+                />
+              </div>
+              <div class="card-body">
+                <h3 class="price-tag">R$ 1.850.000</h3>
+                <h5 class="card-title fw-bold">Edifício Horizon</h5>
+                <p class="text-muted small">Centro, Itajaí</p>
+                <hr />
+                <div class="property-icons d-flex justify-content-between">
+                  <span><i class="fa-solid fa-bed"></i> 2</span>
+                  <span><i class="fa-solid fa-bath"></i> 2</span>
+                  <span><i class="fa-solid fa-car"></i> 1</span>
+                  <span><i class="fa-solid fa-ruler-combined"></i> 98m²</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- imv3 -->
+          <div class="col-md-4">
+            <div class="card property-card">
+              <div class="property-img-wrapper">
+                <span
+                  class="badge bg-success position-absolute top-0 start-0 m-3"
+                  >Lançamento</span
+                >
+                <img
+                  src="https://images.unsplash.com/photo-1560448205-17d3a46c84de?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Imóvel"
+                />
+              </div>
+              <div class="card-body">
+                <h3 class="price-tag">R$ 3.200.000</h3>
+                <h5 class="card-title fw-bold">Residencial Ocean Breeze</h5>
+                <p class="text-muted small">Cabeçudas, Itajaí</p>
+                <hr />
+                <div class="property-icons d-flex justify-content-between">
+                  <span><i class="fa-solid fa-bed"></i> 4</span>
+                  <span><i class="fa-solid fa-bath"></i> 5</span>
+                  <span><i class="fa-solid fa-car"></i> 3</span>
+                  <span><i class="fa-solid fa-ruler-combined"></i> 210m²</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="py-5 bg-navy section-dark">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <h2 class="fw-bold text-white mb-0">Exclusivos</h2>
+          <a href="#" class="text-orange fw-bold text-decoration-none linkResize"
+            >Ver coleção <i class="fa-solid fa-arrow-right"></i
+          ></a>
+        </div>
+
+        <div class="row g-4">
+          <!-- exclusivo 1 -->
+          <div class="col-md-4">
+            <div class="card property-card border-0">
+              <div class="property-img-wrapper">
+                <span
+                  class="badge bg-warning text-dark position-absolute top-0 start-0 m-3"
+                  >Exclusivo</span
+                >
+                <img
+                  src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1000&auto=format&fit=crop"
+                  alt="Imóvel"
+                />
+              </div>
+              <div class="card-body">
+                <h3 class="price-tag">R$ 12.500.000</h3>
+                <h5 class="card-title fw-bold">Mansão Beira Mar</h5>
+                <p class="text-white-50 small">Praia Brava, Itajaí</p>
+                <hr class="border-secondary" />
+                <div class="property-icons d-flex justify-content-between">
+                  <span><i class="fa-solid fa-bed"></i> 6</span>
+                  <span><i class="fa-solid fa-bath"></i> 8</span>
+                  <span><i class="fa-solid fa-car"></i> 6</span>
+                  <span><i class="fa-solid fa-ruler-combined"></i> 850m²</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- exclusivo 2 -->
+          <div class="col-md-4">
+            <div class="card property-card border-0">
+              <div class="property-img-wrapper">
+                <span
+                  class="badge bg-warning text-dark position-absolute top-0 start-0 m-3"
+                  >Exclusivo</span
+                >
+                <img
+                  src="https://images.unsplash.com/photo-1512915922686-57c11dde9b6b?q=80&w=1000&auto=format&fit=crop"
+                  alt="Imóvel"
+                />
+              </div>
+              <div class="card-body">
+                <h3 class="price-tag">R$ 8.900.000</h3>
+                <h5 class="card-title fw-bold">Penthouse Duplex</h5>
+                <p class="text-white-50 small">Centro, Itajaí</p>
+                <hr class="border-secondary" />
+                <div class="property-icons d-flex justify-content-between">
+                  <span><i class="fa-solid fa-bed"></i> 4</span>
+                  <span><i class="fa-solid fa-bath"></i> 5</span>
+                  <span><i class="fa-solid fa-car"></i> 4</span>
+                  <span><i class="fa-solid fa-ruler-combined"></i> 500m²</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- exclusivo 3 -->
+          <div class="col-md-4">
+            <div class="card property-card border-0">
+              <div class="property-img-wrapper">
+                <span
+                  class="badge bg-warning text-dark position-absolute top-0 start-0 m-3"
+                  >Exclusivo</span
+                >
+                <img
+                  src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?q=80&w=1000&auto=format&fit=crop"
+                  alt="Imóvel"
+                />
+              </div>
+              <div class="card-body">
+                <h3 class="price-tag">R$ 5.400.000</h3>
+                <h5 class="card-title fw-bold">Casa Alto Padrão</h5>
+                <p class="text-white-50 small">Fazenda, Itajaí</p>
+                <hr class="border-secondary" />
+                <div class="property-icons d-flex justify-content-between">
+                  <span><i class="fa-solid fa-bed"></i> 4</span>
+                  <span><i class="fa-solid fa-bath"></i> 4</span>
+                  <span><i class="fa-solid fa-car"></i> 3</span>
+                  <span><i class="fa-solid fa-ruler-combined"></i> 320m²</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 bg-white">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-7 mb-4 mb-md-0">
+            <h5 class="text-orange text-uppercase fw-bold ls-1">Sobre Nós</h5>
+            <h2 class="display-5 fw-bold text-navy mb-4">
+              Experiência e Confiança no Mercado Imobiliário
+            </h2>
+            <p class="text-muted lead">
+              Há mais de 15 anos transformando sonhos em realidade na região de
+              Itajaí e Praia Brava.
+            </p>
+            <p class="text-muted">
+              Nossa equipe é especializada em encontrar o imóvel perfeito para o
+              seu perfil. Trabalhamos com as melhores construtoras e imóveis
+              exclusivos que você só encontra aqui.
+            </p>
+            <ul class="list-unstyled mt-4">
+              <li class="mb-2">
+                <i class="fa-solid fa-check-circle text-orange me-2"></i>
+                Atendimento personalizado
+              </li>
+              <li class="mb-2">
+                <i class="fa-solid fa-check-circle text-orange me-2"></i>
+                Assessoria jurídica completa
+              </li>
+              <li class="mb-2">
+                <i class="fa-solid fa-check-circle text-orange me-2"></i>
+                Avaliação precisa de imóveis
+              </li>
+            </ul>
+            <button class="btn btn-outline-dark mt-3 px-4">
+              Conheça a Equipe
+            </button>
+          </div>
+          <div class="col-md-5">
+            <div class="position-relative">
+              <!-- imagem consultor -->
+              <img
+                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1000&auto=format&fit=crop"
+                class="img-fluid rounded shadow-lg"
+                alt="Consultor"
+              />
+              <div
+                class="bg-navy p-3 rounded position-absolute bottom-0 start-0 m-3 text-white shadow"
+              >
+                <p class="mb-0 fw-bold small">João Silva</p>
+                <p class="mb-0 small text-orange">CEO Fundador</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="row g-0">
+        <div class="col-md-6">
+          <div
+            class="cta-box"
+            style="
+              background-image: url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1000&auto=format&fit=crop');
+            "
+          >
+            <div class="cta-overlay"></div>
+            <div class="cta-content">
+              <h3 class="fw-bold mb-3">Quer vender seu imóvel?</h3>
+              <p class="mb-4">Temos a carteira de clientes ideal para você.</p>
+              <button class="btn btn-orange">Avalie Agora</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div
+            class="cta-box"
+            style="
+              background-image: url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1000&auto=format&fit=crop');
+            "
+          >
+            <div class="cta-overlay"></div>
+            <div class="cta-content">
+              <h3 class="fw-bold mb-3" id="contato">Fale com nossos corretores</h3>
+              <p class="mb-4">Estamos prontos para atender você.</p>
+              <button class="btn btn-outline-light">Whatsapp</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-navy pt-5 pb-2 text-white">
+      <div class="container pb-5">
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <h4 class="fw-bold mb-4">
+              <i class="fa-solid fa-gem text-orange me-2"></i>SUPREMO
+            </h4>
+            <p class="text-white-50">
+              Sua referência em imóveis de alto padrão na Praia Brava e região.
+              Conectamos pessoas a lugares extraordinários.
+            </p>
+            <div class="social-icons mt-4">
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6">
+            <h5 class="fw-bold mb-4">Navegação</h5>
+            <ul class="list-unstyled d-flex flex-column gap-2">
+              <li><a href="#">Início</a></li>
+              <li><a href="#">Comprar</a></li>
+              <li><a href="#">Alugar</a></li>
+              <li><a href="#">Lançamentos</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h5 class="fw-bold mb-4">Categorias</h5>
+            <ul class="list-unstyled d-flex flex-column gap-2">
+              <li><a href="#">Frente Mar</a></li>
+              <li><a href="#">Quadra Mar</a></li>
+              <li><a href="#">Coberturas</a></li>
+              <li><a href="#">Casas em Condomínio</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h5 class="fw-bold mb-4">Contato</h5>
+            <ul class="list-unstyled text-white-50">
+              <li class="mb-3">
+                <i class="fa-solid fa-location-dot text-orange me-2"></i> Av.
+                Beira Rio, 1000<br />Itajaí - SC
+              </li>
+              <li class="mb-3">
+                <i class="fa-solid fa-phone text-orange me-2"></i> (47)
+                3333-0000
+              </li>
+              <li class="mb-3">
+                <i class="fa-solid fa-envelope text-orange me-2"></i>
+                contato@supremo.com
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-top border-secondary pt-3">
+        <div class="container text-center">
+          <p class="small text-white-50 mb-0">
+            &copy; 2025 Supremo Imóveis. Todos os direitos reservados.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
