@@ -286,13 +286,15 @@
 
       /* 6. CTA Boxes Inferiores */
       .cta-box {
-        height: 300px;
+       
+        height: 250px;
         background-size: cover;
         background-position: center;
         position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
+         border-radius: 20px;
       }
       .cta-overlay {
         position: absolute;
@@ -302,6 +304,7 @@
         height: 100%;
         background: rgba(11, 28, 46, 0.6);
         transition: background 0.3s;
+        border-radius: 20px;
       }
       .cta-box:hover .cta-overlay {
         background: rgba(11, 28, 46, 0.4);
@@ -892,7 +895,7 @@
     </section>
 
 
-        <section class="py-5" id="supremo">
+    <section class="py-5 bg-light" id="supremo">
       <div class="container">
 
           <div class="card-supremoCRM position-relative d-flex justify-content-between">
@@ -919,16 +922,14 @@
             </div>
 
           </div>
-        
-
-     
-     
+    
       </div>
     </section>
 
 
-    <section>
-      <div class="row g-0">
+    <section class="py-5">
+      <div class="container">
+         <div class="row g-5">
         <div class="col-md-6">
           <div
             class="cta-box"
@@ -937,10 +938,19 @@
             "
           >
             <div class="cta-overlay"></div>
-            <div class="cta-content">
-              <h3 class="fw-bold mb-3">Quer vender seu imóvel?</h3>
-              <p class="mb-4">Temos a carteira de clientes ideal para você.</p>
-              <button class="btn btn-orange">Avalie Agora</button>
+            <div class="cta-content text-start w-100 px-5 h-75 d-flex flex-column justify-content-between">
+           <div>
+
+               <span class="text-orange">Anuncie</span>
+              <h3 class="fw-bold mb-3" style="font-size: 40px;">Seu Imóvel</h3>
+           </div>
+    
+           
+          <a href="#" class="text-light fw-semibold text-decoration-none linkResize " 
+            > <span >Anunciar</span>
+     
+                <button class=" btn btn-outline-light fw-bold" style="width: 54px; height: 32px; line-height: 1;">  <i class="fa-solid fa-arrow-right"></i
+          > </button></a>
             </div>
           </div>
         </div>
@@ -952,14 +962,28 @@
             "
           >
             <div class="cta-overlay"></div>
-            <div class="cta-content">
-              <h3 class="fw-bold mb-3" id="contato">Fale com nossos corretores</h3>
-              <p class="mb-4">Estamos prontos para atender você.</p>
-              <button class="btn btn-outline-light">Whatsapp</button>
+              <div class="cta-overlay"></div>
+            <div class="cta-content text-start w-100 px-5 h-75 d-flex flex-column justify-content-between">
+           <div>
+
+               <span class="text-orange">Conheça a nossa</span>
+              <h3 class="fw-bold mb-3" style="font-size: 40px;">Equipe</h3>
+           </div>
+    
+           
+          <a href="#" class="text-light fw-semibold text-decoration-none linkResize " 
+            > <span >Acessar</span>
+     
+                <button class=" btn btn-outline-light fw-bold" style="width: 54px; height: 32px; line-height: 1;">  <i class="fa-solid fa-arrow-right"></i
+          > </button></a>
             </div>
           </div>
         </div>
+          </div>
+        </div>
       </div>
+      </div>
+     
     </section>
 
 
