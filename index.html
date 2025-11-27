@@ -33,6 +33,32 @@
         --text-gray: #666;
         --light-bg: #f8f9fa;
       }
+      .card-supremoCRM{
+        padding: 20px;
+        box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+      .img-supremoCRM{
+        top: 41% !important;
+        right: -50px;
+        border-radius: 20px;
+
+      }
+      .img-supremoCRM::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 5%;
+        background: linear-gradient(to bottom, transparent, rgb(255, 255, 255));
+        pointer-events: none;
+        border-radius: 20px;
+        }
+      .bg-dark-navy {
+        background-color: var(--dark-navy) !important;
+      }
 
       body {
         font-family: "Montserrat", sans-serif;
@@ -44,10 +70,7 @@
       .text-orange {
         color: var(--primary-orange) !important;
       }
-      .bg-navy {
-        background-color: var(--dark-navy) !important;
-        color: white;
-      }
+     
       .text-navy {
         color: var(--dark-navy) !important;
       }
@@ -204,10 +227,13 @@
       }
       .property-card {
         border: none;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        border-radius: 8px;
+        overflow: hidden;
+        position: relative;
+        background-size: cover;
+        background-position: center;
         transition: transform 0.3s;
-        background: #fff;
-        height: 100%;
+        cursor: pointer;
       }
       .property-card:hover {
         transform: translateY(-5px);
@@ -304,13 +330,18 @@
     </style>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-navy sticky-top py-3">
+      <nav class="navbar navbar-expand-lg bg-transparent position-absolute w-100 z-3 py-6">
       <div class="container">
-        <a class="navbar-brand fw-bold" href="#">
-          <i class="fa-solid fa-gem text-orange me-2"></i>SUPREMO<span
-            class="text-orange"
-            >IMÓVEIS</span
-          >
+        <a class="navbar-brand text-white fw-bold " style="display: flex; " href="#">
+   
+            <i class="fa-solid fa-house text-orange me-2 " style="font-size: 54px;"></i>
+           <div style="display: flex; flex-direction: column; line-height: 2rem;"> 
+            <span class="" style="font-size: 32px;">SUPREMO</span>
+            <span class="" style="font-size: 12px;"
+              >Solução integrada para Imobiliárias</span
+            >
+       
+          </div>
         </a>
         <button
           class="navbar-toggler"
@@ -320,23 +351,13 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Home</a>
-            </li>
-            <li class="nav-item"><a class="nav-link" href="#imoveis">Imóveis</a></li>
-            <li class="nav-item">
-              <a class="nav-link" href="#lancamentos">Lançamentos</a>
-            </li>
-            <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
-          </ul>
-          <a href="#" class="btn btn-orange ms-lg-3 btn-sm">Anuncie</a>
+        <div>
+          <a href="#" class="text-white text-decoration-none fw-bold">(47) 98765-9999</a>
         </div>
-      </div>
     </nav>
+    <header class="hero-section position-relative">
+    
 
-    <header class="hero-section">
       <div class="hero-overlay"></div>
       <div class="container hero-content text-center">
         <h1 class="hero-title text-white mb-3">
@@ -428,32 +449,40 @@
                       class="fa-solid fa-magnifying-glass me-2"
                       style="color: #fd7e14"
                     ></i
-                    >O que você busca?
+                    >Codigo
                   </label>
                   <input
                     type="text"
                     class="form-control formControl border-0 text-white"
                     style="background-color: rgba(255, 255, 255, 0)"
-                    placeholder="Ex: Vista mar, 3 quartos..."
+                    placeholder="Ex: #320292"
                   />
                 </div>
-                <div class="col-md-4 col-lg-2">
-                  <button type="button" class="btn btn-orange w-100 py-2 px-2">
-                    <i class="fa-solid fa-magnifying-glass me-2"></i>Buscar
+                <div class="col-md-4 col-lg-2 " style="height: 64px;">
+                  <button type="button" class="btn btn-orange w-100 h-100 py-2 px-2">
+                    <i class="fa-solid fa-magnifying-glass me-2 fs-3" ></i>
                   </button>
                 </div>
               </form>
             </div>
+              <div class="text-white w-100 text-end mt-2 " style=" ">
+               <span >Busca Avançada</span>
+     
+                <button class="btn btn-outline-light fw-bold " style="width: 64px; height: 32px; line-height: 1;">  <i class="fa-solid fa-arrow-right"></i
+          > </button>
+              </div>
+
           </div>
         </div>
       </div>
     </header>
 
-    <section class="py-5 bg-light" id="imoveis">
+    <section class="py-5 " id="imoveis">
       <div class="container">
         <div class="row mb-4">
           <div class="col-12 text-center">
             <h2 class="fw-bold text-navy">Conheça nossos imóveis</h2>
+            <h3 class="text-orange fs-5">O que nossos visitantes mais procuram em nosso site.</h3>
             <div class="d-flex justify-content-center">
               <div
                 style="
@@ -475,70 +504,211 @@
                 background-image: url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1000&auto=format&fit=crop');
               "
             >
-              <div class="category-overlay">
-                <h4 class="text-white fw-bold">Apartamentos</h4>
-                <ul class="list-unstyled check-list">
-                  <li>
-                    <i class="fa-solid fa-check"></i> Vista definitiva para o
-                    mar
-                  </li>
-                  <li>
-                    <i class="fa-solid fa-check"></i> Alto padrão de acabamento
-                  </li>
-                  <li>
-                    <i class="fa-solid fa-check"></i> Áreas de lazer completas
-                  </li>
+             <div class="category-overlay">
+                <h4 class="text-white fw-bold">Itajaí</h4>
+                
+                <div class="d-flex justify-content-between align-items-center w-100 mt-3"> 
+                    
+                    <span class="text-white"> 
+                        <i class="fa-solid fa-location-dot me-2"></i> Santa Catarina 
+                    </span>
+                    
+                    <button 
+                        class="btn btn-outline-light fw-bold" 
+                        style="width: 56px; height: 32px; line-height: 1;" 
+                    > 
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+            </div>
+             <div class="mt-2">
+                         <ul class="list-unstyled">
+                    <li class="mb-2">
+                        <a href="#" class="text-decoration-none text-dark">
+                            <i class="fa-solid fa-chevron-right me-2 text-secondary"></i>
+                            Apartamentos no bairro Fazenda
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#" class="text-decoration-none text-dark">
+                            <i class="fa-solid fa-chevron-right me-2 text-secondary"></i>
+                            Apartamentos com 3 quartos em Itajaí
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#" class="text-decoration-none text-dark">
+                            <i class="fa-solid fa-chevron-right me-2 text-secondary"></i>
+                            Lançamentos em Itajaí
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#" class="text-decoration-none text-dark">
+                            <i class="fa-solid fa-chevron-right me-2 text-secondary"></i>
+                            Apartamentos acima de 100m² em Itajaí
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#" class="text-decoration-none text-dark">
+                            <i class="fa-solid fa-chevron-right me-2 text-secondary"></i>
+                            Apartamentos Mobiliados em Itajaí
+                        </a>
+                    </li>
+                    <li class="mt-3">
+                        <a href="#" class="text-decoration-none fw-bold" style="color: #fd7e14;">
+                            Ver todos imóveis
+                        </a>
+                    </li>
                 </ul>
               </div>
-            </div>
           </div>
           <!-- card2 -->
           <div class="col-md-4">
             <div
               class="category-card"
               style="
-                background-image: url('https://plus.unsplash.com/premium_photo-1694475117121-0c14f8ddf7bb?q=80&w=680&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+                  background-image: url('https://plus.unsplash.com/premium_photo-1694475117121-0c14f8ddf7bb?q=80&w=680&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
               "
             >
-              <div class="category-overlay">
-                <h4 class="text-white fw-bold">Casas em Condomínio</h4>
-                <ul class="list-unstyled check-list">
-                  <li><i class="fa-solid fa-check"></i> Segurança 24 horas</li>
-                  <li><i class="fa-solid fa-check"></i> Privacidade total</li>
-                  <li><i class="fa-solid fa-check"></i> Espaço para família</li>
+             <div class="category-overlay">
+                <h4 class="text-white fw-bold">Praia Brava</h4>
+                
+                <div class="d-flex justify-content-between align-items-center w-100 mt-3"> 
+                    
+                    <span class="text-white"> 
+                        <i class="fa-solid fa-location-dot me-2"></i> Santa Catarina 
+                    </span>
+                    
+                    <button 
+                        class="btn btn-outline-light fw-bold" 
+                        style="width: 56px; height: 32px; line-height: 1;" 
+                    > 
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+            </div>
+             <div class="mt-2">
+                         <ul class="list-unstyled">
+                    <li class="mb-2">
+                        <a href="#" class="text-decoration-none text-dark">
+                            <i class="fa-solid fa-chevron-right me-2 text-secondary"></i>
+                            Apartamentos no bairro Fazenda
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#" class="text-decoration-none text-dark">
+                            <i class="fa-solid fa-chevron-right me-2 text-secondary"></i>
+                            Apartamentos com 3 quartos em Itajaí
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#" class="text-decoration-none text-dark">
+                            <i class="fa-solid fa-chevron-right me-2 text-secondary"></i>
+                            Lançamentos em Itajaí
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#" class="text-decoration-none text-dark">
+                            <i class="fa-solid fa-chevron-right me-2 text-secondary"></i>
+                            Apartamentos acima de 100m² em Itajaí
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#" class="text-decoration-none text-dark">
+                            <i class="fa-solid fa-chevron-right me-2 text-secondary"></i>
+                            Apartamentos Mobiliados em Itajaí
+                        </a>
+                    </li>
+                    <li class="mt-3">
+                        <a href="#" class="text-decoration-none fw-bold" style="color: #fd7e14;">
+                            Ver todos imóveis
+                        </a>
+                    </li>
                 </ul>
               </div>
-            </div>
           </div>
           <!-- card3 -->
-          <div class="col-md-4">
+           <div class="col-md-4">
             <div
               class="category-card"
               style="
-                background-image: url('https://images.unsplash.com/photo-1613977257363-707ba9348227?q=80&w=1000&auto=format&fit=crop');
+                          background-image: url('https://images.unsplash.com/photo-1613977257363-707ba9348227?q=80&w=1000&auto=format&fit=crop');
+
               "
             >
-              <div class="category-overlay">
-                <h4 class="text-white fw-bold">Coberturas</h4>
-                <ul class="list-unstyled check-list">
-                  <li><i class="fa-solid fa-check"></i> Terraço privativo</li>
-                  <li><i class="fa-solid fa-check"></i> Piscina exclusiva</li>
-                  <li><i class="fa-solid fa-check"></i> Melhor localização</li>
+             <div class="category-overlay">
+                <h4 class="text-white fw-bold">Balneário Camboriú</h4>
+                
+                <div class="d-flex justify-content-between align-items-center w-100 mt-3"> 
+                    
+                    <span class="text-white"> 
+                        <i class="fa-solid fa-location-dot me-2"></i> Santa Catarina 
+                    </span>
+                    
+                    <button 
+                        class="btn btn-outline-light fw-bold" 
+                        style="width: 56px; height: 32px; line-height: 1;" 
+                    > 
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+            </div>
+              <div class="mt-2">
+                         <ul class="list-unstyled">
+                    <li class="mb-2">
+                        <a href="#" class="text-decoration-none text-dark">
+                            <i class="fa-solid fa-chevron-right me-2 text-secondary"></i>
+                            Apartamentos no bairro Fazenda
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#" class="text-decoration-none text-dark">
+                            <i class="fa-solid fa-chevron-right me-2 text-secondary"></i>
+                            Apartamentos com 3 quartos em Itajaí
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#" class="text-decoration-none text-dark">
+                            <i class="fa-solid fa-chevron-right me-2 text-secondary"></i>
+                            Lançamentos em Itajaí
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#" class="text-decoration-none text-dark">
+                            <i class="fa-solid fa-chevron-right me-2 text-secondary"></i>
+                            Apartamentos acima de 100m² em Itajaí
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#" class="text-decoration-none text-dark">
+                            <i class="fa-solid fa-chevron-right me-2 text-secondary"></i>
+                            Apartamentos Mobiliados em Itajaí
+                        </a>
+                    </li>
+                    <li class="mt-3">
+                        <a href="#" class="text-decoration-none fw-bold" style="color: #fd7e14;">
+                            Ver todos imóveis
+                        </a>
+                    </li>
                 </ul>
               </div>
-            </div>
           </div>
         </div>
+        <hr>
       </div>
     </section>
 
-    <section class="py-5" id="lancamentos">
+    <section class="py-4" id="lancamentos">
       <div class="container">
         <div class="d-flex justify-content-between align-items-center mb-4">
           <h2 class="fw-bold text-navy mb-0">Destaques</h2>
-          <a href="#" class="text-orange  fw-bold text-decoration-none linkResize " 
-            >Ver todos <i class="fa-solid fa-arrow-right"></i
-          ></a>
+          <a href="#" class="text-dark fw-semibold text-decoration-none linkResize " 
+            > <span >Ver mais</span>
+     
+                <button class=" btn btn-outline-dark fw-bold" style="width: 54px; height: 32px; line-height: 1;">  <i class="fa-solid fa-arrow-right"></i
+          > </button></a>
         </div>
 
         <div class="row g-4">
@@ -555,22 +725,94 @@
                   alt="Imóvel"
                 />
               </div>
-              <div class="card-body">
-                <h3 class="price-tag">R$ 2.400.000</h3>
-                <h5 class="card-title fw-bold">Brava Beach Internacional</h5>
-                <p class="text-muted small">Praia Brava, Itajaí</p>
-                <hr />
-                <div class="property-icons d-flex justify-content-between">
-                  <span><i class="fa-solid fa-bed"></i> 3</span>
-                  <span><i class="fa-solid fa-bath"></i> 4</span>
-                  <span><i class="fa-solid fa-car"></i> 2</span>
-                  <span><i class="fa-solid fa-ruler-combined"></i> 145m²</span>
+            </div>
+               <div class="">
+                <div class="d-flex justify-content-between mt-2"> <h4 class="fw-bold" style="font-size: 24px;">R$ 2.400.000</h4> <span style="font-size: 12px;">Cod. 16</span></div>
+                <p class="fw-semibold" style="font-size: 12px;">Torres da Brava Sirena - Apartamento Rua Luci Canziani - Praia Brava, Itajaí</p>
+
+             
+                  <div class="property-icons d-flex justify-content-between">
+                  <span class="fw-bold text-dark">145m²</span>
+                  <span class="fw-bold text-dark"> 3 Quartos  </span>
+                  <span class="fw-bold text-dark"> 1 Suíte</span>
+                  <span class="fw-bold text-dark"> 2 Vagas</span>
                 </div>
               </div>
-            </div>
           </div>
+        
           <!-- imv 2 -->
-          <div class="col-md-4">
+            <div class="col-md-4">
+            <div class="card property-card">
+              <div class="property-img-wrapper">
+                <span
+                  class="badge bg-primary position-absolute top-0 start-0 m-3"
+                  >Venda</span
+                >
+                 <img
+            src="https://images.unsplash.com/photo-1631049307379-e96858bda538?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Imóvel"
+          />
+              </div>
+            </div>
+               <div class="">
+                <div class="d-flex justify-content-between mt-2"> <h4 class="fw-bold" style="font-size: 24px;">R$ 2.400.000</h4> <span style="font-size: 12px;">Cod. 16</span></div>
+                <p class="fw-semibold" style="font-size: 12px;">Torres da Brava Sirena - Apartamento Rua Luci Canziani - Praia Brava, Itajaí</p>
+
+             
+             <div class="property-icons d-flex justify-content-between">
+                  <span class="fw-bold text-dark">145m²</span>
+                  <span class="fw-bold text-dark"> 3 Quartos  </span>
+                  <span class="fw-bold text-dark"> 1 Suíte</span>
+                  <span class="fw-bold text-dark"> 2 Vagas</span>
+                </div>
+              </div>
+          </div>
+       
+          <!-- imv3 -->
+              <div class="col-md-4">
+            <div class="card property-card">
+              <div class="property-img-wrapper">
+                <span
+                  class="badge bg-success position-absolute top-0 start-0 m-3"
+                  >NOVIDADE</span
+                >
+                <img
+            src="https://images.unsplash.com/photo-1560448205-17d3a46c84de?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Imóvel"
+          />
+              </div>
+            </div>
+               <div class="">
+                <div class="d-flex justify-content-between mt-2"> <h4 class="fw-bold" style="font-size: 24px;">R$ 2.400.000</h4> <span style="font-size: 12px;">Cod. 16</span></div>
+                <p class="fw-semibold" style="font-size: 12px;">Torres da Brava Sirena - Apartamento Rua Luci Canziani - Praia Brava, Itajaí</p>
+
+             
+                <div class="property-icons d-flex justify-content-between">
+                  <span class="fw-bold text-dark">145m²</span>
+                  <span class="fw-bold text-dark"> 3 Quartos  </span>
+                  <span class="fw-bold text-dark"> 1 Suíte</span>
+                  <span class="fw-bold text-dark"> 2 Vagas</span>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <section class="py-5 bg-dark-navy" id="lancamentos">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <h2 class="fw-bold text-white mb-0 ">Exclusivos</h2>
+          <a href="#" class="text-white fw-semibold text-decoration-none linkResize " 
+            > <span >Ver mais</span>
+     
+                <button class=" btn btn-outline-light fw-bold" style="width: 54px; height: 32px; line-height: 1;">  <i class="fa-solid fa-arrow-right"></i
+          > </button></a>
+        </div>
+
+        <div class="row g-4">
+          <!-- imv 1 -->
+          <div class="col-md-4 text-white">
             <div class="card property-card">
               <div class="property-img-wrapper">
                 <span
@@ -578,205 +820,119 @@
                   >Venda</span
                 >
                 <img
-                  src="https://images.unsplash.com/photo-1631049307379-e96858bda538?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=1000&auto=format&fit=crop"
                   alt="Imóvel"
                 />
               </div>
-              <div class="card-body">
-                <h3 class="price-tag">R$ 1.850.000</h3>
-                <h5 class="card-title fw-bold">Edifício Horizon</h5>
-                <p class="text-muted small">Centro, Itajaí</p>
-                <hr />
-                <div class="property-icons d-flex justify-content-between">
-                  <span><i class="fa-solid fa-bed"></i> 2</span>
-                  <span><i class="fa-solid fa-bath"></i> 2</span>
-                  <span><i class="fa-solid fa-car"></i> 1</span>
-                  <span><i class="fa-solid fa-ruler-combined"></i> 98m²</span>
+            </div>
+               <div class="">
+                <div class="d-flex justify-content-between mt-2"> <h4 class="fw-bold" style="font-size: 24px;">R$ 2.400.000</h4> <span style="font-size: 12px;">Cod. 16</span></div>
+                <p class="fw-semibold" style="font-size: 12px;">Torres da Brava Sirena - Apartamento Rua Luci Canziani - Praia Brava, Itajaí</p>
+
+             
+                  <div class="property-icons d-flex justify-content-between">
+                  <span class="fw-bold text-light">145m²</span>
+                  <span class="fw-bold text-light"> 3 Quartos  </span>
+                  <span class="fw-bold text-light"> 1 Suíte</span>
+                  <span class="fw-bold text-light"> 2 Vagas</span>
                 </div>
               </div>
-            </div>
           </div>
+        
+          <!-- imv 2 -->
+            <div class="col-md-4 text-white">
+            <div class="card property-card">
+              <div class="property-img-wrapper">
+                <span
+                  class="badge bg-primary position-absolute top-0 start-0 m-3"
+                  >Venda</span
+                >
+                 <img
+            src="https://images.unsplash.com/photo-1631049307379-e96858bda538?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Imóvel"
+          />
+              </div>
+            </div>
+               <div class="">
+                <div class="d-flex justify-content-between mt-2"> <h4 class="fw-bold" style="font-size: 24px;">R$ 2.400.000</h4> <span style="font-size: 12px;">Cod. 16</span></div>
+                <p class="fw-semibold" style="font-size: 12px;">Torres da Brava Sirena - Apartamento Rua Luci Canziani - Praia Brava, Itajaí</p>
+
+             
+             <div class="property-icons d-flex justify-content-between">
+                  <span class="fw-bold text-light">145m²</span>
+                  <span class="fw-bold text-light"> 3 Quartos  </span>
+                  <span class="fw-bold text-light"> 1 Suíte</span>
+                  <span class="fw-bold text-light"> 2 Vagas</span>
+                </div>
+              </div>
+          </div>
+       
           <!-- imv3 -->
-          <div class="col-md-4">
+              <div class="col-md-4 text-white">
             <div class="card property-card">
               <div class="property-img-wrapper">
                 <span
                   class="badge bg-success position-absolute top-0 start-0 m-3"
-                  >Lançamento</span
+                  >NOVIDADE</span
                 >
                 <img
-                  src="https://images.unsplash.com/photo-1560448205-17d3a46c84de?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="Imóvel"
-                />
-              </div>
-              <div class="card-body">
-                <h3 class="price-tag">R$ 3.200.000</h3>
-                <h5 class="card-title fw-bold">Residencial Ocean Breeze</h5>
-                <p class="text-muted small">Cabeçudas, Itajaí</p>
-                <hr />
-                <div class="property-icons d-flex justify-content-between">
-                  <span><i class="fa-solid fa-bed"></i> 4</span>
-                  <span><i class="fa-solid fa-bath"></i> 5</span>
-                  <span><i class="fa-solid fa-car"></i> 3</span>
-                  <span><i class="fa-solid fa-ruler-combined"></i> 210m²</span>
-                </div>
+            src="https://images.unsplash.com/photo-1560448205-17d3a46c84de?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Imóvel"
+          />
               </div>
             </div>
+               <div class="">
+                <div class="d-flex justify-content-between mt-2"> <h4 class="fw-bold" style="font-size: 24px;">R$ 2.400.000</h4> <span style="font-size: 12px;">Cod. 16</span></div>
+                <p class="fw-semibold" style="font-size: 12px;">Torres da Brava Sirena - Apartamento Rua Luci Canziani - Praia Brava, Itajaí</p>
+
+             
+                <div class="property-icons d-flex justify-content-between">
+                  <span class="fw-bold text-light">145m²</span>
+                  <span class="fw-bold text-light"> 3 Quartos  </span>
+                  <span class="fw-bold text-light"> 1 Suíte</span>
+                  <span class="fw-bold text-light"> 2 Vagas</span>
+                </div>
+              </div>
           </div>
         </div>
       </div>
     </section>
 
 
-    <section class="py-5 bg-navy section-dark">
+        <section class="py-5" id="supremo">
       <div class="container">
-        <div class="d-flex justify-content-between align-items-center mb-4">
-          <h2 class="fw-bold text-white mb-0">Exclusivos</h2>
-          <a href="#" class="text-orange fw-bold text-decoration-none linkResize"
-            >Ver coleção <i class="fa-solid fa-arrow-right"></i
-          ></a>
-        </div>
 
-        <div class="row g-4">
-          <!-- exclusivo 1 -->
-          <div class="col-md-4">
-            <div class="card property-card border-0">
-              <div class="property-img-wrapper">
-                <span
-                  class="badge bg-warning text-dark position-absolute top-0 start-0 m-3"
-                  >Exclusivo</span
-                >
-                <img
-                  src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1000&auto=format&fit=crop"
-                  alt="Imóvel"
-                />
-              </div>
-              <div class="card-body">
-                <h3 class="price-tag">R$ 12.500.000</h3>
-                <h5 class="card-title fw-bold">Mansão Beira Mar</h5>
-                <p class="text-white-50 small">Praia Brava, Itajaí</p>
-                <hr class="border-secondary" />
-                <div class="property-icons d-flex justify-content-between">
-                  <span><i class="fa-solid fa-bed"></i> 6</span>
-                  <span><i class="fa-solid fa-bath"></i> 8</span>
-                  <span><i class="fa-solid fa-car"></i> 6</span>
-                  <span><i class="fa-solid fa-ruler-combined"></i> 850m²</span>
-                </div>
-              </div>
+          <div class="card-supremoCRM position-relative d-flex justify-content-between">
+            <div class="d-flex flex-column ">
+              <h3 class="small text-orange">Sobre Nós</h3>
+              <h2 class="fw-bold text-navy">Supremo CRM</h2>
+              <p class="text-dark mt-3" style="font-size: 20px; width: 650px;">
+                O Supremo CRM é uma solução integrada para imobiliárias que
+                visa otimizar a gestão de clientes, imóveis e processos de
+                venda e locação. Com uma interface intuitiva e recursos
+                avançados, o Supremo CRM facilita o acompanhamento de leads,
+                agendamento de visitas, controle de contratos e muito mais,
+                proporcionando uma experiência eficiente tanto para os
+                corretores quanto para os clientes.
+              </p>
+                 <a href="#" class="text-dark fw-semibold text-decoration-none  " 
+            > <span >Ver mais</span>
+     
+                <button class=" btn btn-outline-dark fw-bold" style="width: 54px; height: 32px; line-height: 1;">  <i class="fa-solid fa-arrow-right"></i
+          > </button></a>
             </div>
-          </div>
-          <!-- exclusivo 2 -->
-          <div class="col-md-4">
-            <div class="card property-card border-0">
-              <div class="property-img-wrapper">
-                <span
-                  class="badge bg-warning text-dark position-absolute top-0 start-0 m-3"
-                  >Exclusivo</span
-                >
-                <img
-                  src="https://images.unsplash.com/photo-1512915922686-57c11dde9b6b?q=80&w=1000&auto=format&fit=crop"
-                  alt="Imóvel"
-                />
-              </div>
-              <div class="card-body">
-                <h3 class="price-tag">R$ 8.900.000</h3>
-                <h5 class="card-title fw-bold">Penthouse Duplex</h5>
-                <p class="text-white-50 small">Centro, Itajaí</p>
-                <hr class="border-secondary" />
-                <div class="property-icons d-flex justify-content-between">
-                  <span><i class="fa-solid fa-bed"></i> 4</span>
-                  <span><i class="fa-solid fa-bath"></i> 5</span>
-                  <span><i class="fa-solid fa-car"></i> 4</span>
-                  <span><i class="fa-solid fa-ruler-combined"></i> 500m²</span>
-                </div>
-              </div>
+            <div class="position-absolute img-supremoCRM  translate-middle-y me-5" >
+             <img src="bgNone.png" alt="Supremo CRM" style="width: 300px; border-radius: 20px;"/>
             </div>
+
           </div>
-          <!-- exclusivo 3 -->
-          <div class="col-md-4">
-            <div class="card property-card border-0">
-              <div class="property-img-wrapper">
-                <span
-                  class="badge bg-warning text-dark position-absolute top-0 start-0 m-3"
-                  >Exclusivo</span
-                >
-                <img
-                  src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?q=80&w=1000&auto=format&fit=crop"
-                  alt="Imóvel"
-                />
-              </div>
-              <div class="card-body">
-                <h3 class="price-tag">R$ 5.400.000</h3>
-                <h5 class="card-title fw-bold">Casa Alto Padrão</h5>
-                <p class="text-white-50 small">Fazenda, Itajaí</p>
-                <hr class="border-secondary" />
-                <div class="property-icons d-flex justify-content-between">
-                  <span><i class="fa-solid fa-bed"></i> 4</span>
-                  <span><i class="fa-solid fa-bath"></i> 4</span>
-                  <span><i class="fa-solid fa-car"></i> 3</span>
-                  <span><i class="fa-solid fa-ruler-combined"></i> 320m²</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        
+
+     
+     
       </div>
     </section>
 
-    <section class="py-5 bg-white">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-7 mb-4 mb-md-0">
-            <h5 class="text-orange text-uppercase fw-bold ls-1">Sobre Nós</h5>
-            <h2 class="display-5 fw-bold text-navy mb-4">
-              Experiência e Confiança no Mercado Imobiliário
-            </h2>
-            <p class="text-muted lead">
-              Há mais de 15 anos transformando sonhos em realidade na região de
-              Itajaí e Praia Brava.
-            </p>
-            <p class="text-muted">
-              Nossa equipe é especializada em encontrar o imóvel perfeito para o
-              seu perfil. Trabalhamos com as melhores construtoras e imóveis
-              exclusivos que você só encontra aqui.
-            </p>
-            <ul class="list-unstyled mt-4">
-              <li class="mb-2">
-                <i class="fa-solid fa-check-circle text-orange me-2"></i>
-                Atendimento personalizado
-              </li>
-              <li class="mb-2">
-                <i class="fa-solid fa-check-circle text-orange me-2"></i>
-                Assessoria jurídica completa
-              </li>
-              <li class="mb-2">
-                <i class="fa-solid fa-check-circle text-orange me-2"></i>
-                Avaliação precisa de imóveis
-              </li>
-            </ul>
-            <button class="btn btn-outline-dark mt-3 px-4">
-              Conheça a Equipe
-            </button>
-          </div>
-          <div class="col-md-5">
-            <div class="position-relative">
-              <!-- imagem consultor -->
-              <img
-                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1000&auto=format&fit=crop"
-                class="img-fluid rounded shadow-lg"
-                alt="Consultor"
-              />
-              <div
-                class="bg-navy p-3 rounded position-absolute bottom-0 start-0 m-3 text-white shadow"
-              >
-                <p class="mb-0 fw-bold small">João Silva</p>
-                <p class="mb-0 small text-orange">CEO Fundador</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <section>
       <div class="row g-0">
@@ -813,7 +969,7 @@
       </div>
     </section>
 
-    <footer class="bg-navy pt-5 pb-2 text-white">
+    <footer class="bg-dark-navy pt-5 pb-2 text-white">
       <div class="container pb-5">
         <div class="row g-4">
           <div class="col-lg-4 col-md-6">
