@@ -90,7 +90,9 @@
         color: white;
         transform: translateY(-2px);
       }
-
+      .bg-orange{
+        background-color: var(--primary-orange);
+      }
       /* 1. Header / Hero Section */
       .hero-section {
         background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2073&auto=format&fit=crop");
@@ -125,9 +127,9 @@
       }
 
       .hero-title {
-        font-weight: 800;
+        font-weight: 600;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        font-size: 3rem;
+        font-size: 2.5rem;
       }
 
       .search-box-container {
@@ -335,6 +337,10 @@
   <body>
       <nav class="navbar navbar-expand-lg bg-transparent position-absolute w-100 z-3 py-6">
       <div class="container">
+
+
+        <a href="#"> <i class="fa fa-bars text-white"></i> </a>
+
         <a class="navbar-brand text-white fw-bold " style="display: flex; " href="#">
    
             <i class="fa-solid fa-house text-orange me-2 " style="font-size: 54px;"></i>
@@ -356,12 +362,10 @@
 
       <div class="hero-overlay"></div>
       <div class="container hero-content text-center">
-        <h1 class="hero-title text-white mb-3">
+        <h1 class="hero-title text-white mb-3 text-start">
           Imóveis na Praia Brava<br />e Fazenda em Itajaí
         </h1>
-        <p class="text-white lead mb-4">
-          Encontre o luxo e o conforto que você merece.
-        </p>
+     
 
         <div class="row justify-content-center">
           <div class="col-lg-12 mb-5">
@@ -376,7 +380,7 @@
                     >Tipos
                   </label>
                   <select
-                    class="form-select border-0 text-white custom-white-chevron"
+                    class="form-select border-0 text-white-50 custom-white-chevron"
                     style="background-color: rgba(255, 255, 255, 0)"
                   >
                     <option>Comprar</option>
@@ -392,7 +396,7 @@
                     >Cidades
                   </label>
                   <select
-                    class="form-select border-0 text-white custom-white-chevron"
+                    class="form-select border-0 text-white-50 custom-white-chevron"
                     style="background-color: rgba(255, 255, 255, 0)"
                   >
                     <option>Aracaju</option>
@@ -409,7 +413,7 @@
                     >Bairros
                   </label>
                   <select
-                    class="form-select border-0 text-white custom-white-chevron"
+                    class="form-select border-0 text-white-50 custom-white-chevron"
                     style="background-color: rgba(255, 255, 255, 0)"
                   >
                     <option>Farolândia</option>
@@ -426,7 +430,7 @@
                     >Valor
                   </label>
                   <select
-                    class="form-select border-0 text-white custom-white-chevron"
+                    class="form-select border-0 text-white-50 custom-white-chevron"
                     style="background-color: rgba(255, 255, 255, 0)"
                   >
                     <option value="">Todos os valores</option>
@@ -449,7 +453,7 @@
                   </label>
                   <input
                     type="text"
-                    class="form-control formControl border-0 text-white"
+                    class="form-control formControl border-0 text-white-50"
                     style="background-color: rgba(255, 255, 255, 0)"
                     placeholder="Ex: #320292"
                   />
@@ -713,7 +717,7 @@
             <div class="card property-card">
               <div class="property-img-wrapper">
                 <span
-                  class="badge bg-primary position-absolute top-0 start-0 m-3"
+                  class="badge bg-orange position-absolute top-0 start-0 m-3"
                   >Venda</span
                 >
                 <img
@@ -741,7 +745,7 @@
             <div class="card property-card">
               <div class="property-img-wrapper">
                 <span
-                  class="badge bg-primary position-absolute top-0 start-0 m-3"
+                  class="badge bg-orange position-absolute top-0 start-0 m-3"
                   >Venda</span
                 >
                  <img
@@ -769,8 +773,8 @@
             <div class="card property-card">
               <div class="property-img-wrapper">
                 <span
-                  class="badge bg-success position-absolute top-0 start-0 m-3"
-                  >NOVIDADE</span
+                  class="badge bg-orange position-absolute top-0 start-0 m-3"
+                  >MOBILIADO</span
                 >
                 <img
             src="https://images.unsplash.com/photo-1560448205-17d3a46c84de?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -812,7 +816,7 @@
             <div class="card property-card">
               <div class="property-img-wrapper">
                 <span
-                  class="badge bg-primary position-absolute top-0 start-0 m-3"
+                  class="badge bg-orange position-absolute top-0 start-0 m-3"
                   >Venda</span
                 >
                 <img
@@ -840,7 +844,7 @@
             <div class="card property-card">
               <div class="property-img-wrapper">
                 <span
-                  class="badge bg-primary position-absolute top-0 start-0 m-3"
+                  class="badge bg-orange position-absolute top-0 start-0 m-3"
                   >Venda</span
                 >
                  <img
@@ -868,8 +872,8 @@
             <div class="card property-card">
               <div class="property-img-wrapper">
                 <span
-                  class="badge bg-success position-absolute top-0 start-0 m-3"
-                  >NOVIDADE</span
+                  class="badge bg-orange position-absolute top-0 start-0 m-3"
+                  >MOBILIADO</span
                 >
                 <img
             src="https://images.unsplash.com/photo-1560448205-17d3a46c84de?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -946,7 +950,7 @@
            </div>
     
            
-          <a href="#" class="text-light fw-semibold text-decoration-none  " 
+          <a href="#" class="text-light fw-semibold text-decoration-none linkResize " 
             > <span >Anunciar</span>
      
                 <button class=" btn btn-outline-light fw-bold" style="width: 54px; height: 32px; line-height: 1;">  <i class="fa-solid fa-arrow-right"></i
@@ -971,7 +975,7 @@
            </div>
     
            
-          <a href="#" class="text-light fw-semibold text-decoration-none  " 
+          <a href="#" class="text-light fw-semibold text-decoration-none linkResize " 
             > <span >Acessar</span>
      
                 <button class=" btn btn-outline-light fw-bold" style="width: 54px; height: 32px; line-height: 1;">  <i class="fa-solid fa-arrow-right"></i
