@@ -31,12 +31,58 @@
         --text-gray: #666;
         --light-bg: #f8f9fa;
       }
+      .btn-noHover:hover{
+        background-color: transparent !important;
+      }
+      .codigo input {
+          background: none;
+          border: none;
+          color: #fff;
+          text-align: center;
+          float: left;
+          width: 100%;
+          height: 100%;
+          font-size: .8rem;
+          border-left: 1px solid #ffffff21;
+      }
+      .codigo input::placeholder{
+        color: #fff;
+   
+      }
+      .codigo input:focus{
+        outline: none;
+      }
+
+      .chevron{
+        position: relative;
+        width: 100%;
+      }
+      .chevron::after{
+            content: ' ';
+            position: absolute;
+            display: block;
+            border-style: solid;
+            border-color: rgba(255, 255, 255, 0.3) transparent transparent transparent;
+            pointer-events: none;
+            right: 0;
+            padding: 3px;
+            border: 1px solid #b2b5ba;
+            border-width: 0 1px 1px 0;
+            transform: rotate(45deg) translateX(-50%);
+            -webkit-transform: rotate(45deg) translateX(-50%);
+            top: 38%;
+      }
       .small-ad{
         font-size: .8rem;
       }
       .manrope-extra-light{
         font-weight: 200;
       }
+      .select-color{
+        font-size: .85rem;
+        color: #52606b;
+      }
+
       .card-supremoCRM{
         padding: 20px;
         box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
@@ -87,12 +133,12 @@
         font-weight: 600;
         text-transform: uppercase;
         padding: 10px 25px;
-        transition: all 0.3s ease;
+
       }
       .btn-orange:hover {
-        background-color: var(--primary-orange-hover);
-        color: white;
-        transform: translateY(-2px);
+        background-color: #fff;
+        color: var(--primary-orange);
+
       }
       .bg-orange{
         background-color: var(--primary-orange);
@@ -102,6 +148,7 @@
         /* background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2073&auto=format&fit=crop"); */
         background-image: url('https://www.adamantenegocios.com.br/fotos/original/fundo.jpg?token=UnU4WkVNa3N0ZWRTdk85SGhXRjVQSFB3cCtpVnNJN01FY1k4cWQ4VXN3dlpMM2JEMkJ2R3d5NG5BVXlMZ2dldzJBeUNUaGxWb0ROeEE3eExlMWxMZlE9PQ==');
         background-size: cover;
+        background-position: center;
         height: 100vh; 
         min-height: 600px;
         position: relative;
@@ -356,8 +403,14 @@
            </div>
         </a>
     
-        <div>
-          <a href="#" class="text-white text-decoration-none" style="font-size: .9rem; font-weight: 600;">(47) 98765-9999</a>
+        <div class="d-flex align-items-center justify-content-center gap-3">
+           <svg width="18" height="18" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 28.9296C0.235 28.2466 0.472999 27.5666 0.705999 26.8826C1.271 25.2196 1.832 23.5546 2.4 21.8906C2.441 21.7706 2.432 21.6806 2.365 21.5716C1.402 19.9946 0.776 18.2906 0.479 16.4696C0.303 15.3916 0.240999 14.3056 0.332999 13.2196C0.659999 9.34265 2.281 6.10365 5.204 3.53265C7.163 1.80865 9.446 0.730648 12.007 0.241648C13.134 0.0266481 14.275 -0.0403517 15.417 0.0226483C21.25 0.346648 26.243 4.10965 28.176 9.53165C28.572 10.6426 28.83 11.7866 28.916 12.9646C29.265 17.7936 27.6 21.8066 23.975 24.9936C22.089 26.6516 19.876 27.6856 17.41 28.1726C16.037 28.4436 14.654 28.5076 13.265 28.3746C11.316 28.1886 9.476 27.6336 7.756 26.6916C7.611 26.6116 7.488 26.6046 7.331 26.6536C4.958 27.4126 2.584 28.1676 0.21 28.9226C0.142 28.9436 0.07 28.9496 0 28.9646C0 28.9546 0 28.9416 0 28.9296ZM2.421 26.6186C2.489 26.5986 2.517 26.5916 2.545 26.5836C4.22 26.0506 5.895 25.5206 7.567 24.9856C7.706 24.9406 7.81 24.9546 7.936 25.0316C9.704 26.1186 11.627 26.7306 13.693 26.8896C14.769 26.9726 15.839 26.9116 16.903 26.7206C19.302 26.2886 21.419 25.2686 23.221 23.6316C25.693 21.3866 27.098 18.5936 27.393 15.2566C27.497 14.0756 27.433 12.9026 27.196 11.7436C26.744 9.52865 25.777 7.56165 24.27 5.87265C22.037 3.36865 19.239 1.94265 15.907 1.58565C14.616 1.44665 13.328 1.51865 12.053 1.78765C8.993 2.43365 6.47 3.97165 4.549 6.43065C2.311 9.29465 1.472 12.5546 1.993 16.1546C2.266 18.0416 2.972 19.7626 4.045 21.3336C4.125 21.4516 4.143 21.5486 4.097 21.6826C3.747 22.6966 3.404 23.7096 3.06 24.7256C2.851 25.3446 2.642 25.9646 2.421 26.6186Z" fill="white"></path>
+            <path d="M7.84892 10.9547C7.84392 9.86774 8.27792 8.97674 9.04792 8.23374C9.24292 8.04474 9.47192 7.94374 9.74992 7.95874C9.99792 7.97074 10.2469 7.95174 10.4899 7.98274C10.5799 7.99474 10.6919 8.09574 10.7319 8.18474C10.9279 8.61174 11.1019 9.04774 11.2839 9.48074C11.4999 9.99074 11.7129 10.5017 11.9339 11.0107C11.9899 11.1387 12.0029 11.2597 11.9209 11.3697C11.6629 11.7177 11.4199 12.0797 11.1309 12.4007C10.7069 12.8707 10.6519 13.1937 10.9779 13.7317C12.1399 15.6477 13.7149 17.0897 15.7979 17.9557C15.9319 18.0107 16.0599 18.0777 16.1949 18.1277C16.5999 18.2787 16.9629 18.2067 17.2459 17.8757C17.6419 17.4127 18.0279 16.9387 18.4049 16.4587C18.5019 16.3357 18.5839 16.3037 18.7219 16.3677C19.4639 16.7167 20.2069 17.0607 20.9499 17.4077C21.1739 17.5127 21.3989 17.6157 21.6169 17.7307C21.6669 17.7567 21.7229 17.8317 21.7229 17.8827C21.7199 18.7877 21.4569 19.5497 20.6369 20.0697C20.0259 20.4577 19.3669 20.6887 18.6659 20.7007C18.1969 20.7077 17.7109 20.5737 17.2539 20.4337C16.1369 20.0907 15.0269 19.7187 14.0079 19.1297C12.5559 18.2877 11.3339 17.1767 10.3049 15.8637C9.68792 15.0767 9.12392 14.2437 8.58292 13.4017C8.20992 12.8227 7.98392 12.1677 7.88692 11.4777C7.86692 11.3047 7.86192 11.1287 7.84892 10.9547Z" fill="white"></path>
+            </svg>
+          <a href="#" class="text-white text-decoration-none" style="font-size: .9rem; font-weight: 600;">
+           
+            (47) 98765-9999</a>
         </div>
       </div>
     </nav> 
@@ -370,100 +423,67 @@
         <div class="row justify-content-center" style="">
           <div class="col-lg-12 mb-5">
             <div
-              class="search-box-container bg-opacity rounded-3"
-              style="background-color: #0e2a4b; "
+              class="search-box-container "
+              style="background-color: #0d2b4de3; border-radius: 13px;"
             >
               <form class="row  align-items-center" style="height: 87px;">
-                <div class="col-md-4 col-lg-2 text-start d-flex" >
-                   <i class="fa-solid fa-house me-2" style="color: #fd7e14"></i>
-                  <div class="d-flex flex-column">
-                    <label class="form-label manrope-extra-light small-ad text-white">
+                <div class="col-md-4 col-lg-2 text-start d-flex justify-content-center align-items-start" style="" >
+                  <div class="d-flex align-items-start ms-4 me-2 ">
+                      <svg width="14" height="15" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.31122 19.3438C9.18922 19.3438 13.0032 19.3438 16.8512 19.3438C16.8602 19.1718 16.8742 19.0218 16.8742 18.8728C16.8752 15.5628 16.8792 12.2528 16.8662 8.94076C16.8652 8.72476 16.8032 8.44676 16.6622 8.30276C14.8652 6.47876 13.0522 4.67376 11.2412 2.86476C11.2052 2.82976 11.1592 2.80576 10.9532 2.61876C10.8642 2.78576 10.8092 2.98776 10.6812 3.11676C7.94922 5.86276 5.20822 8.60076 2.46722 11.3378C2.33522 11.4708 2.19522 11.6658 2.04122 11.6838C1.78422 11.7138 1.46722 11.6948 1.25922 11.5638C0.981219 11.3888 0.919224 11.0588 1.11022 10.7498C1.19922 10.6088 1.32422 10.4868 1.44322 10.3668C4.42322 7.38576 7.40322 4.40376 10.3842 1.42376C10.9472 0.86076 11.2372 0.859757 11.7922 1.41476C14.7872 4.40776 17.7802 7.39776 20.7672 10.3968C20.9382 10.5698 21.1592 10.8208 21.1452 11.0218C21.1272 11.2598 20.9332 11.5918 20.7262 11.6868C20.5242 11.7768 20.1322 11.7028 19.9592 11.5478C19.4172 11.0648 18.9382 10.5108 18.3252 9.87076C18.3112 10.2218 18.2952 10.3968 18.2952 10.5758C18.2942 13.6298 18.2952 16.6848 18.2942 19.7398C18.2942 20.5778 18.0732 20.7978 17.2382 20.7978C13.1422 20.7978 9.04522 20.7978 4.94922 20.7978C4.11422 20.7978 3.89122 20.5778 3.89122 19.7398C3.89022 17.2838 3.89022 14.8248 3.89122 12.3698C3.89222 11.8038 4.10222 11.5108 4.51522 11.4688C5.02422 11.4168 5.30822 11.6968 5.30922 12.2788C5.31222 14.4278 5.31022 16.5798 5.31022 18.7288C5.31122 18.9158 5.31122 19.1008 5.31122 19.3438Z" fill="#F15F22" stroke="#F16024" stroke-miterlimit="10"></path></svg>
+                  </div>
+                  <div class="d-flex flex-column w-100" style="line-height: .8rem;">
+                    <label class="form-label small-ad chevron text-white" style="font-weight: 400;">
                      Tipos
                     </label>
-                    <span class="text-white-50">Selecione</span>
+                    <span class="select-color">Selecione</span>
                   </div>
                 </div>
-                <div class="col-md-4 col-lg-2 text-start">
-                  <label class="form-label manrope-extra-light small-ad text-white">
-                    <i
-                      class="fa-solid fa-location-dot me-2"
-                      style="color: #fd7e14"
-                    ></i
-                    >Cidades
-                  </label>
-                  <select
-                    class="form-select border-0 text-white-50 custom-white-chevron"
-                    style="background-color: rgba(255, 255, 255, 0)"
-                  >
-                    <option>Aracaju</option>
-                    <option>São Paulo</option>
-                    <option>Itajaí</option>
-                  </select>
+                <div class="col-md-4 col-lg-2 text-start d-flex justify-content-center align-items-start" style="" >
+                  <div class="d-flex align-items-start ms-4 me-2 ">
+                      <svg width="9" height="14" fill="#F16024"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9.93 14.13"><g id="Camada_2" data-name="Camada 2"><g id="Layer_1" data-name="Layer 1"><path class="cls-1" d="M4.86,14.13a1.88,1.88,0,0,1-.32-.31c-.83-1.19-1.67-2.37-2.48-3.58A14,14,0,0,1,.4,7.06,6.36,6.36,0,0,1,0,4.85,5,5,0,0,1,3.59.2c.3-.08.62-.12.93-.18l.09,0h.72c.27.05.54.08.81.14A5,5,0,0,1,9.89,4.29a6,6,0,0,1-.44,3,15.87,15.87,0,0,1-1.76,3.24c-.78,1.14-1.58,2.27-2.37,3.4a1.16,1.16,0,0,1-.24.2ZM5,13l0-.06c.69-1,1.4-2,2.08-3A13.73,13.73,0,0,0,8.74,6.84a5,5,0,0,0,.33-2.4A4.14,4.14,0,0,0,1,3.82a4.67,4.67,0,0,0,.13,2.79A11.43,11.43,0,0,0,2.48,9.37c.8,1.19,1.63,2.37,2.45,3.55Z"></path><path class="cls-1" d="M7.45,5A2.49,2.49,0,1,1,5,2.48,2.49,2.49,0,0,1,7.45,5ZM6.62,5A1.66,1.66,0,1,0,5,6.62,1.66,1.66,0,0,0,6.62,5Z"></path></g></g></svg>
+                  </div>
+                  <div class="d-flex flex-column w-100" style="line-height: .8rem;">
+                    <label class="form-label small-ad chevron text-white" style="font-weight: 400;">
+                      Cidades
+                    </label>
+                    <span class="select-color">Selecione</span>
+                  </div>
                 </div>
-                <div class="col-md-4 col-lg-2 text-start">
-                  <label class="form-label manrope-extra-light small-ad text-white">
-                    <i
-                      class="fa-solid fa-map-pin me-2"
-                      style="color: #fd7e14"
-                    ></i
-                    >Bairros
-                  </label>
-                  <select
-                    class="form-select border-0 text-white-50 custom-white-chevron"
-                    style="background-color: rgba(255, 255, 255, 0)"
-                  >
-                    <option>Farolândia</option>
-                    <option>Aruana</option>
-                    <option>Eduardo Gomes</option>
-                  </select>
+                <div class="col-md-4 col-lg-2 text-start d-flex justify-content-center align-items-start" style="" >
+                  <div class="d-flex align-items-start ms-4 me-2 ">
+                      <svg width="9" height="14" fill="#F16024" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9.93 14.13"><g id="Camada_2" data-name="Camada 2"><g id="Layer_1" data-name="Layer 1"><path class="cls-1" d="M4.86,14.13a1.88,1.88,0,0,1-.32-.31c-.83-1.19-1.67-2.37-2.48-3.58A14,14,0,0,1,.4,7.06,6.36,6.36,0,0,1,0,4.85,5,5,0,0,1,3.59.2c.3-.08.62-.12.93-.18l.09,0h.72c.27.05.54.08.81.14A5,5,0,0,1,9.89,4.29a6,6,0,0,1-.44,3,15.87,15.87,0,0,1-1.76,3.24c-.78,1.14-1.58,2.27-2.37,3.4a1.16,1.16,0,0,1-.24.2ZM5,13l0-.06c.69-1,1.4-2,2.08-3A13.73,13.73,0,0,0,8.74,6.84a5,5,0,0,0,.33-2.4A4.14,4.14,0,0,0,1,3.82a4.67,4.67,0,0,0,.13,2.79A11.43,11.43,0,0,0,2.48,9.37c.8,1.19,1.63,2.37,2.45,3.55Z"></path><path class="cls-1" d="M7.45,5A2.49,2.49,0,1,1,5,2.48,2.49,2.49,0,0,1,7.45,5ZM6.62,5A1.66,1.66,0,1,0,5,6.62,1.66,1.66,0,0,0,6.62,5Z"></path></g></g></svg>
+                  </div>
+                  <div class="d-flex flex-column w-100" style="line-height: .8rem;">
+                    <label class="form-label small-ad chevron text-white" style="font-weight: 400;">
+                      Bairros
+                    </label>
+                    <span class="select-color">Selecione</span>
+                  </div>
                 </div>
-                <div class="col-md-4 col-lg-2 text-start">
-                  <label class="form-label manrope-extra-light small-ad text-white">
-                    <i
-                      class="fa-solid fa-dollar-sign me-2"
-                      style="color: #fd7e14"
-                    ></i
-                    >Valor
-                  </label>
-                  <select
-                    class="form-select border-0 text-white-50 custom-white-chevron"
-                    style="background-color: rgba(255, 255, 255, 0)"
-                  >
-                    <option value="">Todos os valores</option>
-                    <option value="500000">Até R$ 500 mil</option>
-                    <option value="1000000">Até R$ 1 milhão</option>
-                    <option value="1500000">Até R$ 1,5 milhão</option>
-                    <option value="2000000">Até R$ 2 milhões</option>
-                    <option value="2500000">Até R$ 2,5 milhões</option>
-                    <option value="3000000">Até R$ 3 milhões</option>
-                    <option value="3500000">Até R$ 3,5 milhões</option>
-                  </select>
+                <div class="col-md-4 col-lg-2 text-start d-flex justify-content-center align-items-start" style="" >
+                  <div class="d-flex align-items-start ms-4 me-2 ">
+                      <svg width="9" height="14" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.47727 11.0909V0.181818H4.17614V11.0909H3.47727ZM5.82955 3.45455C5.77841 3.02273 5.57102 2.6875 5.20739 2.44886C4.84375 2.21023 4.39773 2.09091 3.86932 2.09091C3.48295 2.09091 3.14489 2.15341 2.85511 2.27841C2.56818 2.40341 2.34375 2.57528 2.18182 2.79403C2.02273 3.01278 1.94318 3.26136 1.94318 3.53977C1.94318 3.77273 1.99858 3.97301 2.10938 4.14062C2.22301 4.3054 2.3679 4.44318 2.54403 4.55398C2.72017 4.66193 2.90483 4.75142 3.09801 4.82244C3.29119 4.89062 3.46875 4.94602 3.63068 4.98864L4.51705 5.22727C4.74432 5.28693 4.99716 5.36932 5.27557 5.47443C5.55682 5.57955 5.82528 5.72301 6.08097 5.90483C6.33949 6.08381 6.55256 6.31392 6.72017 6.59517C6.88778 6.87642 6.97159 7.22159 6.97159 7.63068C6.97159 8.10227 6.84801 8.52841 6.60085 8.90909C6.35653 9.28977 5.99858 9.59233 5.52699 9.81676C5.05824 10.0412 4.48864 10.1534 3.81818 10.1534C3.19318 10.1534 2.65199 10.0526 2.1946 9.85085C1.74006 9.64915 1.3821 9.3679 1.12074 9.0071C0.862216 8.64631 0.715909 8.22727 0.681818 7.75H1.77273C1.80114 8.07955 1.91193 8.35227 2.10511 8.56818C2.30114 8.78125 2.5483 8.94034 2.84659 9.04545C3.14773 9.14773 3.47159 9.19886 3.81818 9.19886C4.22159 9.19886 4.58381 9.13352 4.90483 9.00284C5.22585 8.86932 5.48011 8.68466 5.66761 8.44886C5.85511 8.21023 5.94886 7.93182 5.94886 7.61364C5.94886 7.32386 5.8679 7.08807 5.70597 6.90625C5.54403 6.72443 5.33097 6.5767 5.06676 6.46307C4.80256 6.34943 4.51705 6.25 4.21023 6.16477L3.13636 5.85795C2.45455 5.66193 1.91477 5.3821 1.51705 5.01847C1.11932 4.65483 0.920455 4.17898 0.920455 3.59091C0.920455 3.10227 1.05256 2.67614 1.31676 2.3125C1.58381 1.94602 1.94176 1.66193 2.39062 1.46023C2.84233 1.25568 3.34659 1.15341 3.90341 1.15341C4.46591 1.15341 4.96591 1.25426 5.40341 1.45597C5.84091 1.65483 6.1875 1.92756 6.44318 2.27415C6.7017 2.62074 6.83807 3.0142 6.85227 3.45455H5.82955Z" fill="#F16024"></path></svg>
+                  </div>
+                  <div class="d-flex flex-column w-100" style="line-height: .8rem;">
+                    <label class="form-label small-ad chevron text-white" style="font-weight: 400;">
+                      Valor
+                    </label>
+                    <span class="select-color">Selecione</span>
+                  </div>
                 </div>
-                <div class="col-md-4 col-lg-2 text-start">
-                  <label class="form-label  manrope-extra-light small-ad text-white">
-                    <i
-                      class="fa-solid fa-magnifying-glass me-2"
-                      style="color: #fd7e14"
-                    ></i
-                    >Codigo
-                  </label>
-                  <input
-                    type="text"
-                    class="form-control formControl border-0 text-white-50"
-                    style="background-color: rgba(255, 255, 255, 0)"
-                    placeholder="Ex: #320292"
-                  />
+                <div class="col-md-4 col-lg-2 text-start codigo" style="height: 100%;">
+                  <input type="text" placeholder="Código" name="codigo" class="">
                 </div>
-                <div class="col-md-4 col-lg-2 " style="height: 100%;">
-                  <button type="button" class="btn btn-orange  w-100 h-100">
+                <div class="col-md-4 col-lg-2 " style="height: 100%; width: 146px;">
+                  <button type="button" class="btn btn-orange  h-100" style="width: 146px; border-radius: 13px;">
                     <i class="fa-solid fa-magnifying-glass me-2 fs-3" ></i>
                   </button>
                 </div>
               </form>
             </div>
-            <div class="text-white w-100 text-end mt-2 " style="">
-              <span >Busca Avançada</span>
-              <button class="btn btn-outline-light fw-bold " style="width: 64px; height: 32px; line-height: 1;">  <i class="fa-solid fa-arrow-right"></i> </button>
+            <div class="text-white w-100 text-end mt-2 d-flex align-items-center justify-content-end gap-3 mt-4 pe-5" style="">
+              <span class="small-ad" style="font-weight: 400;">Busca Avançada</span>
+              <button class="btn btn-outline-light btn-noHover fw-bold d-flex align-items-center " style="width: 40px; height: 23px; line-height:">  <svg width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M22 5.65811C21.631 6.04511 21.269 6.43811 20.892 6.81711C19.595 8.12011 18.291 9.41811 16.993 10.7191C16.749 10.9641 16.474 11.1971 16.16 10.8851C15.838 10.5671 16.04 10.2781 16.308 10.0131C17.614 8.72311 18.912 7.42711 20.186 6.01211C20.002 6.01211 19.82 6.01211 19.637 6.01211C13.405 6.01211 7.171 6.01211 0.938 6.01311C0.577 6.01311 0.215 6.03411 0 5.65811C0 5.55911 0 5.46211 0 5.36411C0.193 5.03311 0.512 5.01611 0.846 5.01611C3.289 5.01911 5.733 5.01811 8.176 5.01811C12.005 5.01811 15.833 5.01811 19.662 5.01811C19.837 5.01811 20.012 5.01811 20.288 5.01811C20.116 4.83311 20.016 4.71811 19.907 4.61011C18.711 3.41011 17.51 2.21511 16.32 1.00711C16.182 0.867113 16.049 0.669114 16.025 0.483114C15.977 0.113114 16.346 -0.111886 16.682 0.0571137C16.794 0.114114 16.893 0.207114 16.985 0.298114C18.553 1.86211 20.121 3.42911 21.685 4.99711C21.798 5.11111 21.895 5.24111 21.999 5.36311C22 5.46211 22 5.56011 22 5.65811Z" fill="white"></path></svg></button>
             </div>
           </div>
         </div>
