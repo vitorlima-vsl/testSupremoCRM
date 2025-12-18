@@ -1,131 +1,144 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Imobiliária Praia Brava - Luxo e Exclusividade</title>
 
- 
-    <!-- fonte manrope -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Imobiliária Praia Brava - Luxo e Exclusividade</title>
 
-    <!-- Bootstrap 5 CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
 
-    <!-- Font Awesome Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+  <!-- fonte manrope -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap"
+    rel="stylesheet">
 
-    <style>
-      :root {
-        --primary-orange: #f95c02;
-        --primary-orange-hover: #e65c00;
-        --dark-navy: #0b1c2e;
-        --text-gray: #666;
-        --light-bg: #f8f9fa;
-      }
-      .price-card{
-        margin-top: 8px;
-      }
-      .right-ball::after{
-            content: "●";
-            font-size: .5rem;
-            margin: 0 .7rem;
-      }
-      .btn-hover-grey:hover{
-        background-color: #F1F1F1 !important;
-        
-      }
-      .h2-imoveis{
-        font-size: min(max(1.5rem, 4vw), 2.5rem);
-        font-weight: 400;
-        margin: 0px 0px 8px;
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
 
-      }
-      .title-section-destaques{
-        font-size: min(max(1.5rem, 4vw), 2.5rem);
-        font-weight: 400;
-        margin-bottom: 2.8rem;
-      }
-      .subtitle-imoveis{
-        font-size: 1.2rem;
-        font-weight: 400;
-        margin: 0;
-   
-      }
-      .btn-noHover:hover{
-        background-color: transparent !important;
-      }
-      .codigo input {
-          background: none;
-          border: none;
-          color: #fff;
-          text-align: center;
-          float: left;
-          width: 100%;
-          height: 100%;
-          font-size: .8rem;
-          border-left: 1px solid #ffffff21;
-      }
-      .codigo input::placeholder{
-        color: #fff;
-   
-      }
-      .codigo input:focus{
-        outline: none;
-      }
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-      .chevron{
-        position: relative;
-        width: 100%;
-      }
-      .chevron::after{
-            content: ' ';
-            position: absolute;
-            display: block;
-            border-style: solid;
-            border-color: rgba(255, 255, 255, 0.3) transparent transparent transparent;
-            pointer-events: none;
-            right: 0;
-            padding: 3px;
-            border: 1px solid #b2b5ba;
-            border-width: 0 1px 1px 0;
-            transform: rotate(45deg) translateX(-50%);
-            -webkit-transform: rotate(45deg) translateX(-50%);
-            top: 38%;
-      }
-      .small-ad{
-        font-size: .8rem;
-      }
-      .manrope-extra-light{
-        font-weight: 200;
-      }
-      .select-color{
-        font-size: .85rem;
-        color: #52606b;
-      }
+  <style>
+    :root {
+      --primary-orange: #f95c02;
+      --primary-orange-hover: #e65c00;
+      --dark-navy: #0b1c2e;
+      --text-gray: #666;
+      --light-bg: #f8f9fa;
+    }
 
-      .card-supremoCRM{
-        padding: 24px;
-        box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.089);
-        border-radius: 10px;
-        transition: transform 0.3s, box-shadow 0.3s;
-        height: 458px;
-      }
-      .img-supremoCRM{
-        top: 37% !important;
-        right: -47px;
-        border-radius: 20px;
+    .price-card {
+      margin-top: 8px;
+    }
 
-      }
-      /* .img-supremoCRM::after {
+    .right-ball::after {
+      content: "●";
+      font-size: .5rem;
+      margin: 0 .7rem;
+    }
+
+    .btn-hover-grey:hover {
+      background-color: #F1F1F1 !important;
+
+    }
+
+    .h2-imoveis {
+      font-size: min(max(1.5rem, 4vw), 2.5rem);
+      font-weight: 400;
+      margin: 0px 0px 8px;
+
+    }
+
+    .title-section-destaques {
+      font-size: min(max(1.5rem, 4vw), 2.5rem);
+      font-weight: 400;
+      margin-bottom: 2.8rem;
+    }
+
+    .subtitle-imoveis {
+      font-size: 1.2rem;
+      font-weight: 400;
+      margin: 0;
+
+    }
+
+    .btn-noHover:hover {
+      background-color: transparent !important;
+    }
+
+    .codigo input {
+      background: none;
+      border: none;
+      color: #fff;
+      text-align: center;
+      float: left;
+      width: 100%;
+      height: 100%;
+      font-size: .8rem;
+      border-left: 1px solid #ffffff21;
+    }
+
+    .codigo input::placeholder {
+      color: #fff;
+
+    }
+
+    .codigo input:focus {
+      outline: none;
+    }
+
+    .chevron {
+      position: relative;
+      width: 100%;
+    }
+
+    .chevron::after {
+      content: ' ';
+      position: absolute;
+      display: block;
+      border-style: solid;
+      border-color: rgba(255, 255, 255, 0.3) transparent transparent transparent;
+      pointer-events: none;
+      right: 0;
+      padding: 3px;
+      border: 1px solid #b2b5ba;
+      border-width: 0 1px 1px 0;
+      transform: rotate(45deg) translateX(-50%);
+      -webkit-transform: rotate(45deg) translateX(-50%);
+      top: 38%;
+    }
+
+    .small-ad {
+      font-size: .8rem;
+    }
+
+    .manrope-extra-light {
+      font-weight: 200;
+    }
+
+    .select-color {
+      font-size: .85rem;
+      color: #52606b;
+    }
+
+    .card-supremoCRM {
+      padding: 24px;
+      box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.089);
+      border-radius: 10px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      height: 458px;
+    }
+
+    .img-supremoCRM {
+      top: 37% !important;
+      right: -47px;
+      border-radius: 20px;
+
+    }
+
+    /* .img-supremoCRM::after {
         content: '';
         position: absolute;
         bottom: 0;
@@ -136,60 +149,63 @@
         pointer-events: none;
         border-radius: 20px;
         } */
-      .bg-dark-navy {
-        background-color: var(--dark-navy) !important;
-      }
+    .bg-dark-navy {
+      background-color: var(--dark-navy) !important;
+    }
 
-      body {
-        font-family: 'Manrope', sans-serif;
-        color: #151515;
-        
-        overflow-x: hidden;
-      }
+    body {
+      font-family: 'Manrope', sans-serif;
+      color: #151515;
 
-      /* Utilitários de Cores */
-      .text-orange {
-        color: var(--primary-orange) !important;
-      }
-     
-      .text-navy {
-        color: var(--dark-navy) !important;
-      }
+      overflow-x: hidden;
+    }
 
-      /* Botões Customizados */
-      .btn-orange {
-        background-color: var(--primary-orange);
-        color: white;
-        border: none;
-        font-weight: 600;
-        text-transform: uppercase;
-        padding: 10px 25px;
+    /* Utilitários de Cores */
+    .text-orange {
+      color: var(--primary-orange) !important;
+    }
 
-      }
-      .btn-orange:hover {
-        background-color: #fff;
-        color: var(--primary-orange);
+    .text-navy {
+      color: var(--dark-navy) !important;
+    }
 
-      }
-      .bg-orange{
-        background-color: var(--primary-orange);
-      }
-      /* 1. Header / Hero Section */
-      .hero-section {
-        /* background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2073&auto=format&fit=crop"); */
-        background-image: url('https://www.adamantenegocios.com.br/fotos/original/fundo.jpg?token=UnU4WkVNa3N0ZWRTdk85SGhXRjVQSFB3cCtpVnNJN01FY1k4cWQ4VXN3dlpMM2JEMkJ2R3d5NG5BVXlMZ2dldzJBeUNUaGxWb0ROeEE3eExlMWxMZlE9PQ==');
-        background-size: cover;
-        background-position: center;
-        height: 100vh; 
-        min-height: 600px;
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
+    /* Botões Customizados */
+    .btn-orange {
+      background-color: var(--primary-orange);
+      color: white;
+      border: none;
+      font-weight: 600;
+      text-transform: uppercase;
+      padding: 10px 25px;
 
-      .hero-overlay {
-        /* position: absolute;
+    }
+
+    .btn-orange:hover {
+      background-color: #fff;
+      color: var(--primary-orange);
+
+    }
+
+    .bg-orange {
+      background-color: var(--primary-orange);
+    }
+
+    /* 1. Header / Hero Section */
+    .hero-section {
+      /* background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2073&auto=format&fit=crop"); */
+      background-image: url('https://www.adamantenegocios.com.br/fotos/original/fundo.jpg?token=UnU4WkVNa3N0ZWRTdk85SGhXRjVQSFB3cCtpVnNJN01FY1k4cWQ4VXN3dlpMM2JEMkJ2R3d5NG5BVXlMZ2dldzJBeUNUaGxWb0ROeEE3eExlMWxMZlE9PQ==');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      min-height: 600px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero-overlay {
+      /* position: absolute;
         top: 0;
         left: 0;
         right: 0;
@@ -201,944 +217,1077 @@
         );
         
         z-index: 1; */
-      }
+    }
 
-      .hero-content {
-        position: relative;
-        z-index: 2;
-        max-width: 900px;
-        height: 288.66px;
-      }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 900px;
+      height: 288.66px;
+    }
 
-      .hero-title {
+    .hero-title {
 
       font-size: min(max(1rem, 4vw), 2.3rem);
       font-weight: 600;
       text-align: left;
-      }
+    }
 
-      .search-box-container {
-        background: rgba(255, 255, 255, 0.95);
+    .search-box-container {
+      background: rgba(255, 255, 255, 0.95);
 
-        border-radius: 8px;
+      border-radius: 8px;
 
-        margin-top: 40px;
-        margin-inline: 12px;
-      }
-      .form-control::placeholder {
-        color: white !important;
-        opacity: 0.8;
-      }
+      margin-top: 40px;
+      margin-inline: 12px;
+    }
 
-      .form-select option {
-        background-color: rgba(24, 25, 41, 0.863) !important;
-        color: white !important;
-      }
+    .form-control::placeholder {
+      color: white !important;
+      opacity: 0.8;
+    }
 
-      /* Para compatibilidade com diferentes navegadores */
-      .form-control::-webkit-input-placeholder {
-        color: white !important;
-        opacity: 0.8;
-      }
+    .form-select option {
+      background-color: rgba(24, 25, 41, 0.863) !important;
+      color: white !important;
+    }
 
-      .form-control::-moz-placeholder {
-        color: white !important;
-        opacity: 0.8;
-      }
+    /* Para compatibilidade com diferentes navegadores */
+    .form-control::-webkit-input-placeholder {
+      color: white !important;
+      opacity: 0.8;
+    }
 
-      .form-control:-ms-input-placeholder {
-        color: white !important;
-        opacity: 0.8;
-      }
+    .form-control::-moz-placeholder {
+      color: white !important;
+      opacity: 0.8;
+    }
 
-      .form-control::-ms-input-placeholder {
-        color: white !important;
-        opacity: 0.8;
-      }
-      .form-select:hover {
-        background-color: rgba(255, 255, 255, 0.1) !important;
-        cursor: pointer !important;
-      }
-      /* Estilo para quando o select está aberto */
-      .form-select:focus {
-        background-color: rgba(255, 255, 255, 0.1) !important;
-        color: white !important;
-      }
-      .custom-white-chevron {
-        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='white' fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
-        background-repeat: no-repeat;
-        background-position: right 0.75rem center;
-        background-size: 16px 12px;
-      }
-      /* 2. Cards de Categorias */
-      .category-card-container{
-        width: 381.33px;
-        height: 470.09px;
-        margin: 48px 0px 0px;
-        padding: 0px 32px;
-      }
-      .ver-todos-imv{
-        padding-left: 20px;
-        font-size: 14px;
-        font-weight: 600;
-      }
-      .seta-before{
-        position: relative;
-        padding-left: 20px;
-        font-weight: 600;
-        font-size: 14.4px;
-      }
-      .seta-before::before
-      {
-            content: '';
-            background-image: url('data:image/svg+xml;utf8,<svg width="7" height="8" viewBox="0 0 7 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M6.445 4.00865C6.183 4.28265 5.926 4.56165 5.66 4.82965C4.741 5.75265 3.817 6.67265 2.897 7.59465C2.724 7.76865 2.529 7.93365 2.307 7.71265C2.078 7.48665 2.222 7.28165 2.412 7.09465C3.337 6.18065 4.258 5.26265 5.16 4.25965C5.029 4.25965 4.9 4.25965 4.77 4.25965C0.354001 4.25965 5.081 4.25965 0.665 4.26065C0.409 4.26065 0.152 4.27565 0 4.00865C0 3.93965 0 3.86965 0 3.80065C0.138 3.56665 0.363 3.55465 0.599 3.55465C2.33 3.55665 4.062 3.55565 5.794 3.55565C8.506 3.55565 2.076 3.55565 4.789 3.55565C4.913 3.55565 5.036 3.55565 5.232 3.55565C5.11 3.42465 5.039 3.34365 4.962 3.26665C4.115 2.41665 3.264 1.56965 2.421 0.714654C2.324 0.615654 2.229 0.474655 2.212 0.342655C2.178 0.0796546 2.44 -0.0793454 2.678 0.0406546C2.758 0.0816546 2.827 0.147655 2.893 0.211655C4.004 1.31965 5.115 2.42965 6.223 3.54065C6.303 3.62165 6.371 3.71365 6.446 3.80065C6.445 3.86965 6.445 3.93965 6.445 4.00865Z" fill="%230A203C"/></svg>');
-            width: 12px;
-            height: 13px;
-            position: absolute;
-            left: 0;
-            background-repeat: no-repeat;
-            top: 50%;
-            transform: translateY(-50%);
-            background-size: 10px;
-        }
-      .category-card {
-        height: 285px;
-        width: 317px;
-        border-radius: 13px;
-        overflow: hidden;
-        position: relative;
-        background-size: cover;
-        background-position: center;
+    .form-control:-ms-input-placeholder {
+      color: white !important;
+      opacity: 0.8;
+    }
 
-        cursor: pointer;
-      }
-      .category-overlay:hover{
-         background: linear-gradient(0deg, #2a3e59f1 0%, #2a3e5959 20%);
-      }
-      .category-overlay {
-        /* background: linear-gradient(to top, rgba(0, 0, 0, 0.114), transparent); */
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        top: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        padding: 28px;
-      }
-      .check-list li {
-        font-size: 0.9rem;
-        margin-bottom: 5px;
-        color: #ddd;
-      }
-      .check-list i {
-        color: var(--primary-orange);
-        margin-right: 8px;
-      }
+    .form-control::-ms-input-placeholder {
+      color: white !important;
+      opacity: 0.8;
+    }
 
-      /* 3 e 4. Cards de Imóveis */
-    
-      .property-card {
-        border: none;
-        border-radius: 12px;
-        overflow: hidden;
-        position: relative;
-        background-size: cover;
-        background-position: center;
-        transition: transform 0.3s;
-        cursor: pointer;
-        
-        
-      }
-      .property-card-container{
-        width: 376px;
-        height: 386.78px;
-        margin: 16px 0px 0px;
-        padding: 0px 24px;
-      }
-      /* .property-card:hover {
+    .form-select:hover {
+      background-color: rgba(255, 255, 255, 0.1) !important;
+      cursor: pointer !important;
+    }
+
+    /* Estilo para quando o select está aberto */
+    .form-select:focus {
+      background-color: rgba(255, 255, 255, 0.1) !important;
+      color: white !important;
+    }
+
+    .custom-white-chevron {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='white' fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
+      background-repeat: no-repeat;
+      background-position: right 0.75rem center;
+      background-size: 16px 12px;
+    }
+
+    /* 2. Cards de Categorias */
+    .category-card-container {
+      width: 381.33px;
+      height: 470.09px;
+      margin: 48px 0px 0px;
+      padding: 0px 32px;
+    }
+
+    .ver-todos-imv {
+      padding-left: 20px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .seta-before {
+      position: relative;
+      padding-left: 20px;
+      font-weight: 600;
+      font-size: 14.4px;
+    }
+
+    .seta-before::before {
+      content: '';
+      background-image: url('data:image/svg+xml;utf8,<svg width="7" height="8" viewBox="0 0 7 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M6.445 4.00865C6.183 4.28265 5.926 4.56165 5.66 4.82965C4.741 5.75265 3.817 6.67265 2.897 7.59465C2.724 7.76865 2.529 7.93365 2.307 7.71265C2.078 7.48665 2.222 7.28165 2.412 7.09465C3.337 6.18065 4.258 5.26265 5.16 4.25965C5.029 4.25965 4.9 4.25965 4.77 4.25965C0.354001 4.25965 5.081 4.25965 0.665 4.26065C0.409 4.26065 0.152 4.27565 0 4.00865C0 3.93965 0 3.86965 0 3.80065C0.138 3.56665 0.363 3.55465 0.599 3.55465C2.33 3.55665 4.062 3.55565 5.794 3.55565C8.506 3.55565 2.076 3.55565 4.789 3.55565C4.913 3.55565 5.036 3.55565 5.232 3.55565C5.11 3.42465 5.039 3.34365 4.962 3.26665C4.115 2.41665 3.264 1.56965 2.421 0.714654C2.324 0.615654 2.229 0.474655 2.212 0.342655C2.178 0.0796546 2.44 -0.0793454 2.678 0.0406546C2.758 0.0816546 2.827 0.147655 2.893 0.211655C4.004 1.31965 5.115 2.42965 6.223 3.54065C6.303 3.62165 6.371 3.71365 6.446 3.80065C6.445 3.86965 6.445 3.93965 6.445 4.00865Z" fill="%230A203C"/></svg>');
+      width: 12px;
+      height: 13px;
+      position: absolute;
+      left: 0;
+      background-repeat: no-repeat;
+      top: 50%;
+      transform: translateY(-50%);
+      background-size: 10px;
+    }
+
+    .category-card {
+      height: 285px;
+      width: 317px;
+      border-radius: 13px;
+      overflow: hidden;
+      position: relative;
+      background-size: cover;
+      background-position: center;
+
+      cursor: pointer;
+    }
+
+    .category-overlay:hover {
+      background: linear-gradient(0deg, #2a3e59f1 0%, #2a3e5959 20%);
+    }
+
+    .category-overlay {
+      /* background: linear-gradient(to top, rgba(0, 0, 0, 0.114), transparent); */
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      top: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 28px;
+    }
+
+    .check-list li {
+      font-size: 0.9rem;
+      margin-bottom: 5px;
+      color: #ddd;
+    }
+
+    .check-list i {
+      color: var(--primary-orange);
+      margin-right: 8px;
+    }
+
+    /* 3 e 4. Cards de Imóveis */
+
+    .property-card {
+      border: none;
+      border-radius: 12px;
+      overflow: hidden;
+      position: relative;
+      background-size: cover;
+      background-position: center;
+      transition: transform 0.3s;
+      cursor: pointer;
+
+
+    }
+
+    .property-card-container {
+      width: 376px;
+      height: 386.78px;
+      margin: 16px 0px 0px;
+      padding: 0px 24px;
+    }
+
+    /* .property-card:hover {
         transform: translateY(-5px);
         box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
       } */
-       .property-img-wrapper{
-             height: 229.59px;
-       }
-      .property-img-wrapper img{
+    .property-img-wrapper {
+      height: 229.59px;
+    }
 
-        height: 229.59px;
-        overflow: hidden;
-        position: relative;
-        transition: transform .5s;
-      }
-      .property-img-wrapper:hover img {
-        transform: scale(1.05);
-      }
-      .property-img-wrapper img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-      .price-tag {
-        font-size: 1.5rem;
-        font-weight: 700;
-        color: var(--dark-navy);
-      }
-      .property-icons span {
-        font-size: 0.95rem;
-        font-weight: 700;
+    .property-img-wrapper img {
 
-        display: inline-flex;
-        align-items: center;
-      }
-      .property-icons i {
-        margin-right: 5px;
-        color: var(--primary-orange);
-      }
+      height: 229.59px;
+      overflow: hidden;
+      position: relative;
+      transition: transform .5s;
+    }
 
-      /* Seção Escura (Exclusivos) */
-      .section-dark .price-tag {
-        color: var(--primary-orange);
-      }
-      .section-dark .property-icons span {
-        color: #aaa;
-      }
-      .section-dark .card-body {
-        background: #1a2c40;
-        color: white;
-      }
-      .section-dark h5 {
-        color: white;
-      }
-      .section-dark .property-card {
-        border: 1px solid #2c3e50;
-      }
+    .property-img-wrapper:hover img {
+      transform: scale(1.05);
+    }
 
-      /* 6. CTA Boxes Inferiores */
-      .cta-box {
-       width: 508px;
-        height: 231px;
-        background-size: cover;
-        background-position: center;
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-         border-radius: 15px;
-      }
-      .cta-overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(11, 28, 46, 0.303);
-        transition: background 0.3s;
-        border-radius: 20px;
-      }
-      .cta-box:hover .cta-overlay {
-        background: rgba(11, 28, 46, 0.4);
-      }
-      .cta-content {
-        position: relative;
-        z-index: 2;
-        text-align: center;
-        color: white;
-        padding: 32px 48px;
-      }
+    .property-img-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
 
-      /* 7. Footer */
-      footer a {
-        color: #aaa;
-        text-decoration: none;
-        transition: color 0.2s;
-      }
-      footer a:hover {
-        color: var(--primary-orange);
-      }
-      .social-icons a {
-        font-size: 1.2rem;
-        margin-right: 15px;
-        color: white;
-      }
-      .max__width-1200{
-        max-width: 1200px ;
-      }
-    </style>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg bg-transparent position-absolute w-100 z-3" style="padding-block: 13.8px;">
-      <div class="container max__width-1200">
-        <a href="#"> 
-          <svg class="" version="1.1" fill="#FFFFFF" stroke="#FFF" stroke-width="1" id="menu_1_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="15.752px" height="12.002px" viewBox="0 0 15.752 12.002" enable-background="new 0 0 15.752 12.002" xml:space="preserve"><g id="menu"><g><path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M14.858,0H0.894C0.4,0,0,0.395,0,0.882		C0,1.37,0.4,1.764,0.894,1.764h13.965c0.493,0,0.894-0.394,0.894-0.882C15.752,0.395,15.352,0,14.858,0z M10.39,5.074H0.894		C0.4,5.074,0,5.468,0,5.956c0,0.488,0.4,0.882,0.894,0.882h9.496c0.493,0,0.894-0.395,0.894-0.882			C11.283,5.468,10.883,5.074,10.39,5.074z 4.804,10.236h-3.91C0.4,10.236,0,10.632,0,11.119s0.4,0.882,0.894,0.882h3.91			c0.493,0,0.894-0.395,0.894-0.882S5.297,10.236,4.804,10.236z"></path></g></g></svg>
-        </a>
+    .price-tag {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--dark-navy);
+    }
 
-        <a class="navbar-brand text-white fw-bold" style="display: flex; " href="#">
-           <div style="display: flex; flex-direction: column; line-height: 2rem;"> 
-            <img src="./logoSupremoTransparente.png" alt="Logo Supremo">
-           </div>
-        </a>
-    
-        <div class="d-flex align-items-center justify-content-center gap-3">
-           <svg width="18" height="18" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 28.9296C0.235 28.2466 0.472999 27.5666 0.705999 26.8826C1.271 25.2196 1.832 23.5546 2.4 21.8906C2.441 21.7706 2.432 21.6806 2.365 21.5716C1.402 19.9946 0.776 18.2906 0.479 16.4696C0.303 15.3916 0.240999 14.3056 0.332999 13.2196C0.659999 9.34265 2.281 6.10365 5.204 3.53265C7.163 1.80865 9.446 0.730648 12.007 0.241648C13.134 0.0266481 14.275 -0.0403517 15.417 0.0226483C21.25 0.346648 26.243 4.10965 28.176 9.53165C28.572 10.6426 28.83 11.7866 28.916 12.9646C29.265 17.7936 27.6 21.8066 23.975 24.9936C22.089 26.6516 19.876 27.6856 17.41 28.1726C16.037 28.4436 14.654 28.5076 13.265 28.3746C11.316 28.1886 9.476 27.6336 7.756 26.6916C7.611 26.6116 7.488 26.6046 7.331 26.6536C4.958 27.4126 2.584 28.1676 0.21 28.9226C0.142 28.9436 0.07 28.9496 0 28.9646C0 28.9546 0 28.9416 0 28.9296ZM2.421 26.6186C2.489 26.5986 2.517 26.5916 2.545 26.5836C4.22 26.0506 5.895 25.5206 7.567 24.9856C7.706 24.9406 7.81 24.9546 7.936 25.0316C9.704 26.1186 11.627 26.7306 13.693 26.8896C14.769 26.9726 15.839 26.9116 16.903 26.7206C19.302 26.2886 21.419 25.2686 23.221 23.6316C25.693 21.3866 27.098 18.5936 27.393 15.2566C27.497 14.0756 27.433 12.9026 27.196 11.7436C26.744 9.52865 25.777 7.56165 24.27 5.87265C22.037 3.36865 19.239 1.94265 15.907 1.58565C14.616 1.44665 13.328 1.51865 12.053 1.78765C8.993 2.43365 6.47 3.97165 4.549 6.43065C2.311 9.29465 1.472 12.5546 1.993 16.1546C2.266 18.0416 2.972 19.7626 4.045 21.3336C4.125 21.4516 4.143 21.5486 4.097 21.6826C3.747 22.6966 3.404 23.7096 3.06 24.7256C2.851 25.3446 2.642 25.9646 2.421 26.6186Z" fill="white"></path>
-            <path d="M7.84892 10.9547C7.84392 9.86774 8.27792 8.97674 9.04792 8.23374C9.24292 8.04474 9.47192 7.94374 9.74992 7.95874C9.99792 7.97074 10.2469 7.95174 10.4899 7.98274C10.5799 7.99474 10.6919 8.09574 10.7319 8.18474C10.9279 8.61174 11.1019 9.04774 11.2839 9.48074C11.4999 9.99074 11.7129 10.5017 11.9339 11.0107C11.9899 11.1387 12.0029 11.2597 11.9209 11.3697C11.6629 11.7177 11.4199 12.0797 11.1309 12.4007C10.7069 12.8707 10.6519 13.1937 10.9779 13.7317C12.1399 15.6477 13.7149 17.0897 15.7979 17.9557C15.9319 18.0107 16.0599 18.0777 16.1949 18.1277C16.5999 18.2787 16.9629 18.2067 17.2459 17.8757C17.6419 17.4127 18.0279 16.9387 18.4049 16.4587C18.5019 16.3357 18.5839 16.3037 18.7219 16.3677C19.4639 16.7167 20.2069 17.0607 20.9499 17.4077C21.1739 17.5127 21.3989 17.6157 21.6169 17.7307C21.6669 17.7567 21.7229 17.8317 21.7229 17.8827C21.7199 18.7877 21.4569 19.5497 20.6369 20.0697C20.0259 20.4577 19.3669 20.6887 18.6659 20.7007C18.1969 20.7077 17.7109 20.5737 17.2539 20.4337C16.1369 20.0907 15.0269 19.7187 14.0079 19.1297C12.5559 18.2877 11.3339 17.1767 10.3049 15.8637C9.68792 15.0767 9.12392 14.2437 8.58292 13.4017C8.20992 12.8227 7.98392 12.1677 7.88692 11.4777C7.86692 11.3047 7.86192 11.1287 7.84892 10.9547Z" fill="white"></path>
-            </svg>
-          <a href="#" class="text-white text-decoration-none" style="font-size: .9rem; font-weight: 600;">
-            (47) 98765-9999</a>
+    .property-icons span {
+      font-size: 0.95rem;
+      font-weight: 700;
+
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .property-icons i {
+      margin-right: 5px;
+      color: var(--primary-orange);
+    }
+
+    /* Seção Escura (Exclusivos) */
+    .section-dark .price-tag {
+      color: var(--primary-orange);
+    }
+
+    .section-dark .property-icons span {
+      color: #aaa;
+    }
+
+    .section-dark .card-body {
+      background: #1a2c40;
+      color: white;
+    }
+
+    .section-dark h5 {
+      color: white;
+    }
+
+    .section-dark .property-card {
+      border: 1px solid #2c3e50;
+    }
+
+    /* 6. CTA Boxes Inferiores */
+    .cta-box {
+      width: 508px;
+      height: 231px;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 15px;
+    }
+
+    .cta-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(11, 28, 46, 0.303);
+      transition: background 0.3s;
+      border-radius: 20px;
+    }
+
+    .cta-box:hover .cta-overlay {
+      background: rgba(11, 28, 46, 0.4);
+    }
+
+    .cta-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      color: white;
+      padding: 32px 48px;
+    }
+
+    /* 7. Footer */
+    footer a {
+      color: #aaa;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    footer a:hover {
+      color: var(--primary-orange);
+    }
+
+    .social-icons a {
+      font-size: 1.2rem;
+      margin-right: 15px;
+      color: white;
+    }
+
+    .max__width-1200 {
+      max-width: 1200px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-transparent position-absolute w-100 z-3" style="padding-block: 13.8px;">
+    <div class="container max__width-1200">
+      <a href="#">
+        <svg class="" version="1.1" fill="#FFFFFF" stroke="#FFF" stroke-width="1" id="menu_1_"
+          xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="15.752px"
+          height="12.002px" viewBox="0 0 15.752 12.002" enable-background="new 0 0 15.752 12.002" xml:space="preserve">
+          <g id="menu">
+            <g>
+              <path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF"
+                d="M14.858,0H0.894C0.4,0,0,0.395,0,0.882		C0,1.37,0.4,1.764,0.894,1.764h13.965c0.493,0,0.894-0.394,0.894-0.882C15.752,0.395,15.352,0,14.858,0z M10.39,5.074H0.894		C0.4,5.074,0,5.468,0,5.956c0,0.488,0.4,0.882,0.894,0.882h9.496c0.493,0,0.894-0.395,0.894-0.882			C11.283,5.468,10.883,5.074,10.39,5.074z 4.804,10.236h-3.91C0.4,10.236,0,10.632,0,11.119s0.4,0.882,0.894,0.882h3.91			c0.493,0,0.894-0.395,0.894-0.882S5.297,10.236,4.804,10.236z">
+              </path>
+            </g>
+          </g>
+        </svg>
+      </a>
+
+      <a class="navbar-brand text-white fw-bold" style="display: flex; " href="#">
+        <div style="display: flex; flex-direction: column; line-height: 2rem;">
+          <img src="./logoSupremoTransparente.png" alt="Logo Supremo">
         </div>
+      </a>
+
+      <div class="d-flex align-items-center justify-content-center gap-3">
+        <svg width="18" height="18" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M0 28.9296C0.235 28.2466 0.472999 27.5666 0.705999 26.8826C1.271 25.2196 1.832 23.5546 2.4 21.8906C2.441 21.7706 2.432 21.6806 2.365 21.5716C1.402 19.9946 0.776 18.2906 0.479 16.4696C0.303 15.3916 0.240999 14.3056 0.332999 13.2196C0.659999 9.34265 2.281 6.10365 5.204 3.53265C7.163 1.80865 9.446 0.730648 12.007 0.241648C13.134 0.0266481 14.275 -0.0403517 15.417 0.0226483C21.25 0.346648 26.243 4.10965 28.176 9.53165C28.572 10.6426 28.83 11.7866 28.916 12.9646C29.265 17.7936 27.6 21.8066 23.975 24.9936C22.089 26.6516 19.876 27.6856 17.41 28.1726C16.037 28.4436 14.654 28.5076 13.265 28.3746C11.316 28.1886 9.476 27.6336 7.756 26.6916C7.611 26.6116 7.488 26.6046 7.331 26.6536C4.958 27.4126 2.584 28.1676 0.21 28.9226C0.142 28.9436 0.07 28.9496 0 28.9646C0 28.9546 0 28.9416 0 28.9296ZM2.421 26.6186C2.489 26.5986 2.517 26.5916 2.545 26.5836C4.22 26.0506 5.895 25.5206 7.567 24.9856C7.706 24.9406 7.81 24.9546 7.936 25.0316C9.704 26.1186 11.627 26.7306 13.693 26.8896C14.769 26.9726 15.839 26.9116 16.903 26.7206C19.302 26.2886 21.419 25.2686 23.221 23.6316C25.693 21.3866 27.098 18.5936 27.393 15.2566C27.497 14.0756 27.433 12.9026 27.196 11.7436C26.744 9.52865 25.777 7.56165 24.27 5.87265C22.037 3.36865 19.239 1.94265 15.907 1.58565C14.616 1.44665 13.328 1.51865 12.053 1.78765C8.993 2.43365 6.47 3.97165 4.549 6.43065C2.311 9.29465 1.472 12.5546 1.993 16.1546C2.266 18.0416 2.972 19.7626 4.045 21.3336C4.125 21.4516 4.143 21.5486 4.097 21.6826C3.747 22.6966 3.404 23.7096 3.06 24.7256C2.851 25.3446 2.642 25.9646 2.421 26.6186Z"
+            fill="white"></path>
+          <path
+            d="M7.84892 10.9547C7.84392 9.86774 8.27792 8.97674 9.04792 8.23374C9.24292 8.04474 9.47192 7.94374 9.74992 7.95874C9.99792 7.97074 10.2469 7.95174 10.4899 7.98274C10.5799 7.99474 10.6919 8.09574 10.7319 8.18474C10.9279 8.61174 11.1019 9.04774 11.2839 9.48074C11.4999 9.99074 11.7129 10.5017 11.9339 11.0107C11.9899 11.1387 12.0029 11.2597 11.9209 11.3697C11.6629 11.7177 11.4199 12.0797 11.1309 12.4007C10.7069 12.8707 10.6519 13.1937 10.9779 13.7317C12.1399 15.6477 13.7149 17.0897 15.7979 17.9557C15.9319 18.0107 16.0599 18.0777 16.1949 18.1277C16.5999 18.2787 16.9629 18.2067 17.2459 17.8757C17.6419 17.4127 18.0279 16.9387 18.4049 16.4587C18.5019 16.3357 18.5839 16.3037 18.7219 16.3677C19.4639 16.7167 20.2069 17.0607 20.9499 17.4077C21.1739 17.5127 21.3989 17.6157 21.6169 17.7307C21.6669 17.7567 21.7229 17.8317 21.7229 17.8827C21.7199 18.7877 21.4569 19.5497 20.6369 20.0697C20.0259 20.4577 19.3669 20.6887 18.6659 20.7007C18.1969 20.7077 17.7109 20.5737 17.2539 20.4337C16.1369 20.0907 15.0269 19.7187 14.0079 19.1297C12.5559 18.2877 11.3339 17.1767 10.3049 15.8637C9.68792 15.0767 9.12392 14.2437 8.58292 13.4017C8.20992 12.8227 7.98392 12.1677 7.88692 11.4777C7.86692 11.3047 7.86192 11.1287 7.84892 10.9547Z"
+            fill="white"></path>
+        </svg>
+        <a href="#" class="text-white text-decoration-none" style="font-size: .9rem; font-weight: 600;">
+          (47) 98765-9999</a>
       </div>
-    </nav> 
-    <header class="hero-section position-relative">
-      <div class="hero-overlay"></div>
-      <div class="container hero-content text-center">
-        <h1 class="hero-title text-white mb-3 text-start" style="line-height: 3.175rem;">
-          Imóveis na Praia Brava e <br/> Fazenda em Itajaí
-        </h1>
-        <div class="row justify-content-center" style="">
-          <div class="col-lg-12 mb-5">
-            <div
-              class="search-box-container "
-              style="background-color: #0d2b4de3; border-radius: 13px;"
-            >
-              <form class="row  align-items-center" style="height: 87px;">
-                <div class="col-md-4 col-lg-2 text-start d-flex justify-content-center align-items-start" style="width: 138px;" >
-                  <div class="d-flex align-items-start ms-4 me-2 ">
-                      <svg width="14" height="15" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.31122 19.3438C9.18922 19.3438 13.0032 19.3438 16.8512 19.3438C16.8602 19.1718 16.8742 19.0218 16.8742 18.8728C16.8752 15.5628 16.8792 12.2528 16.8662 8.94076C16.8652 8.72476 16.8032 8.44676 16.6622 8.30276C14.8652 6.47876 13.0522 4.67376 11.2412 2.86476C11.2052 2.82976 11.1592 2.80576 10.9532 2.61876C10.8642 2.78576 10.8092 2.98776 10.6812 3.11676C7.94922 5.86276 5.20822 8.60076 2.46722 11.3378C2.33522 11.4708 2.19522 11.6658 2.04122 11.6838C1.78422 11.7138 1.46722 11.6948 1.25922 11.5638C0.981219 11.3888 0.919224 11.0588 1.11022 10.7498C1.19922 10.6088 1.32422 10.4868 1.44322 10.3668C4.42322 7.38576 7.40322 4.40376 10.3842 1.42376C10.9472 0.86076 11.2372 0.859757 11.7922 1.41476C14.7872 4.40776 17.7802 7.39776 20.7672 10.3968C20.9382 10.5698 21.1592 10.8208 21.1452 11.0218C21.1272 11.2598 20.9332 11.5918 20.7262 11.6868C20.5242 11.7768 20.1322 11.7028 19.9592 11.5478C19.4172 11.0648 18.9382 10.5108 18.3252 9.87076C18.3112 10.2218 18.2952 10.3968 18.2952 10.5758C18.2942 13.6298 18.2952 16.6848 18.2942 19.7398C18.2942 20.5778 18.0732 20.7978 17.2382 20.7978C13.1422 20.7978 9.04522 20.7978 4.94922 20.7978C4.11422 20.7978 3.89122 20.5778 3.89122 19.7398C3.89022 17.2838 3.89022 14.8248 3.89122 12.3698C3.89222 11.8038 4.10222 11.5108 4.51522 11.4688C5.02422 11.4168 5.30822 11.6968 5.30922 12.2788C5.31222 14.4278 5.31022 16.5798 5.31022 18.7288C5.31122 18.9158 5.31122 19.1008 5.31122 19.3438Z" fill="#F15F22" stroke="#F16024" stroke-miterlimit="10"></path></svg>
-                  </div>
-                  <div class="d-flex flex-column w-100" style="line-height: .8rem;">
-                    <label class="form-label small-ad chevron text-white" style="font-weight: 400;">
-                     Tipos
-                    </label>
-                    <span class="select-color">Selecione</span>
-                  </div>
+    </div>
+  </nav>
+  <header class="hero-section position-relative">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content text-center">
+      <h1 class="hero-title text-white mb-3 text-start" style="line-height: 3.175rem;">
+        Imóveis na Praia Brava e <br /> Fazenda em Itajaí
+      </h1>
+      <div class="row justify-content-center" style="">
+        <div class="col-lg-12 mb-5">
+          <div class="search-box-container " style="background-color: #0d2b4de3; border-radius: 13px;">
+            <form class="row  align-items-center" style="height: 87px;">
+              <div class="col-md-4 col-lg-2 text-start d-flex justify-content-center align-items-start"
+                style="width: 138px;">
+                <div class="d-flex align-items-start ms-4 me-2 ">
+                  <svg width="14" height="15" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M5.31122 19.3438C9.18922 19.3438 13.0032 19.3438 16.8512 19.3438C16.8602 19.1718 16.8742 19.0218 16.8742 18.8728C16.8752 15.5628 16.8792 12.2528 16.8662 8.94076C16.8652 8.72476 16.8032 8.44676 16.6622 8.30276C14.8652 6.47876 13.0522 4.67376 11.2412 2.86476C11.2052 2.82976 11.1592 2.80576 10.9532 2.61876C10.8642 2.78576 10.8092 2.98776 10.6812 3.11676C7.94922 5.86276 5.20822 8.60076 2.46722 11.3378C2.33522 11.4708 2.19522 11.6658 2.04122 11.6838C1.78422 11.7138 1.46722 11.6948 1.25922 11.5638C0.981219 11.3888 0.919224 11.0588 1.11022 10.7498C1.19922 10.6088 1.32422 10.4868 1.44322 10.3668C4.42322 7.38576 7.40322 4.40376 10.3842 1.42376C10.9472 0.86076 11.2372 0.859757 11.7922 1.41476C14.7872 4.40776 17.7802 7.39776 20.7672 10.3968C20.9382 10.5698 21.1592 10.8208 21.1452 11.0218C21.1272 11.2598 20.9332 11.5918 20.7262 11.6868C20.5242 11.7768 20.1322 11.7028 19.9592 11.5478C19.4172 11.0648 18.9382 10.5108 18.3252 9.87076C18.3112 10.2218 18.2952 10.3968 18.2952 10.5758C18.2942 13.6298 18.2952 16.6848 18.2942 19.7398C18.2942 20.5778 18.0732 20.7978 17.2382 20.7978C13.1422 20.7978 9.04522 20.7978 4.94922 20.7978C4.11422 20.7978 3.89122 20.5778 3.89122 19.7398C3.89022 17.2838 3.89022 14.8248 3.89122 12.3698C3.89222 11.8038 4.10222 11.5108 4.51522 11.4688C5.02422 11.4168 5.30822 11.6968 5.30922 12.2788C5.31222 14.4278 5.31022 16.5798 5.31022 18.7288C5.31122 18.9158 5.31122 19.1008 5.31122 19.3438Z"
+                      fill="#F15F22" stroke="#F16024" stroke-miterlimit="10"></path>
+                  </svg>
                 </div>
-                <div class="col-md-4 col-lg-2 text-start d-flex justify-content-center align-items-start" style="width: 146px;" >
-                  <div class="d-flex align-items-start ms-4 me-2 ">
-                      <svg width="9" height="14" fill="#F16024"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9.93 14.13"><g id="Camada_2" data-name="Camada 2"><g id="Layer_1" data-name="Layer 1"><path class="cls-1" d="M4.86,14.13a1.88,1.88,0,0,1-.32-.31c-.83-1.19-1.67-2.37-2.48-3.58A14,14,0,0,1,.4,7.06,6.36,6.36,0,0,1,0,4.85,5,5,0,0,1,3.59.2c.3-.08.62-.12.93-.18l.09,0h.72c.27.05.54.08.81.14A5,5,0,0,1,9.89,4.29a6,6,0,0,1-.44,3,15.87,15.87,0,0,1-1.76,3.24c-.78,1.14-1.58,2.27-2.37,3.4a1.16,1.16,0,0,1-.24.2ZM5,13l0-.06c.69-1,1.4-2,2.08-3A13.73,13.73,0,0,0,8.74,6.84a5,5,0,0,0,.33-2.4A4.14,4.14,0,0,0,1,3.82a4.67,4.67,0,0,0,.13,2.79A11.43,11.43,0,0,0,2.48,9.37c.8,1.19,1.63,2.37,2.45,3.55Z"></path><path class="cls-1" d="M7.45,5A2.49,2.49,0,1,1,5,2.48,2.49,2.49,0,0,1,7.45,5ZM6.62,5A1.66,1.66,0,1,0,5,6.62,1.66,1.66,0,0,0,6.62,5Z"></path></g></g></svg>
-                  </div>
-                  <div class="d-flex flex-column w-100" style="line-height: .8rem;">
-                    <label class="form-label small-ad chevron text-white" style="font-weight: 400;">
-                      Cidades
-                    </label>
-                    <span class="select-color">Selecione</span>
-                  </div>
+                <div class="d-flex flex-column w-100" style="line-height: .8rem;">
+                  <label class="form-label small-ad chevron text-white" style="font-weight: 400;">
+                    Tipos
+                  </label>
+                  <span class="select-color">Selecione</span>
                 </div>
-                <div class="col-md-4 col-lg-2 text-start d-flex justify-content-center align-items-start" style="width: 138px;" >
-                  <div class="d-flex align-items-start ms-4 me-2 ">
-                      <svg width="9" height="14" fill="#F16024" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9.93 14.13"><g id="Camada_2" data-name="Camada 2"><g id="Layer_1" data-name="Layer 1"><path class="cls-1" d="M4.86,14.13a1.88,1.88,0,0,1-.32-.31c-.83-1.19-1.67-2.37-2.48-3.58A14,14,0,0,1,.4,7.06,6.36,6.36,0,0,1,0,4.85,5,5,0,0,1,3.59.2c.3-.08.62-.12.93-.18l.09,0h.72c.27.05.54.08.81.14A5,5,0,0,1,9.89,4.29a6,6,0,0,1-.44,3,15.87,15.87,0,0,1-1.76,3.24c-.78,1.14-1.58,2.27-2.37,3.4a1.16,1.16,0,0,1-.24.2ZM5,13l0-.06c.69-1,1.4-2,2.08-3A13.73,13.73,0,0,0,8.74,6.84a5,5,0,0,0,.33-2.4A4.14,4.14,0,0,0,1,3.82a4.67,4.67,0,0,0,.13,2.79A11.43,11.43,0,0,0,2.48,9.37c.8,1.19,1.63,2.37,2.45,3.55Z"></path><path class="cls-1" d="M7.45,5A2.49,2.49,0,1,1,5,2.48,2.49,2.49,0,0,1,7.45,5ZM6.62,5A1.66,1.66,0,1,0,5,6.62,1.66,1.66,0,0,0,6.62,5Z"></path></g></g></svg>
-                  </div>
-                  <div class="d-flex flex-column w-100" style="line-height: .8rem;">
-                    <label class="form-label small-ad chevron text-white" style="font-weight: 400;">
-                      Bairros
-                    </label>
-                    <span class="select-color">Selecione</span>
-                  </div>
+              </div>
+              <div class="col-md-4 col-lg-2 text-start d-flex justify-content-center align-items-start"
+                style="width: 146px;">
+                <div class="d-flex align-items-start ms-4 me-2 ">
+                  <svg width="9" height="14" fill="#F16024" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9.93 14.13">
+                    <g id="Camada_2" data-name="Camada 2">
+                      <g id="Layer_1" data-name="Layer 1">
+                        <path class="cls-1"
+                          d="M4.86,14.13a1.88,1.88,0,0,1-.32-.31c-.83-1.19-1.67-2.37-2.48-3.58A14,14,0,0,1,.4,7.06,6.36,6.36,0,0,1,0,4.85,5,5,0,0,1,3.59.2c.3-.08.62-.12.93-.18l.09,0h.72c.27.05.54.08.81.14A5,5,0,0,1,9.89,4.29a6,6,0,0,1-.44,3,15.87,15.87,0,0,1-1.76,3.24c-.78,1.14-1.58,2.27-2.37,3.4a1.16,1.16,0,0,1-.24.2ZM5,13l0-.06c.69-1,1.4-2,2.08-3A13.73,13.73,0,0,0,8.74,6.84a5,5,0,0,0,.33-2.4A4.14,4.14,0,0,0,1,3.82a4.67,4.67,0,0,0,.13,2.79A11.43,11.43,0,0,0,2.48,9.37c.8,1.19,1.63,2.37,2.45,3.55Z">
+                        </path>
+                        <path class="cls-1"
+                          d="M7.45,5A2.49,2.49,0,1,1,5,2.48,2.49,2.49,0,0,1,7.45,5ZM6.62,5A1.66,1.66,0,1,0,5,6.62,1.66,1.66,0,0,0,6.62,5Z">
+                        </path>
+                      </g>
+                    </g>
+                  </svg>
                 </div>
-                <div class="col-md-4 col-lg-2 text-start d-flex justify-content-center align-items-start" style="width: 138px;" >
-                  <div class="d-flex align-items-start ms-4 me-2 ">
-                      <svg width="9" height="14" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.47727 11.0909V0.181818H4.17614V11.0909H3.47727ZM5.82955 3.45455C5.77841 3.02273 5.57102 2.6875 5.20739 2.44886C4.84375 2.21023 4.39773 2.09091 3.86932 2.09091C3.48295 2.09091 3.14489 2.15341 2.85511 2.27841C2.56818 2.40341 2.34375 2.57528 2.18182 2.79403C2.02273 3.01278 1.94318 3.26136 1.94318 3.53977C1.94318 3.77273 1.99858 3.97301 2.10938 4.14062C2.22301 4.3054 2.3679 4.44318 2.54403 4.55398C2.72017 4.66193 2.90483 4.75142 3.09801 4.82244C3.29119 4.89062 3.46875 4.94602 3.63068 4.98864L4.51705 5.22727C4.74432 5.28693 4.99716 5.36932 5.27557 5.47443C5.55682 5.57955 5.82528 5.72301 6.08097 5.90483C6.33949 6.08381 6.55256 6.31392 6.72017 6.59517C6.88778 6.87642 6.97159 7.22159 6.97159 7.63068C6.97159 8.10227 6.84801 8.52841 6.60085 8.90909C6.35653 9.28977 5.99858 9.59233 5.52699 9.81676C5.05824 10.0412 4.48864 10.1534 3.81818 10.1534C3.19318 10.1534 2.65199 10.0526 2.1946 9.85085C1.74006 9.64915 1.3821 9.3679 1.12074 9.0071C0.862216 8.64631 0.715909 8.22727 0.681818 7.75H1.77273C1.80114 8.07955 1.91193 8.35227 2.10511 8.56818C2.30114 8.78125 2.5483 8.94034 2.84659 9.04545C3.14773 9.14773 3.47159 9.19886 3.81818 9.19886C4.22159 9.19886 4.58381 9.13352 4.90483 9.00284C5.22585 8.86932 5.48011 8.68466 5.66761 8.44886C5.85511 8.21023 5.94886 7.93182 5.94886 7.61364C5.94886 7.32386 5.8679 7.08807 5.70597 6.90625C5.54403 6.72443 5.33097 6.5767 5.06676 6.46307C4.80256 6.34943 4.51705 6.25 4.21023 6.16477L3.13636 5.85795C2.45455 5.66193 1.91477 5.3821 1.51705 5.01847C1.11932 4.65483 0.920455 4.17898 0.920455 3.59091C0.920455 3.10227 1.05256 2.67614 1.31676 2.3125C1.58381 1.94602 1.94176 1.66193 2.39062 1.46023C2.84233 1.25568 3.34659 1.15341 3.90341 1.15341C4.46591 1.15341 4.96591 1.25426 5.40341 1.45597C5.84091 1.65483 6.1875 1.92756 6.44318 2.27415C6.7017 2.62074 6.83807 3.0142 6.85227 3.45455H5.82955Z" fill="#F16024"></path></svg>
-                  </div>
-                  <div class="d-flex flex-column w-100" style="line-height: .8rem;">
-                    <label class="form-label small-ad chevron text-white" style="font-weight: 400;">
-                      Valor
-                    </label>
-                    <span class="select-color">Selecione</span>
-                  </div>
+                <div class="d-flex flex-column w-100" style="line-height: .8rem;">
+                  <label class="form-label small-ad chevron text-white" style="font-weight: 400;">
+                    Cidades
+                  </label>
+                  <span class="select-color">Selecione</span>
                 </div>
-                <div class="col-md-4 col-lg-2 text-start mx-3 d-flex align-items-center codigo" style="height: 100%; width: 122px ;">
-                  <input type="text" placeholder="Código" name="codigo" class="">
+              </div>
+              <div class="col-md-4 col-lg-2 text-start d-flex justify-content-center align-items-start"
+                style="width: 138px;">
+                <div class="d-flex align-items-start ms-4 me-2 ">
+                  <svg width="9" height="14" fill="#F16024" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9.93 14.13">
+                    <g id="Camada_2" data-name="Camada 2">
+                      <g id="Layer_1" data-name="Layer 1">
+                        <path class="cls-1"
+                          d="M4.86,14.13a1.88,1.88,0,0,1-.32-.31c-.83-1.19-1.67-2.37-2.48-3.58A14,14,0,0,1,.4,7.06,6.36,6.36,0,0,1,0,4.85,5,5,0,0,1,3.59.2c.3-.08.62-.12.93-.18l.09,0h.72c.27.05.54.08.81.14A5,5,0,0,1,9.89,4.29a6,6,0,0,1-.44,3,15.87,15.87,0,0,1-1.76,3.24c-.78,1.14-1.58,2.27-2.37,3.4a1.16,1.16,0,0,1-.24.2ZM5,13l0-.06c.69-1,1.4-2,2.08-3A13.73,13.73,0,0,0,8.74,6.84a5,5,0,0,0,.33-2.4A4.14,4.14,0,0,0,1,3.82a4.67,4.67,0,0,0,.13,2.79A11.43,11.43,0,0,0,2.48,9.37c.8,1.19,1.63,2.37,2.45,3.55Z">
+                        </path>
+                        <path class="cls-1"
+                          d="M7.45,5A2.49,2.49,0,1,1,5,2.48,2.49,2.49,0,0,1,7.45,5ZM6.62,5A1.66,1.66,0,1,0,5,6.62,1.66,1.66,0,0,0,6.62,5Z">
+                        </path>
+                      </g>
+                    </g>
+                  </svg>
                 </div>
-                <div class="col-md-4 col-lg-2 " style="height: 100%; width: 14px;">
-                  <button type="button" class="btn btn-orange  h-100" style="width: 145.8px; border-radius: 13px;">
-                    <i class="fa-solid fa-magnifying-glass me-2 fs-3" ></i>
-                  </button>
+                <div class="d-flex flex-column w-100" style="line-height: .8rem;">
+                  <label class="form-label small-ad chevron text-white" style="font-weight: 400;">
+                    Bairros
+                  </label>
+                  <span class="select-color">Selecione</span>
                 </div>
-              </form>
-            </div>
-            <div class="text-white w-100 text-end mt-2 d-flex align-items-center justify-content-end gap-3 mt-4 pe-5" style="">
-              <span class="small-ad" style="font-weight: 400;">Busca Avançada</span>
-              <button class="btn btn-outline-light btn-noHover fw-bold d-flex align-items-center " style="width: 40px; height: 23px; line-height:">  <svg width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M22 5.65811C21.631 6.04511 21.269 6.43811 20.892 6.81711C19.595 8.12011 18.291 9.41811 16.993 10.7191C16.749 10.9641 16.474 11.1971 16.16 10.8851C15.838 10.5671 16.04 10.2781 16.308 10.0131C17.614 8.72311 18.912 7.42711 20.186 6.01211C20.002 6.01211 19.82 6.01211 19.637 6.01211C13.405 6.01211 7.171 6.01211 0.938 6.01311C0.577 6.01311 0.215 6.03411 0 5.65811C0 5.55911 0 5.46211 0 5.36411C0.193 5.03311 0.512 5.01611 0.846 5.01611C3.289 5.01911 5.733 5.01811 8.176 5.01811C12.005 5.01811 15.833 5.01811 19.662 5.01811C19.837 5.01811 20.012 5.01811 20.288 5.01811C20.116 4.83311 20.016 4.71811 19.907 4.61011C18.711 3.41011 17.51 2.21511 16.32 1.00711C16.182 0.867113 16.049 0.669114 16.025 0.483114C15.977 0.113114 16.346 -0.111886 16.682 0.0571137C16.794 0.114114 16.893 0.207114 16.985 0.298114C18.553 1.86211 20.121 3.42911 21.685 4.99711C21.798 5.11111 21.895 5.24111 21.999 5.36311C22 5.46211 22 5.56011 22 5.65811Z" fill="white"></path></svg></button>
-            </div>
+              </div>
+              <div class="col-md-4 col-lg-2 text-start d-flex justify-content-center align-items-start"
+                style="width: 138px;">
+                <div class="d-flex align-items-start ms-4 me-2 ">
+                  <svg width="9" height="14" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M3.47727 11.0909V0.181818H4.17614V11.0909H3.47727ZM5.82955 3.45455C5.77841 3.02273 5.57102 2.6875 5.20739 2.44886C4.84375 2.21023 4.39773 2.09091 3.86932 2.09091C3.48295 2.09091 3.14489 2.15341 2.85511 2.27841C2.56818 2.40341 2.34375 2.57528 2.18182 2.79403C2.02273 3.01278 1.94318 3.26136 1.94318 3.53977C1.94318 3.77273 1.99858 3.97301 2.10938 4.14062C2.22301 4.3054 2.3679 4.44318 2.54403 4.55398C2.72017 4.66193 2.90483 4.75142 3.09801 4.82244C3.29119 4.89062 3.46875 4.94602 3.63068 4.98864L4.51705 5.22727C4.74432 5.28693 4.99716 5.36932 5.27557 5.47443C5.55682 5.57955 5.82528 5.72301 6.08097 5.90483C6.33949 6.08381 6.55256 6.31392 6.72017 6.59517C6.88778 6.87642 6.97159 7.22159 6.97159 7.63068C6.97159 8.10227 6.84801 8.52841 6.60085 8.90909C6.35653 9.28977 5.99858 9.59233 5.52699 9.81676C5.05824 10.0412 4.48864 10.1534 3.81818 10.1534C3.19318 10.1534 2.65199 10.0526 2.1946 9.85085C1.74006 9.64915 1.3821 9.3679 1.12074 9.0071C0.862216 8.64631 0.715909 8.22727 0.681818 7.75H1.77273C1.80114 8.07955 1.91193 8.35227 2.10511 8.56818C2.30114 8.78125 2.5483 8.94034 2.84659 9.04545C3.14773 9.14773 3.47159 9.19886 3.81818 9.19886C4.22159 9.19886 4.58381 9.13352 4.90483 9.00284C5.22585 8.86932 5.48011 8.68466 5.66761 8.44886C5.85511 8.21023 5.94886 7.93182 5.94886 7.61364C5.94886 7.32386 5.8679 7.08807 5.70597 6.90625C5.54403 6.72443 5.33097 6.5767 5.06676 6.46307C4.80256 6.34943 4.51705 6.25 4.21023 6.16477L3.13636 5.85795C2.45455 5.66193 1.91477 5.3821 1.51705 5.01847C1.11932 4.65483 0.920455 4.17898 0.920455 3.59091C0.920455 3.10227 1.05256 2.67614 1.31676 2.3125C1.58381 1.94602 1.94176 1.66193 2.39062 1.46023C2.84233 1.25568 3.34659 1.15341 3.90341 1.15341C4.46591 1.15341 4.96591 1.25426 5.40341 1.45597C5.84091 1.65483 6.1875 1.92756 6.44318 2.27415C6.7017 2.62074 6.83807 3.0142 6.85227 3.45455H5.82955Z"
+                      fill="#F16024"></path>
+                  </svg>
+                </div>
+                <div class="d-flex flex-column w-100" style="line-height: .8rem;">
+                  <label class="form-label small-ad chevron text-white" style="font-weight: 400;">
+                    Valor
+                  </label>
+                  <span class="select-color">Selecione</span>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-2 text-start mx-3 d-flex align-items-center codigo"
+                style="height: 100%; width: 122px ;">
+                <input type="text" placeholder="Código" name="codigo" class="">
+              </div>
+              <div class="col-md-4 col-lg-2 " style="height: 100%; width: 14px;">
+                <button type="button" class="btn btn-orange  h-100" style="width: 145.8px; border-radius: 13px;">
+                  <i class="fa-solid fa-magnifying-glass me-2 fs-3"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="text-white w-100 text-end mt-2 d-flex align-items-center justify-content-end gap-3 mt-4 pe-5"
+            style="">
+            <span class="small-ad" style="font-weight: 400;">Busca Avançada</span>
+            <button class="btn btn-outline-light btn-noHover fw-bold d-flex align-items-center "
+              style="width: 40px; height: 23px; line-height:"> <svg width="22" height="12" viewBox="0 0 22 12"
+                fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M22 5.65811C21.631 6.04511 21.269 6.43811 20.892 6.81711C19.595 8.12011 18.291 9.41811 16.993 10.7191C16.749 10.9641 16.474 11.1971 16.16 10.8851C15.838 10.5671 16.04 10.2781 16.308 10.0131C17.614 8.72311 18.912 7.42711 20.186 6.01211C20.002 6.01211 19.82 6.01211 19.637 6.01211C13.405 6.01211 7.171 6.01211 0.938 6.01311C0.577 6.01311 0.215 6.03411 0 5.65811C0 5.55911 0 5.46211 0 5.36411C0.193 5.03311 0.512 5.01611 0.846 5.01611C3.289 5.01911 5.733 5.01811 8.176 5.01811C12.005 5.01811 15.833 5.01811 19.662 5.01811C19.837 5.01811 20.012 5.01811 20.288 5.01811C20.116 4.83311 20.016 4.71811 19.907 4.61011C18.711 3.41011 17.51 2.21511 16.32 1.00711C16.182 0.867113 16.049 0.669114 16.025 0.483114C15.977 0.113114 16.346 -0.111886 16.682 0.0571137C16.794 0.114114 16.893 0.207114 16.985 0.298114C18.553 1.86211 20.121 3.42911 21.685 4.99711C21.798 5.11111 21.895 5.24111 21.999 5.36311C22 5.46211 22 5.56011 22 5.65811Z"
+                  fill="white"></path>
+              </svg></button>
           </div>
         </div>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <section class="py-5 " id="imoveis">
-      <div class="container">
-        <div class="row mb-4">
-          <div class="col-12 text-center" style="height: 89px;">
-            <h2 class="fw-bold text-navy h2-imoveis">Conheça nossos imóveis</h2>
-            <h3 class="text-orange subtitle-imoveis">O que nossos visitantes mais procuram em nosso site.</h3>
-          
-          </div>
+  <section class="py-5 " id="imoveis">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col-12 text-center" style="height: 89px;">
+          <h2 class="fw-bold text-navy h2-imoveis">Conheça nossos imóveis</h2>
+          <h3 class="text-orange subtitle-imoveis">O que nossos visitantes mais procuram em nosso site.</h3>
+
         </div>
+      </div>
 
-        <div class="row justify-content-center max__width-1200" style="margin-inline: 3rem;">
-          <!-- card 1 -->
-          <div class="col-md-4 category-card-container">
-            <div
-              class="category-card"
-              style="
+      <div class="row justify-content-center max__width-1200" style="margin-inline: 3rem;">
+        <!-- card 1 -->
+        <div class="col-md-4 category-card-container">
+          <div class="category-card" style="
                 background-image: url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1000&auto=format&fit=crop');
-              "
-            >
-             <div class="category-overlay">
-                <h4 class="text-white fw-bold">Itajaí</h4>
-                
-                <div class="d-flex justify-content-between align-items-center w-100 mt-3"> 
-                    
-                    <span class="text-white d-flex align-items-center gap-3" style="font-size: 13.6px;"> 
-                    <svg width="10" height="15" viewBox="0 0 13 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M6.68604 19.3697C6.58204 19.1767 6.48604 18.9947 6.38804 18.8127C5.46304 17.1137 4.53304 15.4177 3.61504 13.7147C2.99404 12.5647 2.40004 11.4017 1.88704 10.1967C1.57504 9.46668 1.28504 8.72568 1.10404 7.94868C1.03704 7.66268 1.00704 7.36268 1.00204 7.06768C0.996038 6.64068 1.00104 6.21068 1.04804 5.78768C1.11304 5.20368 1.31904 4.65368 1.59004 4.13468C2.36104 2.65768 3.55404 1.68768 5.15204 1.21868C5.67004 1.06668 6.20204 0.983682 6.74004 1.00268C8.35704 1.05768 9.74704 1.63168 10.864 2.82568C11.653 3.66868 12.134 4.66168 12.332 5.79468C12.405 6.21668 12.403 6.64668 12.388 7.07468C12.355 7.97268 12.053 8.80268 11.729 9.62468C11.215 10.9267 10.587 12.1747 9.92704 13.4067C9.02004 15.0977 8.09504 16.7787 7.17904 18.4647C7.03304 18.7357 6.88804 19.0037 6.74304 19.2737C6.72704 19.3017 6.70804 19.3307 6.68604 19.3697ZM2.20404 6.80768C2.20204 7.24868 2.26404 7.66168 2.39104 8.07168C2.65504 8.91568 3.01404 9.72168 3.38904 10.5217C4.28004 12.4237 5.29304 14.2637 6.32604 16.0917C6.42404 16.2667 6.52804 16.4377 6.62804 16.6097C6.66304 16.6727 6.70004 16.6737 6.73904 16.6157C6.78404 16.5457 6.83204 16.4747 6.87504 16.4017C7.80704 14.7737 8.71104 13.1307 9.54104 11.4477C10.038 10.4377 10.509 9.41668 10.892 8.35568C11.219 7.44168 11.269 6.51868 11.014 5.58568C10.414 3.39368 8.24904 2.00168 6.04804 2.32668C5.13504 2.46168 4.33504 2.84168 3.66004 3.46568C2.68804 4.36468 2.21804 5.48768 2.20404 6.80768Z" fill="#fff" stroke="#fff" stroke-width="0.5" stroke-miterlimit="10"></path>
-                      </svg> Santa Catarina 
-                    </span>
-                    
-                    <button 
-                        class="btn btn-outline-light fw-bold d-flex align-items-center justify-content-center" 
-                        style="width: 40px; height: 23px; line-height: 1; border-width: 1px; font-size: 12px;" 
-                    > 
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </button>
-                </div>
-            </div>
-            </div>
-             <div class="mt-2">
-                  <ul class="list-unstyled px-2 mt-4">
-                    <li class="mb-2">
-                        <a href="#" class="text-decoration-none text-dark seta-before">
-                          Apartamentos com 3 quartos em Itajaí
-                        </a>
-                    </li>
-                   <li class="mb-2">
-                        <a href="#" class="text-decoration-none text-dark seta-before">
-                          Apartamentos Mobiliados em Itajaí
-                        </a>
-                    </li>
-                     <li class="mb-2">
-                        <a href="#" class="text-decoration-none text-dark seta-before">
-                          Apartamentos acima de 100m² em Itajaí
-                        </a>
-                    </li>
-                     <li class="mb-2">
-                        <a href="#" class="text-decoration-none text-dark seta-before">
-                          Apartamentos no bairro Fazenda
-                        </a>
-                    </li>
-                   
-                    <li class="">
-                        <a href="#" class="text-decoration-none ver-todos-imv" style="color: #f95c02;">
-                            Ver todos imóveis
-                        </a>
-                    </li>
-                </ul>
+              ">
+            <div class="category-overlay">
+              <h4 class="text-white fw-bold">Itajaí</h4>
+
+              <div class="d-flex justify-content-between align-items-center w-100 mt-3">
+
+                <span class="text-white d-flex align-items-center gap-3" style="font-size: 13.6px;">
+                  <svg width="10" height="15" viewBox="0 0 13 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M6.68604 19.3697C6.58204 19.1767 6.48604 18.9947 6.38804 18.8127C5.46304 17.1137 4.53304 15.4177 3.61504 13.7147C2.99404 12.5647 2.40004 11.4017 1.88704 10.1967C1.57504 9.46668 1.28504 8.72568 1.10404 7.94868C1.03704 7.66268 1.00704 7.36268 1.00204 7.06768C0.996038 6.64068 1.00104 6.21068 1.04804 5.78768C1.11304 5.20368 1.31904 4.65368 1.59004 4.13468C2.36104 2.65768 3.55404 1.68768 5.15204 1.21868C5.67004 1.06668 6.20204 0.983682 6.74004 1.00268C8.35704 1.05768 9.74704 1.63168 10.864 2.82568C11.653 3.66868 12.134 4.66168 12.332 5.79468C12.405 6.21668 12.403 6.64668 12.388 7.07468C12.355 7.97268 12.053 8.80268 11.729 9.62468C11.215 10.9267 10.587 12.1747 9.92704 13.4067C9.02004 15.0977 8.09504 16.7787 7.17904 18.4647C7.03304 18.7357 6.88804 19.0037 6.74304 19.2737C6.72704 19.3017 6.70804 19.3307 6.68604 19.3697ZM2.20404 6.80768C2.20204 7.24868 2.26404 7.66168 2.39104 8.07168C2.65504 8.91568 3.01404 9.72168 3.38904 10.5217C4.28004 12.4237 5.29304 14.2637 6.32604 16.0917C6.42404 16.2667 6.52804 16.4377 6.62804 16.6097C6.66304 16.6727 6.70004 16.6737 6.73904 16.6157C6.78404 16.5457 6.83204 16.4747 6.87504 16.4017C7.80704 14.7737 8.71104 13.1307 9.54104 11.4477C10.038 10.4377 10.509 9.41668 10.892 8.35568C11.219 7.44168 11.269 6.51868 11.014 5.58568C10.414 3.39368 8.24904 2.00168 6.04804 2.32668C5.13504 2.46168 4.33504 2.84168 3.66004 3.46568C2.68804 4.36468 2.21804 5.48768 2.20404 6.80768Z"
+                      fill="#fff" stroke="#fff" stroke-width="0.5" stroke-miterlimit="10"></path>
+                  </svg> Santa Catarina
+                </span>
+
+                <button class="btn btn-outline-light fw-bold d-flex align-items-center justify-content-center"
+                  style="width: 40px; height: 23px; line-height: 1; border-width: 1px; font-size: 12px;">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
               </div>
+            </div>
           </div>
-          <!-- card2 -->
-            <div class="col-md-4 category-card-container">
-            <div
-              class="category-card"
-              style="
+          <div class="mt-2">
+            <ul class="list-unstyled px-2 mt-4">
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-dark seta-before">
+                  Apartamentos com 3 quartos em Itajaí
+                </a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-dark seta-before">
+                  Apartamentos Mobiliados em Itajaí
+                </a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-dark seta-before">
+                  Apartamentos acima de 100m² em Itajaí
+                </a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-dark seta-before">
+                  Apartamentos no bairro Fazenda
+                </a>
+              </li>
+
+              <li class="">
+                <a href="#" class="text-decoration-none ver-todos-imv" style="color: #f95c02;">
+                  Ver todos imóveis
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- card2 -->
+        <div class="col-md-4 category-card-container">
+          <div class="category-card" style="
                 background-image: url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1000&auto=format&fit=crop');
-              "
-            >
-             <div class="category-overlay">
-                <h4 class="text-white fw-bold">Itajaí</h4>
-                
-                <div class="d-flex justify-content-between align-items-center w-100 mt-3"> 
-                    
-                    <span class="text-white d-flex align-items-center gap-3" style="font-size: 13.6px;"> 
-                    <svg width="10" height="15" viewBox="0 0 13 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M6.68604 19.3697C6.58204 19.1767 6.48604 18.9947 6.38804 18.8127C5.46304 17.1137 4.53304 15.4177 3.61504 13.7147C2.99404 12.5647 2.40004 11.4017 1.88704 10.1967C1.57504 9.46668 1.28504 8.72568 1.10404 7.94868C1.03704 7.66268 1.00704 7.36268 1.00204 7.06768C0.996038 6.64068 1.00104 6.21068 1.04804 5.78768C1.11304 5.20368 1.31904 4.65368 1.59004 4.13468C2.36104 2.65768 3.55404 1.68768 5.15204 1.21868C5.67004 1.06668 6.20204 0.983682 6.74004 1.00268C8.35704 1.05768 9.74704 1.63168 10.864 2.82568C11.653 3.66868 12.134 4.66168 12.332 5.79468C12.405 6.21668 12.403 6.64668 12.388 7.07468C12.355 7.97268 12.053 8.80268 11.729 9.62468C11.215 10.9267 10.587 12.1747 9.92704 13.4067C9.02004 15.0977 8.09504 16.7787 7.17904 18.4647C7.03304 18.7357 6.88804 19.0037 6.74304 19.2737C6.72704 19.3017 6.70804 19.3307 6.68604 19.3697ZM2.20404 6.80768C2.20204 7.24868 2.26404 7.66168 2.39104 8.07168C2.65504 8.91568 3.01404 9.72168 3.38904 10.5217C4.28004 12.4237 5.29304 14.2637 6.32604 16.0917C6.42404 16.2667 6.52804 16.4377 6.62804 16.6097C6.66304 16.6727 6.70004 16.6737 6.73904 16.6157C6.78404 16.5457 6.83204 16.4747 6.87504 16.4017C7.80704 14.7737 8.71104 13.1307 9.54104 11.4477C10.038 10.4377 10.509 9.41668 10.892 8.35568C11.219 7.44168 11.269 6.51868 11.014 5.58568C10.414 3.39368 8.24904 2.00168 6.04804 2.32668C5.13504 2.46168 4.33504 2.84168 3.66004 3.46568C2.68804 4.36468 2.21804 5.48768 2.20404 6.80768Z" fill="#fff" stroke="#fff" stroke-width="0.5" stroke-miterlimit="10"></path>
-                      </svg> Santa Catarina 
-                    </span>
-                    
-                    <button 
-                        class="btn btn-outline-light fw-bold d-flex align-items-center justify-content-center" 
-                        style="width: 40px; height: 23px; line-height: 1; border-width: 1px; font-size: 12px;" 
-                    > 
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </button>
-                </div>
-            </div>
-            </div>
-             <div class="mt-2">
-                  <ul class="list-unstyled px-2 mt-4">
-                    <li class="mb-2 ">
-                        <a href="#" class="text-decoration-none text-dark seta-before">
-                          Apartamentos com 3 quartos em Itajaí
-                        </a>
-                    </li>
-                   <li class="mb-2">
-                        <a href="#" class="text-decoration-none text-dark seta-before">
-                          Apartamentos Mobiliados em Itajaí
-                        </a>
-                    </li>
-                     <li class="mb-2">
-                        <a href="#" class="text-decoration-none text-dark seta-before">
-                          Apartamentos acima de 100m² em Itajaí
-                        </a>
-                    </li>
-                     <li class="mb-2">
-                        <a href="#" class="text-decoration-none text-dark seta-before">
-                          Apartamentos no bairro Fazenda
-                        </a>
-                    </li>
-                   
-                    <li class="">
-                        <a href="#" class="text-decoration-none ver-todos-imv" style="color: #f95c02;">
-                            Ver todos imóveis
-                        </a>
-                    </li>
-                </ul>
+              ">
+            <div class="category-overlay">
+              <h4 class="text-white fw-bold">Itajaí</h4>
+
+              <div class="d-flex justify-content-between align-items-center w-100 mt-3">
+
+                <span class="text-white d-flex align-items-center gap-3" style="font-size: 13.6px;">
+                  <svg width="10" height="15" viewBox="0 0 13 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M6.68604 19.3697C6.58204 19.1767 6.48604 18.9947 6.38804 18.8127C5.46304 17.1137 4.53304 15.4177 3.61504 13.7147C2.99404 12.5647 2.40004 11.4017 1.88704 10.1967C1.57504 9.46668 1.28504 8.72568 1.10404 7.94868C1.03704 7.66268 1.00704 7.36268 1.00204 7.06768C0.996038 6.64068 1.00104 6.21068 1.04804 5.78768C1.11304 5.20368 1.31904 4.65368 1.59004 4.13468C2.36104 2.65768 3.55404 1.68768 5.15204 1.21868C5.67004 1.06668 6.20204 0.983682 6.74004 1.00268C8.35704 1.05768 9.74704 1.63168 10.864 2.82568C11.653 3.66868 12.134 4.66168 12.332 5.79468C12.405 6.21668 12.403 6.64668 12.388 7.07468C12.355 7.97268 12.053 8.80268 11.729 9.62468C11.215 10.9267 10.587 12.1747 9.92704 13.4067C9.02004 15.0977 8.09504 16.7787 7.17904 18.4647C7.03304 18.7357 6.88804 19.0037 6.74304 19.2737C6.72704 19.3017 6.70804 19.3307 6.68604 19.3697ZM2.20404 6.80768C2.20204 7.24868 2.26404 7.66168 2.39104 8.07168C2.65504 8.91568 3.01404 9.72168 3.38904 10.5217C4.28004 12.4237 5.29304 14.2637 6.32604 16.0917C6.42404 16.2667 6.52804 16.4377 6.62804 16.6097C6.66304 16.6727 6.70004 16.6737 6.73904 16.6157C6.78404 16.5457 6.83204 16.4747 6.87504 16.4017C7.80704 14.7737 8.71104 13.1307 9.54104 11.4477C10.038 10.4377 10.509 9.41668 10.892 8.35568C11.219 7.44168 11.269 6.51868 11.014 5.58568C10.414 3.39368 8.24904 2.00168 6.04804 2.32668C5.13504 2.46168 4.33504 2.84168 3.66004 3.46568C2.68804 4.36468 2.21804 5.48768 2.20404 6.80768Z"
+                      fill="#fff" stroke="#fff" stroke-width="0.5" stroke-miterlimit="10"></path>
+                  </svg> Santa Catarina
+                </span>
+
+                <button class="btn btn-outline-light fw-bold d-flex align-items-center justify-content-center"
+                  style="width: 40px; height: 23px; line-height: 1; border-width: 1px; font-size: 12px;">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
               </div>
             </div>
-          <!-- card3 -->
-          <div class="col-md-4 category-card-container">
-            <div
-              class="category-card"
-              style="
+          </div>
+          <div class="mt-2">
+            <ul class="list-unstyled px-2 mt-4">
+              <li class="mb-2 ">
+                <a href="#" class="text-decoration-none text-dark seta-before">
+                  Apartamentos com 3 quartos em Itajaí
+                </a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-dark seta-before">
+                  Apartamentos Mobiliados em Itajaí
+                </a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-dark seta-before">
+                  Apartamentos acima de 100m² em Itajaí
+                </a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-dark seta-before">
+                  Apartamentos no bairro Fazenda
+                </a>
+              </li>
+
+              <li class="">
+                <a href="#" class="text-decoration-none ver-todos-imv" style="color: #f95c02;">
+                  Ver todos imóveis
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- card3 -->
+        <div class="col-md-4 category-card-container">
+          <div class="category-card" style="
                 background-image: url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1000&auto=format&fit=crop');
-              "
-            >
-             <div class="category-overlay">
-                <h4 class="text-white fw-bold">Itajaí</h4>
-                
-                <div class="d-flex justify-content-between align-items-center w-100 mt-3"> 
-                    
-                    <span class="text-white d-flex align-items-center gap-3" style="font-size: 13.6px;"> 
-                    <svg width="10" height="15" viewBox="0 0 13 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M6.68604 19.3697C6.58204 19.1767 6.48604 18.9947 6.38804 18.8127C5.46304 17.1137 4.53304 15.4177 3.61504 13.7147C2.99404 12.5647 2.40004 11.4017 1.88704 10.1967C1.57504 9.46668 1.28504 8.72568 1.10404 7.94868C1.03704 7.66268 1.00704 7.36268 1.00204 7.06768C0.996038 6.64068 1.00104 6.21068 1.04804 5.78768C1.11304 5.20368 1.31904 4.65368 1.59004 4.13468C2.36104 2.65768 3.55404 1.68768 5.15204 1.21868C5.67004 1.06668 6.20204 0.983682 6.74004 1.00268C8.35704 1.05768 9.74704 1.63168 10.864 2.82568C11.653 3.66868 12.134 4.66168 12.332 5.79468C12.405 6.21668 12.403 6.64668 12.388 7.07468C12.355 7.97268 12.053 8.80268 11.729 9.62468C11.215 10.9267 10.587 12.1747 9.92704 13.4067C9.02004 15.0977 8.09504 16.7787 7.17904 18.4647C7.03304 18.7357 6.88804 19.0037 6.74304 19.2737C6.72704 19.3017 6.70804 19.3307 6.68604 19.3697ZM2.20404 6.80768C2.20204 7.24868 2.26404 7.66168 2.39104 8.07168C2.65504 8.91568 3.01404 9.72168 3.38904 10.5217C4.28004 12.4237 5.29304 14.2637 6.32604 16.0917C6.42404 16.2667 6.52804 16.4377 6.62804 16.6097C6.66304 16.6727 6.70004 16.6737 6.73904 16.6157C6.78404 16.5457 6.83204 16.4747 6.87504 16.4017C7.80704 14.7737 8.71104 13.1307 9.54104 11.4477C10.038 10.4377 10.509 9.41668 10.892 8.35568C11.219 7.44168 11.269 6.51868 11.014 5.58568C10.414 3.39368 8.24904 2.00168 6.04804 2.32668C5.13504 2.46168 4.33504 2.84168 3.66004 3.46568C2.68804 4.36468 2.21804 5.48768 2.20404 6.80768Z" fill="#fff" stroke="#fff" stroke-width="0.5" stroke-miterlimit="10"></path>
-                      </svg> Santa Catarina 
-                    </span>
-                    
-                    <button 
-                        class="btn btn-outline-light fw-bold d-flex align-items-center justify-content-center" 
-                        style="width: 40px; height: 23px; line-height: 1; border-width: 1px; font-size: 12px;" 
-                    > 
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </button>
-                </div>
-            </div>
-            </div>
-             <div class="mt-2">
-                  <ul class="list-unstyled px-2 mt-4">
-                    <li class="mb-2">
-                        <a href="#" class="text-decoration-none text-dark seta-before">
-                          Apartamentos com 3 quartos em Itajaí
-                        </a>
-                    </li>
-                   <li class="mb-2">
-                        <a href="#" class="text-decoration-none text-dark seta-before">
-                          Apartamentos Mobiliados em Itajaí
-                        </a>
-                    </li>
-                     <li class="mb-2">
-                        <a href="#" class="text-decoration-none text-dark seta-before">
-                          Apartamentos acima de 100m² em Itajaí
-                        </a>
-                    </li>
-                     <li class="mb-2">
-                        <a href="#" class="text-decoration-none text-dark seta-before">
-                          Apartamentos no bairro Fazenda
-                        </a>
-                    </li>
-                   
-                    <li class="">
-                        <a href="#" class="text-decoration-none ver-todos-imv" style="color: #f95c02;">
-                            Ver todos imóveis
-                        </a>
-                    </li>
-                </ul>
-              </div>
-          </div>
-          <div class="mx-auto mt-4" style="height: 2px; width: 90%; background-color: #F2F2F2;"></div>
-        </div>
-      </div>
-    </section>
+              ">
+            <div class="category-overlay">
+              <h4 class="text-white fw-bold">Itajaí</h4>
 
-    <section class="pt-2 pb-5 max__width-1200 justify-content-center mx-auto" id="lancamentos">
-      <div class="container" >
-        <div class="d-flex justify-content-between align-items-center mb-4  " style="padding-inline: 50px;">
-          <h2 class="fw-bold text-navy title-section-destaques" >Destaques</h2>
-          <a href="#" class="text-black text-decoration-none d-flex align-items-center  gap-2" 
-            > <span style="font-weight: 400;">Ver mais</span>
-     
-                <button class=" btn btn-outline-dark btn-hover-grey d-flex align-items-center" style="width: 40px; height: 30px; border: 0.1rem solid #808080 !important;">  <svg width="22" height="12" viewBox="0 0 22 12" fill="#808080 " xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M22 5.65811C21.631 6.04511 21.269 6.43811 20.892 6.81711C19.595 8.12011 18.291 9.41811 16.993 10.7191C16.749 10.9641 16.474 11.1971 16.16 10.8851C15.838 10.5671 16.04 10.2781 16.308 10.0131C17.614 8.72311 18.912 7.42711 20.186 6.01211C20.002 6.01211 19.82 6.01211 19.637 6.01211C13.405 6.01211 7.171 6.01211 0.938 6.01311C0.577 6.01311 0.215 6.03411 0 5.65811C0 5.55911 0 5.46211 0 5.36411C0.193 5.03311 0.512 5.01611 0.846 5.01611C3.289 5.01911 5.733 5.01811 8.176 5.01811C12.005 5.01811 15.833 5.01811 19.662 5.01811C19.837 5.01811 20.012 5.01811 20.288 5.01811C20.116 4.83311 20.016 4.71811 19.907 4.61011C18.711 3.41011 17.51 2.21511 16.32 1.00711C16.182 0.867113 16.049 0.669114 16.025 0.483114C15.977 0.113114 16.346 -0.111886 16.682 0.0571137C16.794 0.114114 16.893 0.207114 16.985 0.298114C18.553 1.86211 20.121 3.42911 21.685 4.99711C21.798 5.11111 21.895 5.24111 21.999 5.36311C22 5.46211 22 5.56011 22 5.65811Z" fill="#808080 " stroke="#808080" stroke-width="1"></path></svg></button></a>
-        </div>
+              <div class="d-flex justify-content-between align-items-center w-100 mt-3">
 
-        <div class="row g-4 max__width-1200 justify-content-center">
-          <!-- imv 1 -->
-          <div class="col-md-4 property-card-container">
-            <div class="card property-card">
-              <div class="property-img-wrapper">
-                <span
-                  class="badge bg-orange position-absolute top-0 start-0 m-3 z-3"
-                  >EXCLUSIVO</span
-                >
-                <img
-                  src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=1000&auto=format&fit=crop"
-                  alt="Imóvel"
-                />
-              </div>
-            </div>
-               <div class="">
-                <div class="d-flex justify-content-between mt-3 "> <h4 class="" style="font-size: 1.2rem; font-weight: 900;">R$ 6.450.000</h4> <span style="font-size: .8rem;">Cód. 16</span></div>
-                <p class="" style="font-size: .9rem; font-weight: 400; color:#151515;">Sailor's Bay <span class="" style="font-size: 10px; margin-inline: 2px;">●</span> Apartamento
-                                          Rua Juvêncio Tavares do Amaral - Cabeçudas, Itajaí</p>
-                  <div class="property-icons d-flex justify-content-between">
-                  <span class="fw-bold right-ball">145m²</span>
-                  <span class="fw-bold right-ball"> 3 Quartos  </span>
-                  <span class="fw-bold right-ball"> 1 Suíte</span>
-                  <span class="fw-bold "> 2 Vagas</span>
-                </div>
-              </div>
-          </div>
-        
-          <!-- imv 2 -->
-          <div class="col-md-4 property-card-container">
-            <div class="card property-card">
-              <div class="property-img-wrapper">
-                <span
-                  class="badge bg-orange position-absolute top-0 start-0 m-3 z-3"
-                  >EXCLUSIVO</span
-                >
-                 <img
-            src="https://images.unsplash.com/photo-1560448205-17d3a46c84de?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="Imóvel"
-          />
-              </div>
-            </div>
-               <div class="">
-                <div class="d-flex justify-content-between mt-3 "> <h4 class="" style="font-size: 1.2rem; font-weight: 900;">R$ 6.450.000</h4> <span style="font-size: .8rem;">Cód. 16</span></div>
-                <p class="" style="font-size: .9rem; font-weight: 400; color:#151515;">Sailor's Bay <span class="" style="font-size: 10px; margin-inline: 2px;">●</span> Apartamento
-                                          Rua Juvêncio Tavares do Amaral - Cabeçudas, Itajaí</p>
-                  <div class="property-icons d-flex justify-content-between">
-                  <span class="fw-bold right-ball">145m²</span>
-                  <span class="fw-bold right-ball"> 3 Quartos  </span>
-                  <span class="fw-bold right-ball"> 1 Suíte</span>
-                  <span class="fw-bold "> 2 Vagas</span>
-                </div>
-              </div>
-          </div>
-        
-       
-          <!-- imv3 -->
-          <div class="col-md-4 property-card-container">
-            <div class="card property-card">
-              <div class="property-img-wrapper">
-                <span
-                  class="badge bg-orange position-absolute top-0 start-0 m-3 z-3"
-                  >MOBILIADO</span
-                >
-                    <img
-                  src="https://images.unsplash.com/photo-1631049307379-e96858bda538?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="Imóvel"
-                />
+                <span class="text-white d-flex align-items-center gap-3" style="font-size: 13.6px;">
+                  <svg width="10" height="15" viewBox="0 0 13 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M6.68604 19.3697C6.58204 19.1767 6.48604 18.9947 6.38804 18.8127C5.46304 17.1137 4.53304 15.4177 3.61504 13.7147C2.99404 12.5647 2.40004 11.4017 1.88704 10.1967C1.57504 9.46668 1.28504 8.72568 1.10404 7.94868C1.03704 7.66268 1.00704 7.36268 1.00204 7.06768C0.996038 6.64068 1.00104 6.21068 1.04804 5.78768C1.11304 5.20368 1.31904 4.65368 1.59004 4.13468C2.36104 2.65768 3.55404 1.68768 5.15204 1.21868C5.67004 1.06668 6.20204 0.983682 6.74004 1.00268C8.35704 1.05768 9.74704 1.63168 10.864 2.82568C11.653 3.66868 12.134 4.66168 12.332 5.79468C12.405 6.21668 12.403 6.64668 12.388 7.07468C12.355 7.97268 12.053 8.80268 11.729 9.62468C11.215 10.9267 10.587 12.1747 9.92704 13.4067C9.02004 15.0977 8.09504 16.7787 7.17904 18.4647C7.03304 18.7357 6.88804 19.0037 6.74304 19.2737C6.72704 19.3017 6.70804 19.3307 6.68604 19.3697ZM2.20404 6.80768C2.20204 7.24868 2.26404 7.66168 2.39104 8.07168C2.65504 8.91568 3.01404 9.72168 3.38904 10.5217C4.28004 12.4237 5.29304 14.2637 6.32604 16.0917C6.42404 16.2667 6.52804 16.4377 6.62804 16.6097C6.66304 16.6727 6.70004 16.6737 6.73904 16.6157C6.78404 16.5457 6.83204 16.4747 6.87504 16.4017C7.80704 14.7737 8.71104 13.1307 9.54104 11.4477C10.038 10.4377 10.509 9.41668 10.892 8.35568C11.219 7.44168 11.269 6.51868 11.014 5.58568C10.414 3.39368 8.24904 2.00168 6.04804 2.32668C5.13504 2.46168 4.33504 2.84168 3.66004 3.46568C2.68804 4.36468 2.21804 5.48768 2.20404 6.80768Z"
+                      fill="#fff" stroke="#fff" stroke-width="0.5" stroke-miterlimit="10"></path>
+                  </svg> Santa Catarina
+                </span>
 
+                <button class="btn btn-outline-light fw-bold d-flex align-items-center justify-content-center"
+                  style="width: 40px; height: 23px; line-height: 1; border-width: 1px; font-size: 12px;">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
               </div>
-            </div>
-               <div class="">
-                <div class="d-flex justify-content-between mt-3 "> <h4 class="" style="font-size: 1.2rem; font-weight: 900;">R$ 6.450.000</h4> <span style="font-size: .8rem;">Cód. 16</span></div>
-                <p class="" style="font-size: .9rem; font-weight: 400; color:#151515;">Sailor's Bay <span class="" style="font-size: 10px; margin-inline: 2px;">●</span> Apartamento
-                                          Rua Juvêncio Tavares do Amaral - Cabeçudas, Itajaí</p>
-                  <div class="property-icons d-flex justify-content-between">
-                  <span class="fw-bold right-ball">145m²</span>
-                  <span class="fw-bold right-ball"> 3 Quartos  </span>
-                  <span class="fw-bold right-ball"> 1 Suíte</span>
-                  <span class="fw-bold "> 2 Vagas</span>
-                </div>
-              </div>
-          </div>
-        
-        </div>
-      </div>
-    </section>
-
-      <section class="pb-4" style="background-color: #2A3E59; padding-top: 3.5rem;" id="lancamentos">
-      <div class="container max__width-1200">
-          <div class="d-flex justify-content-between align-items-center mb-4  " style="padding-inline: 50px;">
-            <h2 class="fw-bold text-white title-section-destaques" >Exclusivos</h2>
-            <a href="#" class="text-white text-decoration-none d-flex align-items-center  gap-2" 
-              > <span style="font-weight: 400;">Ver mais</span>
-      
-                  <button class=" btn btn-outline-dark btn-hover-grey d-flex align-items-center" style="width: 40px; height: 30px; border: 0.1rem solid #fff !important;">  <svg width="22" height="12" viewBox="0 0 22 12" fill="#808080 " xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M22 5.65811C21.631 6.04511 21.269 6.43811 20.892 6.81711C19.595 8.12011 18.291 9.41811 16.993 10.7191C16.749 10.9641 16.474 11.1971 16.16 10.8851C15.838 10.5671 16.04 10.2781 16.308 10.0131C17.614 8.72311 18.912 7.42711 20.186 6.01211C20.002 6.01211 19.82 6.01211 19.637 6.01211C13.405 6.01211 7.171 6.01211 0.938 6.01311C0.577 6.01311 0.215 6.03411 0 5.65811C0 5.55911 0 5.46211 0 5.36411C0.193 5.03311 0.512 5.01611 0.846 5.01611C3.289 5.01911 5.733 5.01811 8.176 5.01811C12.005 5.01811 15.833 5.01811 19.662 5.01811C19.837 5.01811 20.012 5.01811 20.288 5.01811C20.116 4.83311 20.016 4.71811 19.907 4.61011C18.711 3.41011 17.51 2.21511 16.32 1.00711C16.182 0.867113 16.049 0.669114 16.025 0.483114C15.977 0.113114 16.346 -0.111886 16.682 0.0571137C16.794 0.114114 16.893 0.207114 16.985 0.298114C18.553 1.86211 20.121 3.42911 21.685 4.99711C21.798 5.11111 21.895 5.24111 21.999 5.36311C22 5.46211 22 5.56011 22 5.65811Z" fill="#fff " stroke="#fff" stroke-width="1"></path></svg></button></a>
-          </div>
-
-
-        <div class="row g-4 max__width-1200 justify-content-center">
-          <!-- imv 1 -->
-          <div class="col-md-4 text-white property-card-container">
-            <div class="card property-card">
-              <div class="property-img-wrapper">
-                <span
-                  class="badge bg-orange position-absolute top-0 start-0 m-3 z-3"
-                  >EXCLUSIVO</span
-                >
-                 <img
-                  src="https://images.unsplash.com/photo-1560448205-17d3a46c84de?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="Imóvel"
-                />
-
-              </div>
-            </div>
-               <div class="">
-                <div class="d-flex justify-content-between mt-3"> <h4 class=""  style="font-size: 1.2rem; font-weight: 900;">R$ 2.400.000</h4> <span style="font-size: 12px;">Cod. 16</span></div>
-                <p class="" style="font-size: .9rem; font-weight: 400;">Torres da Brava Sirena <span class="" style="font-size: 10px; margin-inline: 2px;">●</span>  Apartamento Rua Luci Canziani - Praia Brava, Itajaí</p>
-
-             
-                  <div class="property-icons d-flex justify-content-between">
-                  <span class="fw-bold text-light">145m²</span>
-                  <span class="fw-bold text-light"> 3 Quartos  </span>
-                  <span class="fw-bold text-light"> 1 Suíte</span>
-                  <span class="fw-bold text-light"> 2 Vagas</span>
-                </div>
-              </div>
-          </div>
-        
-          <!-- imv 2 -->
-            <div class="col-md-4 text-white property-card-container">
-            <div class="card property-card">
-              <div class="property-img-wrapper">
-                <span
-                  class="badge bg-orange position-absolute top-0 start-0 m-3 z-3"
-                  >EXCLUSIVO</span
-                >
-                 <img
-            src="https://images.unsplash.com/photo-1631049307379-e96858bda538?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="Imóvel"
-          />
-              </div>
-            </div>
-               <div class="">
-                <div class="d-flex justify-content-between mt-3"> <h4 class=""  style="font-size: 1.2rem; font-weight: 900;">R$ 2.400.000</h4> <span style="font-size: 12px;">Cod. 16</span></div>
-                <p class="" style="font-size: .9rem; font-weight: 400;">Torres da Brava Sirena <span class="" style="font-size: 10px; margin-inline: 2px;">●</span>  Apartamento Rua Luci Canziani - Praia Brava, Itajaí</p>
-
-             
-                <div class="property-icons d-flex justify-content-between">
-                    <span class="fw-bold text-light">145m²</span>
-                    <span class="fw-bold text-light"> 3 Quartos  </span>
-                    <span class="fw-bold text-light"> 1 Suíte</span>
-                    <span class="fw-bold text-light"> 2 Vagas</span>
-                </div>
             </div>
           </div>
-       
-          <!-- imv3 -->
-              <div class="col-md-4 text-white property-card-container">
-            <div class="card property-card">
-              <div class="property-img-wrapper">
-                <span
-                  class="badge bg-orange position-absolute top-0 start-0 m-3 z-3"
-                  >MOBILIADO</span
-                >
-                <img
-            src="https://images.unsplash.com/photo-1560448205-17d3a46c84de?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="Imóvel"
-          />
-              </div>
-            </div>
-               <div class="">
-                <div class="d-flex justify-content-between mt-3"> <h4 class=""  style="font-size: 1.2rem; font-weight: 900;">R$ 2.400.000</h4> <span style="font-size: 12px;">Cod. 16</span></div>
-                <p class="" style="font-size: .9rem; font-weight: 400;">Torres da Brava Sirena <span class="" style="font-size: 10px; margin-inline: 2px;">●</span>  Apartamento Rua Luci Canziani - Praia Brava, Itajaí</p>
+          <div class="mt-2">
+            <ul class="list-unstyled px-2 mt-4">
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-dark seta-before">
+                  Apartamentos com 3 quartos em Itajaí
+                </a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-dark seta-before">
+                  Apartamentos Mobiliados em Itajaí
+                </a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-dark seta-before">
+                  Apartamentos acima de 100m² em Itajaí
+                </a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-dark seta-before">
+                  Apartamentos no bairro Fazenda
+                </a>
+              </li>
 
-             
-                <div class="property-icons d-flex justify-content-between">
-                  <span class="fw-bold text-light">145m²</span>
-                  <span class="fw-bold text-light"> 3 Quartos  </span>
-                  <span class="fw-bold text-light"> 1 Suíte</span>
-                  <span class="fw-bold text-light"> 2 Vagas</span>
-                </div>
-              </div>
+              <li class="">
+                <a href="#" class="text-decoration-none ver-todos-imv" style="color: #f95c02;">
+                  Ver todos imóveis
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
+        <div class="mx-auto mt-4" style="height: 2px; width: 90%; background-color: #F2F2F2;"></div>
       </div>
-    </section>
+    </div>
+  </section>
 
+  <section class="pt-2 pb-5 max__width-1200 justify-content-center mx-auto" id="lancamentos">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center mb-4  " style="padding-inline: 50px;">
+        <h2 class="fw-bold text-navy title-section-destaques">Destaques</h2>
+        <a href="#" class="text-black text-decoration-none d-flex align-items-center  gap-2"> <span
+            style="font-weight: 400;">Ver mais</span>
 
-    <section class=" bg-light" style="height: 606px; padding: 64px 0px;" id="supremo">
-      <div class="container max__width-1200" style="padding-inline: 50px;">
+          <button class=" btn btn-outline-dark btn-hover-grey d-flex align-items-center"
+            style="width: 40px; height: 30px; border: 0.1rem solid #808080 !important;"> <svg width="22" height="12"
+              viewBox="0 0 22 12" fill="#808080 " xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M22 5.65811C21.631 6.04511 21.269 6.43811 20.892 6.81711C19.595 8.12011 18.291 9.41811 16.993 10.7191C16.749 10.9641 16.474 11.1971 16.16 10.8851C15.838 10.5671 16.04 10.2781 16.308 10.0131C17.614 8.72311 18.912 7.42711 20.186 6.01211C20.002 6.01211 19.82 6.01211 19.637 6.01211C13.405 6.01211 7.171 6.01211 0.938 6.01311C0.577 6.01311 0.215 6.03411 0 5.65811C0 5.55911 0 5.46211 0 5.36411C0.193 5.03311 0.512 5.01611 0.846 5.01611C3.289 5.01911 5.733 5.01811 8.176 5.01811C12.005 5.01811 15.833 5.01811 19.662 5.01811C19.837 5.01811 20.012 5.01811 20.288 5.01811C20.116 4.83311 20.016 4.71811 19.907 4.61011C18.711 3.41011 17.51 2.21511 16.32 1.00711C16.182 0.867113 16.049 0.669114 16.025 0.483114C15.977 0.113114 16.346 -0.111886 16.682 0.0571137C16.794 0.114114 16.893 0.207114 16.985 0.298114C18.553 1.86211 20.121 3.42911 21.685 4.99711C21.798 5.11111 21.895 5.24111 21.999 5.36311C22 5.46211 22 5.56011 22 5.65811Z"
+                fill="#808080 " stroke="#808080" stroke-width="1"></path>
+            </svg></button></a>
+      </div>
 
-          <div class="card-supremoCRM position-relative d-flex justify-content-between">
-            <div class="d-flex flex-column " style="height: 412px; padding: 0px 48px;">
-              <h3 class="text-orange m-0" style="font-size: 1rem; font-weight: 400;">Sobre Nós</h3>
-              <h2 class="fw-bold" style="font-size: min(max(1.8rem, 4vw), 2.8rem);">Supremo CRM</h2>
-              <p class="mx-0 mb-3 mt-0" style="font-size: 16px; width: 592px; height: 270px;">
-               Nossa Missão é encontrar a melhor solução para os clientes no mercado imobiliário, proporcionando retorno financeiro e satisfação com o investimento realizado.
-                <br>
-                <br>
-               Localizada na belíssima Praia Brava, em Itajaí/SC, a Adamante Negócios é uma imobiliária focada nas pessoas, em seus desejos e em maximizar o retorno para seus investimentos. Proporciona consultoria personalizada e abre caminhos para a realização de negócios imobiliários surpreendentes. Conhecimento do mercado, segurança, confiança e transparência, estão sempre presentes na busca pela excelência na realização de cada negócio. Venha nos conhecer e entender como podemos fazer a diferença na sua aquisição imobiliária no litoral catarinense.
-              </p>
-               <a href="#" class="text-black text-decoration-none d-flex align-items-center mt-4  gap-2" 
-               > <span style="font-weight: 400;">Ver mais</span>
-     
-                <button class=" btn btn-outline-dark btn-hover-grey d-flex align-items-center" style="width: 40px; height: 30px; border: 0.1rem solid #808080 !important;">  <svg width="22" height="12" viewBox="0 0 22 12" fill="#808080 " xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M22 5.65811C21.631 6.04511 21.269 6.43811 20.892 6.81711C19.595 8.12011 18.291 9.41811 16.993 10.7191C16.749 10.9641 16.474 11.1971 16.16 10.8851C15.838 10.5671 16.04 10.2781 16.308 10.0131C17.614 8.72311 18.912 7.42711 20.186 6.01211C20.002 6.01211 19.82 6.01211 19.637 6.01211C13.405 6.01211 7.171 6.01211 0.938 6.01311C0.577 6.01311 0.215 6.03411 0 5.65811C0 5.55911 0 5.46211 0 5.36411C0.193 5.03311 0.512 5.01611 0.846 5.01611C3.289 5.01911 5.733 5.01811 8.176 5.01811C12.005 5.01811 15.833 5.01811 19.662 5.01811C19.837 5.01811 20.012 5.01811 20.288 5.01811C20.116 4.83311 20.016 4.71811 19.907 4.61011C18.711 3.41011 17.51 2.21511 16.32 1.00711C16.182 0.867113 16.049 0.669114 16.025 0.483114C15.977 0.113114 16.346 -0.111886 16.682 0.0571137C16.794 0.114114 16.893 0.207114 16.985 0.298114C18.553 1.86211 20.121 3.42911 21.685 4.99711C21.798 5.11111 21.895 5.24111 21.999 5.36311C22 5.46211 22 5.56011 22 5.65811Z" fill="#808080 " stroke="#808080" stroke-width="1"></path></svg></button></a>
+      <div class="row g-4 max__width-1200 justify-content-center">
+        <!-- imv 1 -->
+        <div class="col-md-4 property-card-container">
+          <div class="card property-card">
+            <div class="property-img-wrapper">
+              <span class="badge bg-orange position-absolute top-0 start-0 m-3 z-3">EXCLUSIVO</span>
+              <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=1000&auto=format&fit=crop"
+                alt="Imóvel" />
             </div>
-            <div class="position-absolute img-supremoCRM  translate-middle-y me-5" >
-             <img src="https://www.adamantenegocios.com.br/assets/site/img/adamante.png" alt="Supremo CRM" style="width: 340px; height:512px ; border-radius: 20px;"/>
-            </div>
-
           </div>
-    
-      </div>
-    </section>
+          <div class="">
+            <div class="d-flex justify-content-between mt-3 ">
+              <h4 class="" style="font-size: 1.2rem; font-weight: 900;">R$ 6.450.000</h4> <span
+                style="font-size: .8rem;">Cód. 16</span>
+            </div>
+            <p class="" style="font-size: .9rem; font-weight: 400; color:#151515;">Sailor's Bay <span class=""
+                style="font-size: 10px; margin-inline: 2px;">●</span> Apartamento
+              Rua Juvêncio Tavares do Amaral - Cabeçudas, Itajaí</p>
+            <div class="property-icons d-flex justify-content-between">
+              <span class="fw-bold right-ball">145m²</span>
+              <span class="fw-bold right-ball"> 3 Quartos </span>
+              <span class="fw-bold right-ball"> 1 Suíte</span>
+              <span class="fw-bold "> 2 Vagas</span>
+            </div>
+          </div>
+        </div>
 
-<!-- https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1000&auto=format&fit=crop' -->
-    <section class="py-5">
-      <div class="container max__width-1200 justify-content-center" style="padding-inline: 50px;">
+        <!-- imv 2 -->
+        <div class="col-md-4 property-card-container">
+          <div class="card property-card">
+            <div class="property-img-wrapper">
+              <span class="badge bg-orange position-absolute top-0 start-0 m-3 z-3">EXCLUSIVO</span>
+              <img
+                src="https://images.unsplash.com/photo-1560448205-17d3a46c84de?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Imóvel" />
+            </div>
+          </div>
+          <div class="">
+            <div class="d-flex justify-content-between mt-3 ">
+              <h4 class="" style="font-size: 1.2rem; font-weight: 900;">R$ 6.450.000</h4> <span
+                style="font-size: .8rem;">Cód. 16</span>
+            </div>
+            <p class="" style="font-size: .9rem; font-weight: 400; color:#151515;">Sailor's Bay <span class=""
+                style="font-size: 10px; margin-inline: 2px;">●</span> Apartamento
+              Rua Juvêncio Tavares do Amaral - Cabeçudas, Itajaí</p>
+            <div class="property-icons d-flex justify-content-between">
+              <span class="fw-bold right-ball">145m²</span>
+              <span class="fw-bold right-ball"> 3 Quartos </span>
+              <span class="fw-bold right-ball"> 1 Suíte</span>
+              <span class="fw-bold "> 2 Vagas</span>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- imv3 -->
+        <div class="col-md-4 property-card-container">
+          <div class="card property-card">
+            <div class="property-img-wrapper">
+              <span class="badge bg-orange position-absolute top-0 start-0 m-3 z-3">MOBILIADO</span>
+              <img
+                src="https://images.unsplash.com/photo-1631049307379-e96858bda538?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Imóvel" />
+
+            </div>
+          </div>
+          <div class="">
+            <div class="d-flex justify-content-between mt-3 ">
+              <h4 class="" style="font-size: 1.2rem; font-weight: 900;">R$ 6.450.000</h4> <span
+                style="font-size: .8rem;">Cód. 16</span>
+            </div>
+            <p class="" style="font-size: .9rem; font-weight: 400; color:#151515;">Sailor's Bay <span class=""
+                style="font-size: 10px; margin-inline: 2px;">●</span> Apartamento
+              Rua Juvêncio Tavares do Amaral - Cabeçudas, Itajaí</p>
+            <div class="property-icons d-flex justify-content-between">
+              <span class="fw-bold right-ball">145m²</span>
+              <span class="fw-bold right-ball"> 3 Quartos </span>
+              <span class="fw-bold right-ball"> 1 Suíte</span>
+              <span class="fw-bold "> 2 Vagas</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="pb-4" style="background-color: #2A3E59; padding-top: 3.5rem;" id="lancamentos">
+    <div class="container max__width-1200">
+      <div class="d-flex justify-content-between align-items-center mb-4  " style="padding-inline: 50px;">
+        <h2 class="fw-bold text-white title-section-destaques">Exclusivos</h2>
+        <a href="#" class="text-white text-decoration-none d-flex align-items-center  gap-2"> <span
+            style="font-weight: 400;">Ver mais</span>
+
+          <button class=" btn btn-outline-dark btn-hover-grey d-flex align-items-center"
+            style="width: 40px; height: 30px; border: 0.1rem solid #fff !important;"> <svg width="22" height="12"
+              viewBox="0 0 22 12" fill="#808080 " xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M22 5.65811C21.631 6.04511 21.269 6.43811 20.892 6.81711C19.595 8.12011 18.291 9.41811 16.993 10.7191C16.749 10.9641 16.474 11.1971 16.16 10.8851C15.838 10.5671 16.04 10.2781 16.308 10.0131C17.614 8.72311 18.912 7.42711 20.186 6.01211C20.002 6.01211 19.82 6.01211 19.637 6.01211C13.405 6.01211 7.171 6.01211 0.938 6.01311C0.577 6.01311 0.215 6.03411 0 5.65811C0 5.55911 0 5.46211 0 5.36411C0.193 5.03311 0.512 5.01611 0.846 5.01611C3.289 5.01911 5.733 5.01811 8.176 5.01811C12.005 5.01811 15.833 5.01811 19.662 5.01811C19.837 5.01811 20.012 5.01811 20.288 5.01811C20.116 4.83311 20.016 4.71811 19.907 4.61011C18.711 3.41011 17.51 2.21511 16.32 1.00711C16.182 0.867113 16.049 0.669114 16.025 0.483114C15.977 0.113114 16.346 -0.111886 16.682 0.0571137C16.794 0.114114 16.893 0.207114 16.985 0.298114C18.553 1.86211 20.121 3.42911 21.685 4.99711C21.798 5.11111 21.895 5.24111 21.999 5.36311C22 5.46211 22 5.56011 22 5.65811Z"
+                fill="#fff " stroke="#fff" stroke-width="1"></path>
+            </svg></button></a>
+      </div>
+
+
+      <div class="row g-4 max__width-1200 justify-content-center">
+        <!-- imv 1 -->
+        <div class="col-md-4 text-white property-card-container">
+          <div class="card property-card">
+            <div class="property-img-wrapper">
+              <span class="badge bg-orange position-absolute top-0 start-0 m-3 z-3">EXCLUSIVO</span>
+              <img
+                src="https://images.unsplash.com/photo-1560448205-17d3a46c84de?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Imóvel" />
+
+            </div>
+          </div>
+          <div class="">
+            <div class="d-flex justify-content-between mt-3">
+              <h4 class="" style="font-size: 1.2rem; font-weight: 900;">R$ 2.400.000</h4> <span
+                style="font-size: 12px;">Cod. 16</span>
+            </div>
+            <p class="" style="font-size: .9rem; font-weight: 400;">Torres da Brava Sirena <span class=""
+                style="font-size: 10px; margin-inline: 2px;">●</span> Apartamento Rua Luci Canziani - Praia Brava,
+              Itajaí</p>
+
+
+            <div class="property-icons d-flex justify-content-between">
+              <span class="fw-bold text-light">145m²</span>
+              <span class="fw-bold text-light"> 3 Quartos </span>
+              <span class="fw-bold text-light"> 1 Suíte</span>
+              <span class="fw-bold text-light"> 2 Vagas</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- imv 2 -->
+        <div class="col-md-4 text-white property-card-container">
+          <div class="card property-card">
+            <div class="property-img-wrapper">
+              <span class="badge bg-orange position-absolute top-0 start-0 m-3 z-3">EXCLUSIVO</span>
+              <img
+                src="https://images.unsplash.com/photo-1631049307379-e96858bda538?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Imóvel" />
+            </div>
+          </div>
+          <div class="">
+            <div class="d-flex justify-content-between mt-3">
+              <h4 class="" style="font-size: 1.2rem; font-weight: 900;">R$ 2.400.000</h4> <span
+                style="font-size: 12px;">Cod. 16</span>
+            </div>
+            <p class="" style="font-size: .9rem; font-weight: 400;">Torres da Brava Sirena <span class=""
+                style="font-size: 10px; margin-inline: 2px;">●</span> Apartamento Rua Luci Canziani - Praia Brava,
+              Itajaí</p>
+
+
+            <div class="property-icons d-flex justify-content-between">
+              <span class="fw-bold text-light">145m²</span>
+              <span class="fw-bold text-light"> 3 Quartos </span>
+              <span class="fw-bold text-light"> 1 Suíte</span>
+              <span class="fw-bold text-light"> 2 Vagas</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- imv3 -->
+        <div class="col-md-4 text-white property-card-container">
+          <div class="card property-card">
+            <div class="property-img-wrapper">
+              <span class="badge bg-orange position-absolute top-0 start-0 m-3 z-3">MOBILIADO</span>
+              <img
+                src="https://images.unsplash.com/photo-1560448205-17d3a46c84de?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Imóvel" />
+            </div>
+          </div>
+          <div class="">
+            <div class="d-flex justify-content-between mt-3">
+              <h4 class="" style="font-size: 1.2rem; font-weight: 900;">R$ 2.400.000</h4> <span
+                style="font-size: 12px;">Cod. 16</span>
+            </div>
+            <p class="" style="font-size: .9rem; font-weight: 400;">Torres da Brava Sirena <span class=""
+                style="font-size: 10px; margin-inline: 2px;">●</span> Apartamento Rua Luci Canziani - Praia Brava,
+              Itajaí</p>
+
+
+            <div class="property-icons d-flex justify-content-between">
+              <span class="fw-bold text-light">145m²</span>
+              <span class="fw-bold text-light"> 3 Quartos </span>
+              <span class="fw-bold text-light"> 1 Suíte</span>
+              <span class="fw-bold text-light"> 2 Vagas</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class=" bg-light" style="height: 606px; padding: 64px 0px;" id="supremo">
+    <div class="container max__width-1200" style="padding-inline: 50px;">
+
+      <div class="card-supremoCRM position-relative d-flex justify-content-between">
+        <div class="d-flex flex-column " style="height: 412px; padding: 0px 48px;">
+          <h3 class="text-orange m-0" style="font-size: 1rem; font-weight: 400;">Sobre Nós</h3>
+          <h2 class="fw-bold" style="font-size: min(max(1.8rem, 4vw), 2.8rem);">Supremo CRM</h2>
+          <p class="mx-0 mb-3 mt-0" style="font-size: 16px; width: 592px; height: 270px;">
+            Nossa Missão é encontrar a melhor solução para os clientes no mercado imobiliário, proporcionando retorno
+            financeiro e satisfação com o investimento realizado.
+            <br>
+            <br>
+            Localizada na belíssima Praia Brava, em Itajaí/SC, a Adamante Negócios é uma imobiliária focada nas pessoas,
+            em seus desejos e em maximizar o retorno para seus investimentos. Proporciona consultoria personalizada e
+            abre caminhos para a realização de negócios imobiliários surpreendentes. Conhecimento do mercado, segurança,
+            confiança e transparência, estão sempre presentes na busca pela excelência na realização de cada negócio.
+            Venha nos conhecer e entender como podemos fazer a diferença na sua aquisição imobiliária no litoral
+            catarinense.
+          </p>
+          <a href="#" class="text-black text-decoration-none d-flex align-items-center mt-4  gap-2"> <span
+              style="font-weight: 400;">Ver mais</span>
+
+            <button class=" btn btn-outline-dark btn-hover-grey d-flex align-items-center"
+              style="width: 40px; height: 30px; border: 0.1rem solid #808080 !important;"> <svg width="22" height="12"
+                viewBox="0 0 22 12" fill="#808080 " xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M22 5.65811C21.631 6.04511 21.269 6.43811 20.892 6.81711C19.595 8.12011 18.291 9.41811 16.993 10.7191C16.749 10.9641 16.474 11.1971 16.16 10.8851C15.838 10.5671 16.04 10.2781 16.308 10.0131C17.614 8.72311 18.912 7.42711 20.186 6.01211C20.002 6.01211 19.82 6.01211 19.637 6.01211C13.405 6.01211 7.171 6.01211 0.938 6.01311C0.577 6.01311 0.215 6.03411 0 5.65811C0 5.55911 0 5.46211 0 5.36411C0.193 5.03311 0.512 5.01611 0.846 5.01611C3.289 5.01911 5.733 5.01811 8.176 5.01811C12.005 5.01811 15.833 5.01811 19.662 5.01811C19.837 5.01811 20.012 5.01811 20.288 5.01811C20.116 4.83311 20.016 4.71811 19.907 4.61011C18.711 3.41011 17.51 2.21511 16.32 1.00711C16.182 0.867113 16.049 0.669114 16.025 0.483114C15.977 0.113114 16.346 -0.111886 16.682 0.0571137C16.794 0.114114 16.893 0.207114 16.985 0.298114C18.553 1.86211 20.121 3.42911 21.685 4.99711C21.798 5.11111 21.895 5.24111 21.999 5.36311C22 5.46211 22 5.56011 22 5.65811Z"
+                  fill="#808080 " stroke="#808080" stroke-width="1"></path>
+              </svg></button></a>
+        </div>
+        <div class="position-absolute img-supremoCRM  translate-middle-y me-5">
+          <img src="https://www.adamantenegocios.com.br/assets/site/img/adamante.png" alt="Supremo CRM"
+            style="width: 340px; height:512px ; border-radius: 20px;" />
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1000&auto=format&fit=crop' -->
+  <section class="py-5">
+    <div class="container max__width-1200 justify-content-center" style="padding-inline: 50px;">
       <div class="row gx-4">
         <div class="col-md-6">
-          <div
-            class="cta-box"
-            style="
+          <div class="cta-box" style="
               background-image: url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1000&auto=format&fit=crop');
-            "
-          >
+            ">
             <div class="cta-overlay"></div>
             <div class="cta-content text-start w-100 px-5 h-100 d-flex flex-column justify-content-between">
-           <div>
+              <div>
 
-               <span class="text-orange" style="font-size: 12.8px;">Anuncie</span>
-              <h3 class="fw-bold mb-3" style="font-size: 35.2px;">Seu Imóvel</h3>
-           </div>
-    
-           
-            <a href="#" class="text-light  text-decoration-none d-flex gap-2" 
-              style=""> <span style="font-weight: 400;">Anunciar</span>
-                <button class=" btn btn-outline-light btn-hover-grey d-flex align-items-center" style="width: 40px; height: 30px; line-height: 1;"> 
-                  <svg width="22" height="12" viewBox="0 0 22 12" fill="#808080 " xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M22 5.65811C21.631 6.04511 21.269 6.43811 20.892 6.81711C19.595 8.12011 18.291 9.41811 16.993 10.7191C16.749 10.9641 16.474 11.1971 16.16 10.8851C15.838 10.5671 16.04 10.2781 16.308 10.0131C17.614 8.72311 18.912 7.42711 20.186 6.01211C20.002 6.01211 19.82 6.01211 19.637 6.01211C13.405 6.01211 7.171 6.01211 0.938 6.01311C0.577 6.01311 0.215 6.03411 0 5.65811C0 5.55911 0 5.46211 0 5.36411C0.193 5.03311 0.512 5.01611 0.846 5.01611C3.289 5.01911 5.733 5.01811 8.176 5.01811C12.005 5.01811 15.833 5.01811 19.662 5.01811C19.837 5.01811 20.012 5.01811 20.288 5.01811C20.116 4.83311 20.016 4.71811 19.907 4.61011C18.711 3.41011 17.51 2.21511 16.32 1.00711C16.182 0.867113 16.049 0.669114 16.025 0.483114C15.977 0.113114 16.346 -0.111886 16.682 0.0571137C16.794 0.114114 16.893 0.207114 16.985 0.298114C18.553 1.86211 20.121 3.42911 21.685 4.99711C21.798 5.11111 21.895 5.24111 21.999 5.36311C22 5.46211 22 5.56011 22 5.65811Z" fill="#fff "  stroke="#fff" stroke-width="1px"></path></svg>
+                <span class="text-orange" style="font-size: 12.8px;">Anuncie</span>
+                <h3 class="fw-bold mb-3" style="font-size: 35.2px;">Seu Imóvel</h3>
+              </div>
+
+
+              <a href="#" class="text-light  text-decoration-none d-flex gap-2" style=""> <span
+                  style="font-weight: 400;">Anunciar</span>
+                <button class=" btn btn-outline-light btn-hover-grey d-flex align-items-center"
+                  style="width: 40px; height: 30px; line-height: 1;">
+                  <svg width="22" height="12" viewBox="0 0 22 12" fill="#808080 " xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M22 5.65811C21.631 6.04511 21.269 6.43811 20.892 6.81711C19.595 8.12011 18.291 9.41811 16.993 10.7191C16.749 10.9641 16.474 11.1971 16.16 10.8851C15.838 10.5671 16.04 10.2781 16.308 10.0131C17.614 8.72311 18.912 7.42711 20.186 6.01211C20.002 6.01211 19.82 6.01211 19.637 6.01211C13.405 6.01211 7.171 6.01211 0.938 6.01311C0.577 6.01311 0.215 6.03411 0 5.65811C0 5.55911 0 5.46211 0 5.36411C0.193 5.03311 0.512 5.01611 0.846 5.01611C3.289 5.01911 5.733 5.01811 8.176 5.01811C12.005 5.01811 15.833 5.01811 19.662 5.01811C19.837 5.01811 20.012 5.01811 20.288 5.01811C20.116 4.83311 20.016 4.71811 19.907 4.61011C18.711 3.41011 17.51 2.21511 16.32 1.00711C16.182 0.867113 16.049 0.669114 16.025 0.483114C15.977 0.113114 16.346 -0.111886 16.682 0.0571137C16.794 0.114114 16.893 0.207114 16.985 0.298114C18.553 1.86211 20.121 3.42911 21.685 4.99711C21.798 5.11111 21.895 5.24111 21.999 5.36311C22 5.46211 22 5.56011 22 5.65811Z"
+                      fill="#fff " stroke="#fff" stroke-width="1px"></path>
+                  </svg>
                 </button>
-            </a>
+              </a>
             </div>
           </div>
         </div>
         <div class="col-md-6 d-flex justify-content-end" style=" ">
-          <div
-            class="cta-box"
-            style="
+          <div class="cta-box" style="
               background-image: url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1000&auto=format&fit=crop');
-            "
-          >
+            ">
             <div class="cta-overlay"></div>
-              <div class="cta-overlay"></div>
+            <div class="cta-overlay"></div>
             <div class="cta-content text-start w-100 px-5 h-100 d-flex flex-column justify-content-between">
-           <div>
+              <div>
 
-               <span class="text-orange" style="font-size: 12.8px;">Conheça a nossa</span>
-              <h3 class="fw-bold mb-3" style="font-size: 35.2px;">Equipe</h3>
-           </div>
-    
-           
-         <a href="#" class="text-light  text-decoration-none d-flex gap-2" 
-              style=""> <span style="font-weight: 400;">Acessar</span>
-                <button class=" btn btn-outline-light btn-hover-grey d-flex align-items-center" style="width: 40px; height: 30px; line-height: 1;"> 
-                  <svg width="22" height="12" viewBox="0 0 22 12" fill="#808080 " xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M22 5.65811C21.631 6.04511 21.269 6.43811 20.892 6.81711C19.595 8.12011 18.291 9.41811 16.993 10.7191C16.749 10.9641 16.474 11.1971 16.16 10.8851C15.838 10.5671 16.04 10.2781 16.308 10.0131C17.614 8.72311 18.912 7.42711 20.186 6.01211C20.002 6.01211 19.82 6.01211 19.637 6.01211C13.405 6.01211 7.171 6.01211 0.938 6.01311C0.577 6.01311 0.215 6.03411 0 5.65811C0 5.55911 0 5.46211 0 5.36411C0.193 5.03311 0.512 5.01611 0.846 5.01611C3.289 5.01911 5.733 5.01811 8.176 5.01811C12.005 5.01811 15.833 5.01811 19.662 5.01811C19.837 5.01811 20.012 5.01811 20.288 5.01811C20.116 4.83311 20.016 4.71811 19.907 4.61011C18.711 3.41011 17.51 2.21511 16.32 1.00711C16.182 0.867113 16.049 0.669114 16.025 0.483114C15.977 0.113114 16.346 -0.111886 16.682 0.0571137C16.794 0.114114 16.893 0.207114 16.985 0.298114C18.553 1.86211 20.121 3.42911 21.685 4.99711C21.798 5.11111 21.895 5.24111 21.999 5.36311C22 5.46211 22 5.56011 22 5.65811Z" fill="#fff "  stroke="#fff" stroke-width="1px"></path></svg>
+                <span class="text-orange" style="font-size: 12.8px;">Conheça a nossa</span>
+                <h3 class="fw-bold mb-3" style="font-size: 35.2px;">Equipe</h3>
+              </div>
+
+
+              <a href="#" class="text-light  text-decoration-none d-flex gap-2" style=""> <span
+                  style="font-weight: 400;">Acessar</span>
+                <button class=" btn btn-outline-light btn-hover-grey d-flex align-items-center"
+                  style="width: 40px; height: 30px; line-height: 1;">
+                  <svg width="22" height="12" viewBox="0 0 22 12" fill="#808080 " xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M22 5.65811C21.631 6.04511 21.269 6.43811 20.892 6.81711C19.595 8.12011 18.291 9.41811 16.993 10.7191C16.749 10.9641 16.474 11.1971 16.16 10.8851C15.838 10.5671 16.04 10.2781 16.308 10.0131C17.614 8.72311 18.912 7.42711 20.186 6.01211C20.002 6.01211 19.82 6.01211 19.637 6.01211C13.405 6.01211 7.171 6.01211 0.938 6.01311C0.577 6.01311 0.215 6.03411 0 5.65811C0 5.55911 0 5.46211 0 5.36411C0.193 5.03311 0.512 5.01611 0.846 5.01611C3.289 5.01911 5.733 5.01811 8.176 5.01811C12.005 5.01811 15.833 5.01811 19.662 5.01811C19.837 5.01811 20.012 5.01811 20.288 5.01811C20.116 4.83311 20.016 4.71811 19.907 4.61011C18.711 3.41011 17.51 2.21511 16.32 1.00711C16.182 0.867113 16.049 0.669114 16.025 0.483114C15.977 0.113114 16.346 -0.111886 16.682 0.0571137C16.794 0.114114 16.893 0.207114 16.985 0.298114C18.553 1.86211 20.121 3.42911 21.685 4.99711C21.798 5.11111 21.895 5.24111 21.999 5.36311C22 5.46211 22 5.56011 22 5.65811Z"
+                      fill="#fff " stroke="#fff" stroke-width="1px"></path>
+                  </svg>
                 </button>
-            </a>
+              </a>
             </div>
           </div>
         </div>
-          </div>
-        </div>
-      </div>
-      </div>
-     
-    </section>
-
-
-
-<footer class="bg-dark-navy pt-5 pb-2 text-white">
-      <div class="container p4-5">
-        <div class="row g-4">
-          <div class="col-lg-4 col-md-6">
-            <h4 class="fw-bold mb-4">
-              <i class="fa-solid fa-house text-orange me-2"></i>SUPREMO
-            </h4>
-          
-          
-          </div>
-
-            <div class="social-icons mt-4 col-lg-4 col-md-6 text-center">
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
-              <a href="#"><i class="fa-brands fa-facebook"></i></a>
-              <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-              <a href="#"><i class="fa-brands fa-youtube"></i></a>
-            </div>
-
-         
-
-          <div class="col-lg-4 col-md-6 text-end">
-            <h5 class="fw-medium mb-4" style="font-size: 18px;"> <i class="fa-brands fa-whatsapp me-2"></i>(47) 98765-9999</h5>
-          </div>
-        </div>
-        <hr>
-        <div class="d-flex gap-5 justify-content-between">
-          
-        <div>
-           <h5 class="fw-bold mb-3 text-white-50">Navegação</h5>
-        <ul class="list-unstyled fw-semibold" style="font-size: 12px; ">
-          <li><a href="#" class="text-white">Página Inicial</a></li>
-          <li><a href="#" class="text-white">Buscar Imóveis</a></li>
-          <li><a href="#" class="text-white">Empreendimentos</a></li>
-          <li><a href="#" class="text-white">Anuncie seu Imóvel</a></li>
-          <li><a href="#" class="text-white">Sobre Nós</a></li>
-          <li><a href="#" class="text-white">Entre em Contato</a></li>
-          <li><a href="#" class="text-white">Política de Privacidade</a></li>
-        </ul>
-        </div>
-
-      <div class="">
-        <h5 class="fw-bold mb-3  text-white-50">Mais Buscados</h5>
-        <ul class="list-unstyled row g-0 fw-semibold" style="font-size: 12px;">
-          <div class="col-6">
-            <li><a href="#" class="text-white">3 quartos na Praia Brava</a></li>
-            <li><a href="#" class="text-white">Imóveis até 5 milhões</a></li>
-            <li><a href="#" class="text-white">Apartamento em Balneário Camboriú</a></li>
-            <li><a href="#" class="text-white">Cobertura Balneário Camboriú</a></li>
-            <li><a href="#" class="text-white">Cobertura Navegantes</a></li>
-            <li><a href="#" class="text-white">2 quartos em Camboriú</a></li>
-            <li><a href="#" class="text-white">Apartamentos no bairro Fazenda</a></li>
-          </div>
-          <div class="col-6  fw-semibold">
-            <li><a href="#" class="text-white">Apartamento em Camboriú</a></li>
-            <li><a href="#" class="text-white">Apartamento 3 vagas</a></li>
-            <li><a href="#" class="text-white">Com 100m² ou mais</a></li>
-            <li><a href="#" class="text-white">Apartamentos Frente Mar</a></li>
-            <li><a href="#" class="text-white">Mobiliados em Navegantes</a></li>
-            <li><a href="#" class="text-white">Navegantes 3 quartos</a></li>
-            <li><a href="#" class="text-white">Mobiliados na Praia Brava</a></li>
-          </div>
-        </ul>
-      </div>
-
-      <div class="">
-        <h5 class="fw-bold mb-3  text-white-50 ">Endereço</h5>
-        <ul class="list-unstyled fw-semibold" style="font-size: 12px;">
-          <li><p class="mb-0">Riviera Business & Mall</p></li>
-          <li><p class="mb-0">Av. Francisco Reis, 281 - Sala 12 - Térreo</p></li>
-          <li><p class="mb-0">Meia Praia, Itapema - SC</p></li>
-          <li><p class="mb-0">CEP: 88000-000</p></li>
-          <li class="mt-2"><p class="mb-0">CRECI/SC 12345-J</p></li>
-        </ul>
       </div>
     </div>
+    </div>
+    </div>
+
+  </section>
+
+
+
+  <footer class="bg-dark-navy pt-5 pb-2 text-white">
+    <div class="container p4-5 max__width-1200 " style="padding-inline: 50px;">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div style="display: flex; flex-direction: column; width: 170px; height: 27px;">
+            <img src="./logoSupremoTransparente.png" alt="Logo Supremo">
+          </div>
+
 
         </div>
-        
-      </div>
-      
-      <div class="border-top border-secondary pt-3">
-        <div class="container text-center">
-          <p class="small text-white-50 mb-0">
-            &copy; 2025 Supremo Imóveis. Todos os direitos reservados.
-          </p>
+
+        <div class="social-icons mt-4 col-lg-4 col-md-6 text-center">
+          <a href="#">
+            <svg width="30" height="30" viewBox="0 0 87 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M0.00805831 43.5904C0.00805831 35.7174 -0.0129368 27.8444 0.0130632 19.9724C0.0480632 9.36144 7.54305 0.687438 18.0441 0.413438C34.7551 -0.0215622 51.4941 -0.0335589 68.2051 0.393441C78.7261 0.662441 86.4181 9.18844 86.5081 19.7614C86.6431 35.7234 86.6391 51.6904 86.4941 67.6534C86.3911 79.0104 77.7871 87.4964 66.4581 87.5614C50.9321 87.6504 35.4041 87.6624 19.8781 87.5634C8.53605 87.4924 0.0460643 78.8344 0.0110643 67.5364C-0.0119357 59.5554 0.00805831 51.5734 0.00805831 43.5904ZM81.4691 43.8334C81.4691 36.1814 81.1961 28.5174 81.5361 20.8804C81.9961 10.5054 73.2811 4.73444 65.5501 4.88844C51.0171 5.17944 36.4631 5.31244 21.9401 4.84944C12.6211 4.55244 4.54605 10.7094 4.81105 21.7904C5.16805 36.7574 4.90005 51.7404 4.89505 66.7154C4.89205 76.4554 10.8561 82.5234 20.5461 82.5324C35.8501 82.5474 51.1531 82.5284 66.4571 82.4964C75.2011 82.4774 81.3291 76.5094 81.4391 67.7704C81.5391 59.7944 81.4601 51.8134 81.4691 43.8334Z"
+                fill="white"></path>
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M63.052 43.9573C63.051 46.6903 63.128 49.4273 63.034 52.1573C62.826 58.2203 58.443 63.1513 52.45 63.4983C46.568 63.8383 40.641 63.8893 34.758 63.5983C28.147 63.2703 23.755 58.9043 23.434 52.2923C23.143 46.3033 23.139 40.2593 23.611 34.2863C24.102 28.0783 28.867 24.0773 35.101 23.9783C40.567 23.8923 46.037 23.8773 51.501 23.9773C57.91 24.0943 62.805 28.9873 63.036 35.4313C63.139 38.2693 63.054 41.1153 63.052 43.9573ZM59.133 43.8953C59.133 41.3853 59.162 38.8743 59.127 36.3653C59.055 31.1313 56.031 27.9823 50.864 27.8983C45.737 27.8153 40.606 27.8163 35.478 27.8823C30.833 27.9413 27.526 30.8243 27.311 35.4823C27.055 41.0343 27.109 46.6143 27.334 52.1703C27.489 56.0063 30.152 59.2363 33.657 59.4253C39.954 59.7633 46.295 59.8233 52.589 59.4683C56.536 59.2453 59.052 55.8053 59.128 51.7533C59.176 49.1343 59.137 46.5143 59.133 43.8953Z"
+                fill="white"></path>
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M33.4791 43.9475C33.5061 38.4815 37.8241 34.1695 43.2321 34.2105C48.9131 34.2535 53.1761 38.5305 53.1401 44.1525C53.1041 49.8405 48.6131 54.0275 42.6851 53.8985C37.6061 53.7885 33.4531 49.2995 33.4791 43.9475ZM49.3171 44.0965C49.3571 40.5925 46.5841 37.7425 43.1971 37.8075C40.0201 37.8685 37.2291 40.7325 37.1691 43.9965C37.1071 47.3435 40.0651 50.3195 43.3951 50.2625C46.6121 50.2075 49.2781 47.4315 49.3171 44.0965Z"
+                fill="white"></path>
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M53.49 30.1404C54.735 31.7134 56.007 32.6454 55.885 33.3284C55.715 34.2774 54.608 35.5104 53.695 35.7194C53.062 35.8644 51.469 34.5344 51.412 33.7814C51.343 32.8634 52.437 31.8594 53.49 30.1404Z"
+                fill="white"></path>
+            </svg>
+          </a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+
+
+
+        <div class="col-lg-4 col-md-6 text-end">
+          <h5 class="fw-medium mb-4" style="font-size: 18px;"> <i class="fa-brands fa-whatsapp me-2"></i>(47) 98765-9999
+          </h5>
         </div>
       </div>
-    </footer>
+      <hr>
+      <div class="d-flex gap-5 justify-content-between">
+
+        <div>
+          <h5 class="fw-bold mb-3 text-white-50">Navegação</h5>
+          <ul class="list-unstyled fw-semibold" style="font-size: 12px; ">
+            <li><a href="#" class="text-white">Página Inicial</a></li>
+            <li><a href="#" class="text-white">Buscar Imóveis</a></li>
+            <li><a href="#" class="text-white">Empreendimentos</a></li>
+            <li><a href="#" class="text-white">Anuncie seu Imóvel</a></li>
+            <li><a href="#" class="text-white">Sobre Nós</a></li>
+            <li><a href="#" class="text-white">Entre em Contato</a></li>
+            <li><a href="#" class="text-white">Política de Privacidade</a></li>
+          </ul>
+        </div>
+
+        <div class="">
+          <h5 class="fw-bold mb-3  text-white-50">Mais Buscados</h5>
+          <ul class="list-unstyled row g-0 fw-semibold" style="font-size: 12px;">
+            <div class="col-6">
+              <li><a href="#" class="text-white">3 quartos na Praia Brava</a></li>
+              <li><a href="#" class="text-white">Imóveis até 5 milhões</a></li>
+              <li><a href="#" class="text-white">Apartamento em Balneário Camboriú</a></li>
+              <li><a href="#" class="text-white">Cobertura Balneário Camboriú</a></li>
+              <li><a href="#" class="text-white">Cobertura Navegantes</a></li>
+              <li><a href="#" class="text-white">2 quartos em Camboriú</a></li>
+              <li><a href="#" class="text-white">Apartamentos no bairro Fazenda</a></li>
+            </div>
+            <div class="col-6  fw-semibold">
+              <li><a href="#" class="text-white">Apartamento em Camboriú</a></li>
+              <li><a href="#" class="text-white">Apartamento 3 vagas</a></li>
+              <li><a href="#" class="text-white">Com 100m² ou mais</a></li>
+              <li><a href="#" class="text-white">Apartamentos Frente Mar</a></li>
+              <li><a href="#" class="text-white">Mobiliados em Navegantes</a></li>
+              <li><a href="#" class="text-white">Navegantes 3 quartos</a></li>
+              <li><a href="#" class="text-white">Mobiliados na Praia Brava</a></li>
+            </div>
+          </ul>
+        </div>
+
+        <div class="">
+          <h5 class="fw-bold mb-3  text-white-50 ">Endereço</h5>
+          <ul class="list-unstyled fw-semibold" style="font-size: 12px;">
+            <li>
+              <p class="mb-0">Riviera Business & Mall</p>
+            </li>
+            <li>
+              <p class="mb-0">Av. Francisco Reis, 281 - Sala 12 - Térreo</p>
+            </li>
+            <li>
+              <p class="mb-0">Meia Praia, Itapema - SC</p>
+            </li>
+            <li>
+              <p class="mb-0">CEP: 88000-000</p>
+            </li>
+            <li class="mt-2">
+              <p class="mb-0">CRECI/SC 12345-J</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    </div>
+
+    <div class="border-top border-secondary pt-3">
+      <div class="container text-center">
+        <p class="small text-white-50 mb-0">
+          &copy; 2025 Supremo Imóveis. Todos os direitos reservados.
+        </p>
+      </div>
+    </div>
+  </footer>
 
 
-  
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
