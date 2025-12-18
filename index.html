@@ -31,6 +31,18 @@
         --text-gray: #666;
         --light-bg: #f8f9fa;
       }
+      .h2-imoveis{
+        font-size: min(max(1.5rem, 4vw), 2.5rem);
+        font-weight: 400;
+        margin: 0px 0px 8px;
+
+      }
+      .subtitle-imoveis{
+        font-size: 1.2rem;
+        font-weight: 400;
+        margin: 0;
+   
+      }
       .btn-noHover:hover{
         background-color: transparent !important;
       }
@@ -240,21 +252,52 @@
         background-size: 16px 12px;
       }
       /* 2. Cards de Categorias */
+      .category-card-container{
+        width: 381.33px;
+        height: 470.09px;
+        margin: 48px 0px 0px;
+        padding: 0px 32px;
+      }
+      .ver-todos-imv{
+        padding-left: 20px;
+        font-size: 14px;
+        font-weight: 600;
+      }
+      .seta-before{
+        position: relative;
+        padding-left: 20px;
+        font-weight: 600;
+        font-size: 14.4px;
+      }
+      .seta-before::before
+      {
+            content: '';
+            background-image: url('data:image/svg+xml;utf8,<svg width="7" height="8" viewBox="0 0 7 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M6.445 4.00865C6.183 4.28265 5.926 4.56165 5.66 4.82965C4.741 5.75265 3.817 6.67265 2.897 7.59465C2.724 7.76865 2.529 7.93365 2.307 7.71265C2.078 7.48665 2.222 7.28165 2.412 7.09465C3.337 6.18065 4.258 5.26265 5.16 4.25965C5.029 4.25965 4.9 4.25965 4.77 4.25965C0.354001 4.25965 5.081 4.25965 0.665 4.26065C0.409 4.26065 0.152 4.27565 0 4.00865C0 3.93965 0 3.86965 0 3.80065C0.138 3.56665 0.363 3.55465 0.599 3.55465C2.33 3.55665 4.062 3.55565 5.794 3.55565C8.506 3.55565 2.076 3.55565 4.789 3.55565C4.913 3.55565 5.036 3.55565 5.232 3.55565C5.11 3.42465 5.039 3.34365 4.962 3.26665C4.115 2.41665 3.264 1.56965 2.421 0.714654C2.324 0.615654 2.229 0.474655 2.212 0.342655C2.178 0.0796546 2.44 -0.0793454 2.678 0.0406546C2.758 0.0816546 2.827 0.147655 2.893 0.211655C4.004 1.31965 5.115 2.42965 6.223 3.54065C6.303 3.62165 6.371 3.71365 6.446 3.80065C6.445 3.86965 6.445 3.93965 6.445 4.00865Z" fill="%230A203C"/></svg>');
+            width: 12px;
+            height: 13px;
+            position: absolute;
+            left: 0;
+            background-repeat: no-repeat;
+            top: 50%;
+            transform: translateY(-50%);
+            background-size: 10px;
+        }
       .category-card {
-        height: 350px;
-        border-radius: 8px;
+        height: 285px;
+        width: 317px;
+        border-radius: 13px;
         overflow: hidden;
         position: relative;
         background-size: cover;
         background-position: center;
-        transition: transform 0.3s;
+
         cursor: pointer;
       }
-      .category-card:hover {
-        transform: scale(1.02);
+      .category-overlay:hover{
+         background: linear-gradient(0deg, #2a3e59f1 0%, #2a3e5959 20%);
       }
       .category-overlay {
-        background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+        /* background: linear-gradient(to top, rgba(0, 0, 0, 0.114), transparent); */
         position: absolute;
         bottom: 0;
         left: 0;
@@ -263,7 +306,7 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        padding: 20px;
+        padding: 28px;
       }
       .check-list li {
         font-size: 0.9rem;
@@ -494,24 +537,16 @@
     <section class="py-5 " id="imoveis">
       <div class="container">
         <div class="row mb-4">
-          <div class="col-12 text-center">
-            <h2 class="fw-bold text-navy">Conheça nossos imóveis</h2>
-            <h3 class="text-orange fs-5">O que nossos visitantes mais procuram em nosso site.</h3>
-            <div class="d-flex justify-content-center">
-              <div
-                style="
-                  width: 50px;
-                  height: 3px;
-                  background: var(--primary-orange);
-                "
-              ></div>
-            </div>
+          <div class="col-12 text-center" style="height: 89px;">
+            <h2 class="fw-bold text-navy h2-imoveis">Conheça nossos imóveis</h2>
+            <h3 class="text-orange subtitle-imoveis">O que nossos visitantes mais procuram em nosso site.</h3>
+          
           </div>
         </div>
 
-        <div class="row g-4">
+        <div class="row justify-content-center max__width-1200" style="margin-inline: 3rem;">
           <!-- card 1 -->
-          <div class="col-md-4">
+          <div class="col-md-4 category-card-container">
             <div
               class="category-card"
               style="
@@ -523,13 +558,15 @@
                 
                 <div class="d-flex justify-content-between align-items-center w-100 mt-3"> 
                     
-                    <span class="text-white"> 
-                        <i class="fa-solid fa-location-dot me-2"></i> Santa Catarina 
+                    <span class="text-white d-flex align-items-center gap-3" style="font-size: 13.6px;"> 
+                    <svg width="10" height="15" viewBox="0 0 13 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M6.68604 19.3697C6.58204 19.1767 6.48604 18.9947 6.38804 18.8127C5.46304 17.1137 4.53304 15.4177 3.61504 13.7147C2.99404 12.5647 2.40004 11.4017 1.88704 10.1967C1.57504 9.46668 1.28504 8.72568 1.10404 7.94868C1.03704 7.66268 1.00704 7.36268 1.00204 7.06768C0.996038 6.64068 1.00104 6.21068 1.04804 5.78768C1.11304 5.20368 1.31904 4.65368 1.59004 4.13468C2.36104 2.65768 3.55404 1.68768 5.15204 1.21868C5.67004 1.06668 6.20204 0.983682 6.74004 1.00268C8.35704 1.05768 9.74704 1.63168 10.864 2.82568C11.653 3.66868 12.134 4.66168 12.332 5.79468C12.405 6.21668 12.403 6.64668 12.388 7.07468C12.355 7.97268 12.053 8.80268 11.729 9.62468C11.215 10.9267 10.587 12.1747 9.92704 13.4067C9.02004 15.0977 8.09504 16.7787 7.17904 18.4647C7.03304 18.7357 6.88804 19.0037 6.74304 19.2737C6.72704 19.3017 6.70804 19.3307 6.68604 19.3697ZM2.20404 6.80768C2.20204 7.24868 2.26404 7.66168 2.39104 8.07168C2.65504 8.91568 3.01404 9.72168 3.38904 10.5217C4.28004 12.4237 5.29304 14.2637 6.32604 16.0917C6.42404 16.2667 6.52804 16.4377 6.62804 16.6097C6.66304 16.6727 6.70004 16.6737 6.73904 16.6157C6.78404 16.5457 6.83204 16.4747 6.87504 16.4017C7.80704 14.7737 8.71104 13.1307 9.54104 11.4477C10.038 10.4377 10.509 9.41668 10.892 8.35568C11.219 7.44168 11.269 6.51868 11.014 5.58568C10.414 3.39368 8.24904 2.00168 6.04804 2.32668C5.13504 2.46168 4.33504 2.84168 3.66004 3.46568C2.68804 4.36468 2.21804 5.48768 2.20404 6.80768Z" fill="#fff" stroke="#fff" stroke-width="0.5" stroke-miterlimit="10"></path>
+                      </svg> Santa Catarina 
                     </span>
                     
                     <button 
-                        class="btn btn-outline-light fw-bold" 
-                        style="width: 56px; height: 32px; line-height: 1;" 
+                        class="btn btn-outline-light fw-bold d-flex align-items-center justify-content-center" 
+                        style="width: 40px; height: 23px; line-height: 1; border-width: 1px; font-size: 12px;" 
                     > 
                         <i class="fa-solid fa-arrow-right"></i>
                     </button>
@@ -537,39 +574,30 @@
             </div>
             </div>
              <div class="mt-2">
-                         <ul class="list-unstyled">
+                  <ul class="list-unstyled px-2 mt-4">
                     <li class="mb-2">
-                        <a href="#" class="text-decoration-none text-dark">
-                            <i class="fa-solid fa-chevron-right me-2 text-secondary"></i>
-                            Apartamentos no bairro Fazenda
+                        <a href="#" class="text-decoration-none text-dark seta-before">
+                          Apartamentos com 3 quartos em Itajaí
                         </a>
                     </li>
-                    <li class="mb-2">
-                        <a href="#" class="text-decoration-none text-dark">
-                            <i class="fa-solid fa-chevron-right me-2 text-secondary"></i>
-                            Apartamentos com 3 quartos em Itajaí
+                   <li class="mb-2">
+                        <a href="#" class="text-decoration-none text-dark seta-before">
+                          Apartamentos Mobiliados em Itajaí
                         </a>
                     </li>
-                    <li class="mb-2">
-                        <a href="#" class="text-decoration-none text-dark">
-                            <i class="fa-solid fa-chevron-right me-2 text-secondary"></i>
-                            Lançamentos em Itajaí
+                     <li class="mb-2">
+                        <a href="#" class="text-decoration-none text-dark seta-before">
+                          Apartamentos acima de 100m² em Itajaí
                         </a>
                     </li>
-                    <li class="mb-2">
-                        <a href="#" class="text-decoration-none text-dark">
-                            <i class="fa-solid fa-chevron-right me-2 text-secondary"></i>
-                            Apartamentos acima de 100m² em Itajaí
+                     <li class="mb-2">
+                        <a href="#" class="text-decoration-none text-dark seta-before">
+                          Apartamentos no bairro Fazenda
                         </a>
                     </li>
-                    <li class="mb-2">
-                        <a href="#" class="text-decoration-none text-dark">
-                            <i class="fa-solid fa-chevron-right me-2 text-secondary"></i>
-                            Apartamentos Mobiliados em Itajaí
-                        </a>
-                    </li>
-                    <li class="mt-3">
-                        <a href="#" class="text-decoration-none fw-bold" style="color: #fd7e14;">
+                   
+                    <li class="">
+                        <a href="#" class="text-decoration-none ver-todos-imv" style="color: #f95c02;">
                             Ver todos imóveis
                         </a>
                     </li>
@@ -577,25 +605,27 @@
               </div>
           </div>
           <!-- card2 -->
-          <div class="col-md-4">
+            <div class="col-md-4 category-card-container">
             <div
               class="category-card"
               style="
-                  background-image: url('https://plus.unsplash.com/premium_photo-1694475117121-0c14f8ddf7bb?q=80&w=680&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+                background-image: url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1000&auto=format&fit=crop');
               "
             >
              <div class="category-overlay">
-                <h4 class="text-white fw-bold">Praia Brava</h4>
+                <h4 class="text-white fw-bold">Itajaí</h4>
                 
                 <div class="d-flex justify-content-between align-items-center w-100 mt-3"> 
                     
-                    <span class="text-white"> 
-                        <i class="fa-solid fa-location-dot me-2"></i> Santa Catarina 
+                    <span class="text-white d-flex align-items-center gap-3" style="font-size: 13.6px;"> 
+                    <svg width="10" height="15" viewBox="0 0 13 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M6.68604 19.3697C6.58204 19.1767 6.48604 18.9947 6.38804 18.8127C5.46304 17.1137 4.53304 15.4177 3.61504 13.7147C2.99404 12.5647 2.40004 11.4017 1.88704 10.1967C1.57504 9.46668 1.28504 8.72568 1.10404 7.94868C1.03704 7.66268 1.00704 7.36268 1.00204 7.06768C0.996038 6.64068 1.00104 6.21068 1.04804 5.78768C1.11304 5.20368 1.31904 4.65368 1.59004 4.13468C2.36104 2.65768 3.55404 1.68768 5.15204 1.21868C5.67004 1.06668 6.20204 0.983682 6.74004 1.00268C8.35704 1.05768 9.74704 1.63168 10.864 2.82568C11.653 3.66868 12.134 4.66168 12.332 5.79468C12.405 6.21668 12.403 6.64668 12.388 7.07468C12.355 7.97268 12.053 8.80268 11.729 9.62468C11.215 10.9267 10.587 12.1747 9.92704 13.4067C9.02004 15.0977 8.09504 16.7787 7.17904 18.4647C7.03304 18.7357 6.88804 19.0037 6.74304 19.2737C6.72704 19.3017 6.70804 19.3307 6.68604 19.3697ZM2.20404 6.80768C2.20204 7.24868 2.26404 7.66168 2.39104 8.07168C2.65504 8.91568 3.01404 9.72168 3.38904 10.5217C4.28004 12.4237 5.29304 14.2637 6.32604 16.0917C6.42404 16.2667 6.52804 16.4377 6.62804 16.6097C6.66304 16.6727 6.70004 16.6737 6.73904 16.6157C6.78404 16.5457 6.83204 16.4747 6.87504 16.4017C7.80704 14.7737 8.71104 13.1307 9.54104 11.4477C10.038 10.4377 10.509 9.41668 10.892 8.35568C11.219 7.44168 11.269 6.51868 11.014 5.58568C10.414 3.39368 8.24904 2.00168 6.04804 2.32668C5.13504 2.46168 4.33504 2.84168 3.66004 3.46568C2.68804 4.36468 2.21804 5.48768 2.20404 6.80768Z" fill="#fff" stroke="#fff" stroke-width="0.5" stroke-miterlimit="10"></path>
+                      </svg> Santa Catarina 
                     </span>
                     
                     <button 
-                        class="btn btn-outline-light fw-bold" 
-                        style="width: 56px; height: 32px; line-height: 1;" 
+                        class="btn btn-outline-light fw-bold d-flex align-items-center justify-content-center" 
+                        style="width: 40px; height: 23px; line-height: 1; border-width: 1px; font-size: 12px;" 
                     > 
                         <i class="fa-solid fa-arrow-right"></i>
                     </button>
@@ -603,121 +633,104 @@
             </div>
             </div>
              <div class="mt-2">
-                         <ul class="list-unstyled">
-                    <li class="mb-2">
-                        <a href="#" class="text-decoration-none text-dark">
-                            <i class="fa-solid fa-chevron-right me-2 text-secondary"></i>
-                            Apartamentos no bairro Fazenda
+                  <ul class="list-unstyled px-2 mt-4">
+                    <li class="mb-2 ">
+                        <a href="#" class="text-decoration-none text-dark seta-before">
+                          Apartamentos com 3 quartos em Itajaí
                         </a>
                     </li>
-                    <li class="mb-2">
-                        <a href="#" class="text-decoration-none text-dark">
-                            <i class="fa-solid fa-chevron-right me-2 text-secondary"></i>
-                            Apartamentos com 3 quartos em Itajaí
+                   <li class="mb-2">
+                        <a href="#" class="text-decoration-none text-dark seta-before">
+                          Apartamentos Mobiliados em Itajaí
                         </a>
                     </li>
-                    <li class="mb-2">
-                        <a href="#" class="text-decoration-none text-dark">
-                            <i class="fa-solid fa-chevron-right me-2 text-secondary"></i>
-                            Lançamentos em Itajaí
+                     <li class="mb-2">
+                        <a href="#" class="text-decoration-none text-dark seta-before">
+                          Apartamentos acima de 100m² em Itajaí
                         </a>
                     </li>
-                    <li class="mb-2">
-                        <a href="#" class="text-decoration-none text-dark">
-                            <i class="fa-solid fa-chevron-right me-2 text-secondary"></i>
-                            Apartamentos acima de 100m² em Itajaí
+                     <li class="mb-2">
+                        <a href="#" class="text-decoration-none text-dark seta-before">
+                          Apartamentos no bairro Fazenda
                         </a>
                     </li>
-                    <li class="mb-2">
-                        <a href="#" class="text-decoration-none text-dark">
-                            <i class="fa-solid fa-chevron-right me-2 text-secondary"></i>
-                            Apartamentos Mobiliados em Itajaí
-                        </a>
-                    </li>
-                    <li class="mt-3">
-                        <a href="#" class="text-decoration-none fw-bold" style="color: #fd7e14;">
+                   
+                    <li class="">
+                        <a href="#" class="text-decoration-none ver-todos-imv" style="color: #f95c02;">
                             Ver todos imóveis
                         </a>
                     </li>
                 </ul>
               </div>
-          </div>
+            </div>
           <!-- card3 -->
-           <div class="col-md-4">
+          <div class="col-md-4 category-card-container">
             <div
               class="category-card"
               style="
-                          background-image: url('https://images.unsplash.com/photo-1613977257363-707ba9348227?q=80&w=1000&auto=format&fit=crop');
-
+                background-image: url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1000&auto=format&fit=crop');
               "
             >
              <div class="category-overlay">
-                <h4 class="text-white fw-bold">Balneário Camboriú</h4>
+                <h4 class="text-white fw-bold">Itajaí</h4>
                 
                 <div class="d-flex justify-content-between align-items-center w-100 mt-3"> 
                     
-                    <span class="text-white"> 
-                        <i class="fa-solid fa-location-dot me-2"></i> Santa Catarina 
+                    <span class="text-white d-flex align-items-center gap-3" style="font-size: 13.6px;"> 
+                    <svg width="10" height="15" viewBox="0 0 13 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M6.68604 19.3697C6.58204 19.1767 6.48604 18.9947 6.38804 18.8127C5.46304 17.1137 4.53304 15.4177 3.61504 13.7147C2.99404 12.5647 2.40004 11.4017 1.88704 10.1967C1.57504 9.46668 1.28504 8.72568 1.10404 7.94868C1.03704 7.66268 1.00704 7.36268 1.00204 7.06768C0.996038 6.64068 1.00104 6.21068 1.04804 5.78768C1.11304 5.20368 1.31904 4.65368 1.59004 4.13468C2.36104 2.65768 3.55404 1.68768 5.15204 1.21868C5.67004 1.06668 6.20204 0.983682 6.74004 1.00268C8.35704 1.05768 9.74704 1.63168 10.864 2.82568C11.653 3.66868 12.134 4.66168 12.332 5.79468C12.405 6.21668 12.403 6.64668 12.388 7.07468C12.355 7.97268 12.053 8.80268 11.729 9.62468C11.215 10.9267 10.587 12.1747 9.92704 13.4067C9.02004 15.0977 8.09504 16.7787 7.17904 18.4647C7.03304 18.7357 6.88804 19.0037 6.74304 19.2737C6.72704 19.3017 6.70804 19.3307 6.68604 19.3697ZM2.20404 6.80768C2.20204 7.24868 2.26404 7.66168 2.39104 8.07168C2.65504 8.91568 3.01404 9.72168 3.38904 10.5217C4.28004 12.4237 5.29304 14.2637 6.32604 16.0917C6.42404 16.2667 6.52804 16.4377 6.62804 16.6097C6.66304 16.6727 6.70004 16.6737 6.73904 16.6157C6.78404 16.5457 6.83204 16.4747 6.87504 16.4017C7.80704 14.7737 8.71104 13.1307 9.54104 11.4477C10.038 10.4377 10.509 9.41668 10.892 8.35568C11.219 7.44168 11.269 6.51868 11.014 5.58568C10.414 3.39368 8.24904 2.00168 6.04804 2.32668C5.13504 2.46168 4.33504 2.84168 3.66004 3.46568C2.68804 4.36468 2.21804 5.48768 2.20404 6.80768Z" fill="#fff" stroke="#fff" stroke-width="0.5" stroke-miterlimit="10"></path>
+                      </svg> Santa Catarina 
                     </span>
                     
                     <button 
-                        class="btn btn-outline-light fw-bold" 
-                        style="width: 56px; height: 32px; line-height: 1;" 
+                        class="btn btn-outline-light fw-bold d-flex align-items-center justify-content-center" 
+                        style="width: 40px; height: 23px; line-height: 1; border-width: 1px; font-size: 12px;" 
                     > 
                         <i class="fa-solid fa-arrow-right"></i>
                     </button>
                 </div>
             </div>
             </div>
-              <div class="mt-2">
-                         <ul class="list-unstyled">
+             <div class="mt-2">
+                  <ul class="list-unstyled px-2 mt-4">
                     <li class="mb-2">
-                        <a href="#" class="text-decoration-none text-dark">
-                            <i class="fa-solid fa-chevron-right me-2 text-secondary"></i>
-                            Apartamentos no bairro Fazenda
+                        <a href="#" class="text-decoration-none text-dark seta-before">
+                          Apartamentos com 3 quartos em Itajaí
                         </a>
                     </li>
-                    <li class="mb-2">
-                        <a href="#" class="text-decoration-none text-dark">
-                            <i class="fa-solid fa-chevron-right me-2 text-secondary"></i>
-                            Apartamentos com 3 quartos em Itajaí
+                   <li class="mb-2">
+                        <a href="#" class="text-decoration-none text-dark seta-before">
+                          Apartamentos Mobiliados em Itajaí
                         </a>
                     </li>
-                    <li class="mb-2">
-                        <a href="#" class="text-decoration-none text-dark">
-                            <i class="fa-solid fa-chevron-right me-2 text-secondary"></i>
-                            Lançamentos em Itajaí
+                     <li class="mb-2">
+                        <a href="#" class="text-decoration-none text-dark seta-before">
+                          Apartamentos acima de 100m² em Itajaí
                         </a>
                     </li>
-                    <li class="mb-2">
-                        <a href="#" class="text-decoration-none text-dark">
-                            <i class="fa-solid fa-chevron-right me-2 text-secondary"></i>
-                            Apartamentos acima de 100m² em Itajaí
+                     <li class="mb-2">
+                        <a href="#" class="text-decoration-none text-dark seta-before">
+                          Apartamentos no bairro Fazenda
                         </a>
                     </li>
-                    <li class="mb-2">
-                        <a href="#" class="text-decoration-none text-dark">
-                            <i class="fa-solid fa-chevron-right me-2 text-secondary"></i>
-                            Apartamentos Mobiliados em Itajaí
-                        </a>
-                    </li>
-                    <li class="mt-3">
-                        <a href="#" class="text-decoration-none fw-bold" style="color: #fd7e14;">
+                   
+                    <li class="">
+                        <a href="#" class="text-decoration-none ver-todos-imv" style="color: #f95c02;">
                             Ver todos imóveis
                         </a>
                     </li>
                 </ul>
               </div>
           </div>
+          <div class="mx-auto mt-4" style="height: 2px; width: 90%; background-color: #F2F2F2;"></div>
         </div>
-        <hr>
       </div>
     </section>
 
-    <section class="pt-4 pb-5" id="lancamentos">
-      <div class="container">
+    <section class="pt-4 pb-5 max__width-1200 mx-auto" id="lancamentos">
+      <div class="container" style="padding-inline: 5%;">
         <div class="d-flex justify-content-between align-items-center mb-4">
-          <h2 class="fw-bold text-navy mb-0">Destaques</h2>
+          <h2 class="fw-bold text-navy mb-0" >Destaques</h2>
           <a href="#" class="text-dark fw-semibold text-decoration-none linkResize " 
             > <span >Ver mais</span>
      
