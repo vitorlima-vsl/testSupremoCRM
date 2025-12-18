@@ -31,6 +31,12 @@
         --text-gray: #666;
         --light-bg: #f8f9fa;
       }
+      .small-ad{
+        font-size: .8rem;
+      }
+      .manrope-extra-light{
+        font-weight: 200;
+      }
       .card-supremoCRM{
         padding: 20px;
         box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
@@ -93,10 +99,10 @@
       }
       /* 1. Header / Hero Section */
       .hero-section {
-        background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2073&auto=format&fit=crop");
+        /* background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2073&auto=format&fit=crop"); */
+        background-image: url('https://www.adamantenegocios.com.br/fotos/original/fundo.jpg?token=UnU4WkVNa3N0ZWRTdk85SGhXRjVQSFB3cCtpVnNJN01FY1k4cWQ4VXN3dlpMM2JEMkJ2R3d5NG5BVXlMZ2dldzJBeUNUaGxWb0ROeEE3eExlMWxMZlE9PQ==');
         background-size: cover;
-        background-position: center;
-        height: 80vh; /* Altura considerável */
+        height: 100vh; 
         min-height: 600px;
         position: relative;
         display: flex;
@@ -105,7 +111,7 @@
       }
 
       .hero-overlay {
-        position: absolute;
+        /* position: absolute;
         top: 0;
         left: 0;
         right: 0;
@@ -115,23 +121,26 @@
           rgba(11, 28, 46, 0.4),
           rgba(11, 28, 46, 0.7)
         );
-        z-index: 1;
+        
+        z-index: 1; */
       }
 
       .hero-content {
         position: relative;
         z-index: 2;
-        width: 100%;
+        max-width: 900px;
       }
 
       .hero-title {
-        font-weight: 400;
-        font-size: 36px;
+
+      font-size: min(max(1rem, 4vw), 2.3rem);
+      font-weight: 600;
+      text-align: left;
       }
 
       .search-box-container {
         background: rgba(255, 255, 255, 0.95);
-        padding: 25px;
+
         border-radius: 8px;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
         margin-top: 40px;
@@ -329,60 +338,53 @@
         margin-right: 15px;
         color: white;
       }
+      .max__width-1200{
+        max-width: 1200px ;
+      }
     </style>
   </head>
   <body>
-      <nav class="navbar navbar-expand-lg bg-transparent position-absolute w-100 z-3 py-6">
-      <div class="container">
-
-
-        <a href="#"> <i class="fa fa-bars text-white"></i> </a>
+    <nav class="navbar navbar-expand-lg bg-transparent position-absolute w-100 z-3 py-6">
+      <div class="container max__width-1200">
+        <a href="#"> 
+          <svg class="" version="1.1" fill="#FFFFFF" stroke="#FFF" stroke-width="1" id="menu_1_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="15.752px" height="12.002px" viewBox="0 0 15.752 12.002" enable-background="new 0 0 15.752 12.002" xml:space="preserve"><g id="menu"><g><path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M14.858,0H0.894C0.4,0,0,0.395,0,0.882		C0,1.37,0.4,1.764,0.894,1.764h13.965c0.493,0,0.894-0.394,0.894-0.882C15.752,0.395,15.352,0,14.858,0z M10.39,5.074H0.894		C0.4,5.074,0,5.468,0,5.956c0,0.488,0.4,0.882,0.894,0.882h9.496c0.493,0,0.894-0.395,0.894-0.882			C11.283,5.468,10.883,5.074,10.39,5.074z 4.804,10.236h-3.91C0.4,10.236,0,10.632,0,11.119s0.4,0.882,0.894,0.882h3.91			c0.493,0,0.894-0.395,0.894-0.882S5.297,10.236,4.804,10.236z"></path></g></g></svg>
+        </a>
 
         <a class="navbar-brand text-white fw-bold" style="display: flex; " href="#">
-   
-    
            <div style="display: flex; flex-direction: column; line-height: 2rem;"> 
             <img src="./logoSupremoTransparente.png" alt="Logo Supremo">
-       
-          </div>
+           </div>
         </a>
     
         <div>
           <a href="#" class="text-white text-decoration-none" style="font-size: .9rem; font-weight: 600;">(47) 98765-9999</a>
         </div>
-    </nav>
+      </div>
+    </nav> 
     <header class="hero-section position-relative">
-    
-
       <div class="hero-overlay"></div>
       <div class="container hero-content text-center">
         <h1 class="hero-title text-white mb-3 text-start">
-          Imóveis na Praia Brava e <br />Fazenda em Itajaí
+          Imóveis na Praia Brava e <br/> Fazenda em Itajaí
         </h1>
-     
-
-        <div class="row justify-content-center">
+        <div class="row justify-content-center" style="">
           <div class="col-lg-12 mb-5">
             <div
-              class="search-box-container bg-opacity p-4 rounded-3"
-              style="background-color: rgba(24, 25, 41, 0.76)"
+              class="search-box-container bg-opacity rounded-3"
+              style="background-color: #0e2a4b; "
             >
-              <form class="row g-3 align-items-end">
-                <div class="col-md-4 col-lg-2 text-start">
-                  <label class="form-label fw-bold small text-white">
-                    <i class="fa-solid fa-house me-2" style="color: #fd7e14"></i
-                    >Tipos
-                  </label>
-                  <select
-                    class="form-select border-0 text-white-50 custom-white-chevron"
-                    style="background-color: rgba(255, 255, 255, 0)"
-                  >
-                    <option>Comprar</option>
-                    <option>Alugar</option>
-                  </select>
+              <form class="row  align-items-center" style="height: 87px;">
+                <div class="col-md-4 col-lg-2 text-start d-flex" >
+                   <i class="fa-solid fa-house me-2" style="color: #fd7e14"></i>
+                  <div class="d-flex flex-column">
+                    <label class="form-label manrope-extra-light small-ad text-white">
+                     Tipos
+                    </label>
+                    <span class="text-white-50">Selecione</span>
+                  </div>
                 </div>
                 <div class="col-md-4 col-lg-2 text-start">
-                  <label class="form-label fw-bold small text-white">
+                  <label class="form-label manrope-extra-light small-ad text-white">
                     <i
                       class="fa-solid fa-location-dot me-2"
                       style="color: #fd7e14"
@@ -399,7 +401,7 @@
                   </select>
                 </div>
                 <div class="col-md-4 col-lg-2 text-start">
-                  <label class="form-label fw-bold small text-white">
+                  <label class="form-label manrope-extra-light small-ad text-white">
                     <i
                       class="fa-solid fa-map-pin me-2"
                       style="color: #fd7e14"
@@ -416,7 +418,7 @@
                   </select>
                 </div>
                 <div class="col-md-4 col-lg-2 text-start">
-                  <label class="form-label fw-bold small text-white">
+                  <label class="form-label manrope-extra-light small-ad text-white">
                     <i
                       class="fa-solid fa-dollar-sign me-2"
                       style="color: #fd7e14"
@@ -438,7 +440,7 @@
                   </select>
                 </div>
                 <div class="col-md-4 col-lg-2 text-start">
-                  <label class="form-label fw-bold small text-white">
+                  <label class="form-label  manrope-extra-light small-ad text-white">
                     <i
                       class="fa-solid fa-magnifying-glass me-2"
                       style="color: #fd7e14"
@@ -452,20 +454,17 @@
                     placeholder="Ex: #320292"
                   />
                 </div>
-                <div class="col-md-4 col-lg-2 " style="height: 64px;">
-                  <button type="button" class="btn btn-orange w-100 h-100 py-2 px-2">
+                <div class="col-md-4 col-lg-2 " style="height: 100%;">
+                  <button type="button" class="btn btn-orange  w-100 h-100">
                     <i class="fa-solid fa-magnifying-glass me-2 fs-3" ></i>
                   </button>
                 </div>
               </form>
             </div>
-              <div class="text-white w-100 text-end mt-2 " style=" ">
-               <span >Busca Avançada</span>
-     
-                <button class="btn btn-outline-light fw-bold " style="width: 64px; height: 32px; line-height: 1;">  <i class="fa-solid fa-arrow-right"></i
-          > </button>
-              </div>
-
+            <div class="text-white w-100 text-end mt-2 " style="">
+              <span >Busca Avançada</span>
+              <button class="btn btn-outline-light fw-bold " style="width: 64px; height: 32px; line-height: 1;">  <i class="fa-solid fa-arrow-right"></i> </button>
+            </div>
           </div>
         </div>
       </div>
