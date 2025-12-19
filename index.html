@@ -27,13 +27,37 @@
       --dark-navy: #0b1c2e;
       --text-gray: #666;
       --light-bg: #f8f9fa;
+      --nav-links-color: #091F3D;
+    }
+   .nav-item a{
+    padding-block: 7px
+   }
+    .nav-sub-links-container{
+      margin-left: 16px;
+    }
+    .offcanvas-btn-close{
+      background-color: transparent;
+      border: none;
+     color: var(--primary-orange);
+     padding-top: 8px;
     }
     .offcanvas-header-edit{
       padding: 0px 0px;
+      align-items: self-start;
+      
     }
     .offcanvas-edit{
       width: 300px !important;
-      padding: 24px 32px;
+      padding: 16px 32px;
+    }
+    .offcanvas-body-edit{
+      padding: 16px 0px !important;
+
+    }
+    .offcanvas-links a{
+      color: var(--nav-links-color);
+      font-size: 16px;
+      font-weight: 400;
     }
     .fill-svg-black-hov:hover path{
       stroke: #000 !important;
@@ -168,7 +192,7 @@
     body {
       font-family: 'Manrope', sans-serif;
       color: #151515;
-
+      position: relative;
       overflow-x: hidden;
     }
 
@@ -525,10 +549,16 @@
   </style>
 </head>
 
-<body>
+<body >
  
   
-  <nav class="navbar bg-transparent fixed-top" style="top: 40px; padding-inline: 0px;">
+  <nav class="navbar bg-transparent fixed-top" style="top: 40px; padding-inline: 0px;
+    position: absolute;
+    
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    ">
   <div class="container-fluid">
       <nav class="navbar navbar-expand-lg bg-transparent position-absolute w-100 z-3" style="padding-block: 13.8px; padding-inline: 0px;">
         <div class="container max__width-1200" style="padding-inline: 0px;">
@@ -568,18 +598,45 @@
       </nav>
     <div class="offcanvas offcanvas-start offcanvas-edit" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
       <div class="offcanvas-header offcanvas-header-edit">
-        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+          <div id="offcanvasNavbarLabel" style="display: flex; flex-direction: column; line-height: 2rem;">
+              <img style="width: 150px;" src="./logoSupremoPreto.jpg" alt="Logo Supremo">
+            </div>
+        </h5>
+        <button type="button" class="offcanvas-btn-close" data-bs-dismiss="offcanvas" aria-label="Close"><svg width="20" height="20" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium Cozy__Icon Cozy__Icon--medium mui-1u1ct0h" focusable="false" aria-hidden="true" viewBox="0 0 24 24" title="IconButton Icon" fill="none"><path fill="currentColor" fill-rule="evenodd" d="M18.9697 20.5303l-15-15 1.0607-1.0606 15 15-1.0607 1.0606z" clip-rule="evenodd"></path><path fill="currentColor" fill-rule="evenodd" d="M5.0304 20.5303l15-15-1.0607-1.0606-15 15 1.0607 1.0606z" clip-rule="evenodd"></path></svg></button>
       </div>
-      <div class="offcanvas-body">
-        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+      <div class="offcanvas-body offcanvas-body-edit">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 offcanvas-links">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link  " aria-current="page" href="#">Página Inicial</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link " href="#">Buscar Imóveis</a>
+            <div class="nav-sub-links-container" style="">
+              <a class="nav-link " href="#">Imóveis na Praia Brava</a>
+              <a class="nav-link " href="#">Imóveis na Fazenda</a>
+            </div>
           </li>
-          <li class="nav-item dropdown">
+          <li class="nav-item">
+            <a class="nav-link " href="#">Empreendimentos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#">Anuncie seu Imóvel</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#">Sobre Nós</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#">Entre em Contato</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#">Instagram</a>
+          </li>
+          <li class="nav-item mt-4" style="">
+            <a class="nav-link " href="#">Politica de Privacidade</a>
+          </li>
+ 
+          <li class="nav-item dropdown" style="display: none;">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Dropdown
             </a>
@@ -593,10 +650,12 @@
             </ul>
           </li>
         </ul>
-        <form class="d-flex mt-3" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+        <div style="display: none;" > 
+          <form class="d-flex mt-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
       </div>
     </div>
   </div>
