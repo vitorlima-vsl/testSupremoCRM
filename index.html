@@ -35,12 +35,42 @@
       /* filter  */
       .responsive-hero-btn{
         width: 100% !important;
+        padding: 12.8px 16px;
       }
       .responsive-select-span-hero{
         width: 70px !important;
       }
       .responsive-100w{
         width: 100% !important;
+      }
+      .responsive-filters-form{
+        height: 350px !important;
+        padding: 0px;
+      }
+      .hero-filter-label{
+        padding: 0px !important;
+      }
+      .responsive-container-label{
+        padding-right: 13px !important;
+      }
+      .responsive-search-hero{
+        width: 45% !important;
+        height: 40px !important;
+      }
+      .codigo{
+        width: 45% !important;
+        height: 40px !important;
+      }
+      .codigo input{
+        border-left: 0px !important;
+      }
+      .hero-title{
+        margin-inline: 5%;
+        margin-bottom: 0px !important;
+      }
+      .hero-content{
+        height: auto !important;
+        margin-top: 5rem;
       }
       /* filter fim  */
     }
@@ -353,10 +383,10 @@
     }
 
     .hero-title {
-
       font-size: min(max(1rem, 4vw), 2.3rem);
       font-weight: 600;
       text-align: left;
+      max-width: 450px;
     }
 
     .search-box-container {
@@ -770,12 +800,12 @@
     <div class="hero-overlay"></div>
     <div class="container hero-content text-center">
       <h1 class="hero-title text-white mb-3 text-start" style="line-height: 3.175rem;">
-        Imóveis na Praia Brava e <br /> Fazenda em Itajaí
+        Imóveis na Praia Brava e Fazenda em Itajaí
       </h1>
       <div class="row justify-content-center" style="">
         <div class="col-lg-12 mb-5">
           <div class="search-box-container " style="background-color: #0d2b4de3; border-radius: 13px;">
-            <form class="row  align-items-center" style="height: 87px;">
+            <form class="row  align-items-center responsive-filters-form" style="height: 87px;">
               <!-- btn dropdown 1 -->
               <div class="responsive-hero-btn dropdown col-md-4 col-lg-2 text-start d-flex justify-content-center align-items-start"
                 style="width: 138px;">
@@ -788,7 +818,7 @@
                         fill="#F15F22" stroke="#F16024" stroke-miterlimit="10"></path>
                     </svg>
                   </div>
-                  <div class="d-flex flex-column responsive-100w">
+                  <div class="d-flex flex-column responsive-100w responsive-container-label">
                     <label class="form-label small-ad chevron text-white w-100" style="font-weight: 400;">
                       Tipos
                     </label>
@@ -850,7 +880,7 @@
                       </g>
                     </svg>
                   </div>
-                  <div class="d-flex flex-column responsive-100w">
+                  <div class="d-flex flex-column responsive-100w responsive-container-label">
                     <label class="form-label small-ad chevron text-white w-100" style="font-weight: 400;">
                       Cidades
                     </label>
@@ -913,7 +943,7 @@
                       </g>
                     </svg>
                   </div>
-                  <div class="d-flex flex-column responsive-100w">
+                  <div class="d-flex flex-column responsive-100w responsive-container-label">
                     <label class="form-label small-ad chevron text-white w-100" style="font-weight: 400;">
                       Bairros
                     </label>
@@ -969,7 +999,7 @@
                       </g>
                     </svg>
                   </div>
-                  <div class="d-flex flex-column responsive-100w">
+                  <div class="d-flex flex-column responsive-100w responsive-container-label">
                     <label class="form-label small-ad chevron text-white w-100" style="font-weight: 400;">
                       Valor
                     </label>
@@ -991,12 +1021,12 @@
                 </ul>
               </div>
               <!-- final btn 4.1  -->
-
+              
               <div class="col-md-4 col-lg-2 text-start mx-3 d-flex align-items-center codigo"
                 style="height: 100%; width: 122px ;">
                 <input type="text" placeholder="Código" name="codigo" class="">
               </div>
-              <div class="col-md-4 col-lg-2 " style="height: 100%; width: 14px;">
+              <div class="col-md-4 col-lg-2 responsive-search-hero" style="height: 100%; width: 14px;">
                 <button type="button" class="btn btn-orange  h-100" style="width: 145.8px; border-radius: 13px;">
                   <i class="fa-solid fa-magnifying-glass me-2 fs-3"></i>
                 </button>
