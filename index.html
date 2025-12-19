@@ -735,14 +735,15 @@
                     <label class="form-label small-ad chevron text-white w-100" style="font-weight: 400;">
                       Tipos
                     </label>
-                    <span class="select-color">Selecione</span>
+                    <span class="select-color " style="width: 90px; overflow: hidden;
+                      text-overflow: ellipsis; white-space: nowrap;"  id="selected-tipos">Selecione</span>
                   </div>
                 </button>
                 <ul class="dropdown-menu dropdown-menu-edit" style="">
                   <div class="drop-down-items-container" style="width: 129px; ">
-                    <li><a class="dropdown-item" href="#">Apartamentos</a></li>
-                    <li><a class="dropdown-item" style="text-wrap: wrap;" href="#">Apartamentos Garden</a></li>
-                    <li><a class="dropdown-item" href="#">Coberturas</a></li>
+                    <li><a class="dropdown-item tipos-checkbox" href="#">Apartamentos</a></li>
+                    <li><a class="dropdown-item tipos-checkbox" style="text-wrap: wrap;" href="#">Apartamentos Garden</a></li>
+                    <li><a class="dropdown-item tipos-checkbox" href="#">Coberturas</a></li>
                   </div>
                 </ul>
               </div> <!-- fim btn drop 1-->
@@ -1499,6 +1500,41 @@
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    let selectedTipos = document.getElementById('selected-tipos').textContent;
+  
+    // codigo filter select checkbox 
+    document.addEventListener('DOMContentLoaded', function()
+    {
+      const checkboxes = document.querySelectorAll('.tipos-checkbox');
+      checkboxes.forEach(function(checkbox)
+      {
+        checkboxes.preventDefault;
+        checkbox.addEventListener('click', function() {
+          if (selectedTipos.includes('Selecione')){
+            selectedTipos = '';
+          }
+          if(selectedTipos.includes(this.textContent)){
+            selectedTipos = selectedTipos.replace(this.textContent + ', ', '');
+            console.log('removidos:' + selectedTipos);
+            document.getElementById('selected-tipos').textContent = selectedTipos.slice(0, -2);
+            itsEmpty(selectedTipos, 'selected-tipos');
+            return;
+          }
+          selectedTipos += this.textContent + ', ';
+          console.log('selecionados:' + selectedTipos);
+          document.getElementById('selected-tipos').textContent = selectedTipos.slice(0, -2);
+
+        });
+      });
+    }); 
+    function itsEmpty(string, id){
+      if(string.length === 0)
+      {
+        document.getElementById(id).textContent = 'Selecione';
+      }
+    }
+  </script>
 </body>
 
 </html>
