@@ -28,6 +28,13 @@
       --text-gray: #666;
       --light-bg: #f8f9fa;
     }
+    .offcanvas-header-edit{
+      padding: 0px 0px;
+    }
+    .offcanvas-edit{
+      width: 300px !important;
+      padding: 24px 32px;
+    }
     .fill-svg-black-hov:hover path{
       stroke: #000 !important;
     }
@@ -559,8 +566,8 @@
           </div>
         </div>
       </nav>
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-      <div class="offcanvas-header">
+    <div class="offcanvas offcanvas-start offcanvas-edit" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header offcanvas-header-edit">
         <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
