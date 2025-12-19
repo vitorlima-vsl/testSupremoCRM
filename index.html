@@ -21,6 +21,27 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
   <style>
+    
+    @media (max-width: 767px) {
+      .responsive-number {
+        display: none;
+      }
+      .display-none-767{
+        display: none;
+      }
+      .responsive-nav{
+        width: 90% !important;
+       
+      }
+    }
+
+
+
+
+
+
+
+
     :root {
       --primary-orange: #f95c02;
       --primary-orange-hover: #e65c00;
@@ -29,7 +50,7 @@
       --light-bg: #f8f9fa;
       --nav-links-color: #091F3D;
     }
-
+  
     .drop-down-selects select {
       display: block;
       width: 100%;
@@ -611,7 +632,7 @@
 <body>
 
 
-  <nav class="navbar bg-transparent fixed-top" style="top: 40px; padding-inline: 0px;
+  <nav class="navbar bg-transparent fixed-top responsive-nav" style="top: 40px; padding-inline: 0px;
     position: absolute;
     
     right: 0;
@@ -653,7 +674,7 @@
                 d="M7.84892 10.9547C7.84392 9.86774 8.27792 8.97674 9.04792 8.23374C9.24292 8.04474 9.47192 7.94374 9.74992 7.95874C9.99792 7.97074 10.2469 7.95174 10.4899 7.98274C10.5799 7.99474 10.6919 8.09574 10.7319 8.18474C10.9279 8.61174 11.1019 9.04774 11.2839 9.48074C11.4999 9.99074 11.7129 10.5017 11.9339 11.0107C11.9899 11.1387 12.0029 11.2597 11.9209 11.3697C11.6629 11.7177 11.4199 12.0797 11.1309 12.4007C10.7069 12.8707 10.6519 13.1937 10.9779 13.7317C12.1399 15.6477 13.7149 17.0897 15.7979 17.9557C15.9319 18.0107 16.0599 18.0777 16.1949 18.1277C16.5999 18.2787 16.9629 18.2067 17.2459 17.8757C17.6419 17.4127 18.0279 16.9387 18.4049 16.4587C18.5019 16.3357 18.5839 16.3037 18.7219 16.3677C19.4639 16.7167 20.2069 17.0607 20.9499 17.4077C21.1739 17.5127 21.3989 17.6157 21.6169 17.7307C21.6669 17.7567 21.7229 17.8317 21.7229 17.8827C21.7199 18.7877 21.4569 19.5497 20.6369 20.0697C20.0259 20.4577 19.3669 20.6887 18.6659 20.7007C18.1969 20.7077 17.7109 20.5737 17.2539 20.4337C16.1369 20.0907 15.0269 19.7187 14.0079 19.1297C12.5559 18.2877 11.3339 17.1767 10.3049 15.8637C9.68792 15.0767 9.12392 14.2437 8.58292 13.4017C8.20992 12.8227 7.98392 12.1677 7.88692 11.4777C7.86692 11.3047 7.86192 11.1287 7.84892 10.9547Z"
                 fill="white"></path>
             </svg>
-            <a href="#" class="text-white text-decoration-none" style="font-size: .9rem; font-weight: 600;">
+            <a href="#" class="text-white text-decoration-none responsive-number" style="font-size: .9rem; font-weight: 600;">
               (47) 98765-9999</a>
           </div>
         </div>
@@ -988,7 +1009,7 @@
     </div>
   </header>
 
-  <section class="py-5 " id="imoveis">
+  <section class="py-5 display-none-767" id="imoveis">
     <div class="container">
       <div class="row mb-4">
         <div class="col-12 text-center" style="height: 89px;">
@@ -1172,7 +1193,7 @@
     </div>
   </section>
 
-  <section class="pt-2 pb-5 max__width-1200 justify-content-center mx-auto" id="lancamentos">
+  <section class="display-none-767 pt-2 pb-5 max__width-1200 justify-content-center mx-auto" id="lancamentos">
     <div class="container">
       <div class="d-flex justify-content-between align-items-center mb-4  " style="padding-inline: 50px;">
         <h2 class="fw-bold text-navy title-section-destaques">Destaques</h2>
@@ -1275,7 +1296,7 @@
     </div>
   </section>
 
-  <section class="pb-4" style="background-color: #2A3E59; padding-top: 3.5rem;" id="lancamentos">
+  <section class="display-none-767 pb-4" style="background-color: #2A3E59; padding-top: 3.5rem;" id="lancamentos">
     <div class="container max__width-1200">
       <div class="d-flex justify-content-between align-items-center mb-4  " style="padding-inline: 50px;">
         <h2 class="fw-bold text-white title-section-destaques">Exclusivos</h2>
@@ -1385,7 +1406,7 @@
   </section>
 
 
-  <section class=" bg-light" style="height: 606px; padding: 64px 0px;" id="supremo">
+  <section class="display-none-767 bg-light" style="height: 606px; padding: 64px 0px;" id="supremo">
     <div class="container max__width-1200" style="padding-inline: 50px;">
 
       <div class="card-supremoCRM position-relative d-flex justify-content-between">
@@ -1426,7 +1447,7 @@
   </section>
 
   <!-- https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1000&auto=format&fit=crop' -->
-  <section class="py-5">
+  <section class="display-none-767 py-5">
     <div class="container max__width-1200 justify-content-center" style="padding-inline: 50px;">
       <div class="row gx-4">
         <div class="col-md-6">
@@ -1493,7 +1514,7 @@
 
 
 
-  <footer class=" pt-5 pb-2 text-white" style="background-color: #091F3D;">
+  <footer class="display-none-767 pt-5 pb-2 text-white" style="background-color: #091F3D;">
     <div class="container p4-5 max__width-1200 " style="padding-inline: 50px;">
       <div class="row g-4">
         <div class="col-lg-4 col-md-6">
