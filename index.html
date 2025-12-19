@@ -41,6 +41,10 @@
      color: var(--primary-orange);
      padding-top: 8px;
     }
+    .reset-btn{
+      background-color: transparent;
+      border: none;
+    }
     .offcanvas-header-edit{
       padding: 0px 0px;
       align-items: self-start;
@@ -239,7 +243,9 @@
       align-items: center;
       justify-content: center;
     }
-
+    .hero-filter-label label{
+      cursor: pointer;
+    }
     .hero-overlay {
       /* position: absolute;
         top: 0;
@@ -682,12 +688,12 @@
                       fill="#F15F22" stroke="#F16024" stroke-miterlimit="10"></path>
                   </svg>
                 </div>
-                <div class="d-flex flex-column w-100" style="line-height: .8rem;">
+                <button class="reset-btn hero-filter-label text-start d-flex flex-column w-100" style="line-height: .8rem;">
                   <label class="form-label small-ad chevron text-white" style="font-weight: 400;">
                     Tipos
                   </label>
                   <span class="select-color">Selecione</span>
-                </div>
+                </button>
               </div>
               <div class="col-md-4 col-lg-2 text-start d-flex justify-content-center align-items-start"
                 style="width: 146px;">
@@ -705,12 +711,12 @@
                     </g>
                   </svg>
                 </div>
-                <div class="d-flex flex-column w-100" style="line-height: .8rem;">
+                <button class="reset-btn hero-filter-label  text-start d-flex flex-column w-100" style="line-height: .8rem;">
                   <label class="form-label small-ad chevron text-white" style="font-weight: 400;">
                     Cidades
                   </label>
                   <span class="select-color">Selecione</span>
-                </div>
+                </button>
               </div>
               <div class="col-md-4 col-lg-2 text-start d-flex justify-content-center align-items-start"
                 style="width: 138px;">
@@ -728,12 +734,12 @@
                     </g>
                   </svg>
                 </div>
-                <div class="d-flex flex-column w-100" style="line-height: .8rem;">
+                <button class="reset-btn hero-filter-label  text-start d-flex flex-column w-100" style="line-height: .8rem;">
                   <label class="form-label small-ad chevron text-white" style="font-weight: 400;">
                     Bairros
                   </label>
                   <span class="select-color">Selecione</span>
-                </div>
+                </button>
               </div>
               <div class="col-md-4 col-lg-2 text-start d-flex justify-content-center align-items-start"
                 style="width: 138px;">
@@ -744,12 +750,12 @@
                       fill="#F16024"></path>
                   </svg>
                 </div>
-                <div class="d-flex flex-column w-100" style="line-height: .8rem;">
+                <button class="reset-btn hero-filter-label  text-start d-flex flex-column w-100" style="line-height: .8rem;">
                   <label class="form-label small-ad chevron text-white" style="font-weight: 400;">
                     Valor
                   </label>
                   <span class="select-color">Selecione</span>
-                </div>
+                </button>
               </div>
               <div class="col-md-4 col-lg-2 text-start mx-3 d-flex align-items-center codigo"
                 style="height: 100%; width: 122px ;">
