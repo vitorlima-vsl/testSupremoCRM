@@ -30,13 +30,39 @@
       --nav-links-color: #091F3D;
     }
 
+    .drop-down-selects select {
+      display: block;
+      width: 100%;
+      border: none;
+      padding: 0.6rem 0.8rem;
+      background: #eee;
+      margin-bottom: .5rem;
+      border-right: 0.5rem solid #eee;
+      font-size: .8rem;
+      border-radius: 8px;
+      font-weight: 700;
+    }
+
+    .valor-ok-btn {
+      background-color: #091f3d;
+      color: #fff;
+      cursor: pointer;
+      padding: .6rem 1rem;
+      width: 100%;
+      display: block;
+      text-align: center;
+      font-size: .8rem;
+      border-radius: 8px;
+    }
+
     .dropdown-menu-edit {
       font-size: 12.8px;
       color: #3C3A36;
       border-radius: 0px;
       padding: 6.4px;
       padding-left: 20px;
-      transform: translate(12px, 45%) !important;
+      transform: translate(12px, 43.5px) !important;
+      min-width: 154px;
     }
 
     .dropdown-menu-edit a {
@@ -736,19 +762,20 @@
                       Tipos
                     </label>
                     <span class="select-color " style="width: 90px; overflow: hidden;
-                      text-overflow: ellipsis; white-space: nowrap;"  id="selected-tipos">Selecione</span>
+                      text-overflow: ellipsis; white-space: nowrap;" id="selected-tipos">Selecione</span>
                   </div>
                 </button>
                 <ul class="dropdown-menu dropdown-menu-edit" style="">
                   <div class="drop-down-items-container" style="width: 129px; ">
                     <li><a class="dropdown-item tipos-checkbox" href="#">Apartamentos</a></li>
-                    <li><a class="dropdown-item tipos-checkbox" style="text-wrap: wrap;" href="#">Apartamentos Garden</a></li>
+                    <li><a class="dropdown-item tipos-checkbox" style="text-wrap: wrap;" href="#">Apartamentos
+                        Garden</a></li>
                     <li><a class="dropdown-item tipos-checkbox" href="#">Coberturas</a></li>
                   </div>
                 </ul>
               </div> <!-- fim btn drop 1-->
               <!-- btn dropdown 2 -->
-              <div class="col-md-4 col-lg-2 text-start d-flex justify-content-center align-items-start"
+              <!-- <div class="col-md-4 col-lg-2 text-start d-flex justify-content-center align-items-start"
                 style="width: 146px;">
                 <div class="d-flex align-items-start ms-4 me-2 ">
                   <svg width="9" height="14" fill="#F16024" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9.93 14.13">
@@ -771,8 +798,46 @@
                   </label>
                   <span class="select-color">Selecione</span>
                 </button>
-              </div> <!-- fim btn drop 2-->
-              <div class="col-md-4 col-lg-2 text-start d-flex justify-content-center align-items-start"
+              </div> -->
+              <!-- fim btn drop 2-->
+              <div class="dropdown col-md-4 col-lg-2 text-start d-flex  justify-content-center align-items-start"
+                style="width: 138px;">
+                <button class="reset-btn hero-filter-label text-start d-flex w-100" data-bs-toggle="dropdown"
+                  aria-expanded="false" type="button" style="line-height: .8rem;">
+                  <div class="d-flex align-items-start ms-4 me-2 ">
+                    <svg width="9" height="14" fill="#F16024" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 9.93 14.13">
+                      <g id="Camada_2" data-name="Camada 2">
+                        <g id="Layer_1" data-name="Layer 1">
+                          <path class="cls-1"
+                            d="M4.86,14.13a1.88,1.88,0,0,1-.32-.31c-.83-1.19-1.67-2.37-2.48-3.58A14,14,0,0,1,.4,7.06,6.36,6.36,0,0,1,0,4.85,5,5,0,0,1,3.59.2c.3-.08.62-.12.93-.18l.09,0h.72c.27.05.54.08.81.14A5,5,0,0,1,9.89,4.29a6,6,0,0,1-.44,3,15.87,15.87,0,0,1-1.76,3.24c-.78,1.14-1.58,2.27-2.37,3.4a1.16,1.16,0,0,1-.24.2ZM5,13l0-.06c.69-1,1.4-2,2.08-3A13.73,13.73,0,0,0,8.74,6.84a5,5,0,0,0,.33-2.4A4.14,4.14,0,0,0,1,3.82a4.67,4.67,0,0,0,.13,2.79A11.43,11.43,0,0,0,2.48,9.37c.8,1.19,1.63,2.37,2.45,3.55Z">
+                          </path>
+                          <path class="cls-1"
+                            d="M7.45,5A2.49,2.49,0,1,1,5,2.48,2.49,2.49,0,0,1,7.45,5ZM6.62,5A1.66,1.66,0,1,0,5,6.62,1.66,1.66,0,0,0,6.62,5Z">
+                          </path>
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
+                  <div class="d-flex flex-column">
+                    <label class="form-label small-ad chevron text-white w-100" style="font-weight: 400;">
+                      Cidades
+                    </label>
+                    <span class="select-color " style="width: 90px; overflow: hidden;
+                      text-overflow: ellipsis; white-space: nowrap;" id="selected-cidades">Selecione</span>
+                  </div>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-edit" style="">
+                  <div class="drop-down-items-container" style="width: 129px; ">
+                    <li><a class="dropdown-item" style="text-wrap: wrap;" href="#">Aracaju</a></li>
+                    <li><a class="dropdown-item" style="text-wrap: wrap;" href="#">São Cristóvão</a></li>
+                    <li><a class="dropdown-item" style="text-wrap: wrap;" href="#">Nossa Senhora do Socorro</a></li>
+                  </div>
+                </ul>
+              </div>
+              <!-- fim btn drop 2.1-->
+              <!-- inicio do btn 3 -->
+              <!-- <div class="col-md-4 col-lg-2 text-start d-flex justify-content-center align-items-start"
                 style="width: 138px;">
                 <div class="d-flex align-items-start ms-4 me-2 ">
                   <svg width="9" height="14" fill="#F16024" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9.93 14.13">
@@ -795,8 +860,47 @@
                   </label>
                   <span class="select-color">Selecione</span>
                 </button>
+              </div> -->
+              <!-- final do btn 3 -->
+              <!-- inicio btn 3.1 -->
+              <div class="dropdown col-md-4 col-lg-2 text-start d-flex  justify-content-center align-items-start"
+                style="width: 138px;">
+                <button class="reset-btn hero-filter-label text-start d-flex w-100" data-bs-toggle="dropdown"
+                  aria-expanded="false" type="button" style="line-height: .8rem;">
+                  <div class="d-flex align-items-start ms-4 me-2 ">
+                    <svg width="9" height="14" fill="#F16024" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 9.93 14.13">
+                      <g id="Camada_2" data-name="Camada 2">
+                        <g id="Layer_1" data-name="Layer 1">
+                          <path class="cls-1"
+                            d="M4.86,14.13a1.88,1.88,0,0,1-.32-.31c-.83-1.19-1.67-2.37-2.48-3.58A14,14,0,0,1,.4,7.06,6.36,6.36,0,0,1,0,4.85,5,5,0,0,1,3.59.2c.3-.08.62-.12.93-.18l.09,0h.72c.27.05.54.08.81.14A5,5,0,0,1,9.89,4.29a6,6,0,0,1-.44,3,15.87,15.87,0,0,1-1.76,3.24c-.78,1.14-1.58,2.27-2.37,3.4a1.16,1.16,0,0,1-.24.2ZM5,13l0-.06c.69-1,1.4-2,2.08-3A13.73,13.73,0,0,0,8.74,6.84a5,5,0,0,0,.33-2.4A4.14,4.14,0,0,0,1,3.82a4.67,4.67,0,0,0,.13,2.79A11.43,11.43,0,0,0,2.48,9.37c.8,1.19,1.63,2.37,2.45,3.55Z">
+                          </path>
+                          <path class="cls-1"
+                            d="M7.45,5A2.49,2.49,0,1,1,5,2.48,2.49,2.49,0,0,1,7.45,5ZM6.62,5A1.66,1.66,0,1,0,5,6.62,1.66,1.66,0,0,0,6.62,5Z">
+                          </path>
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
+                  <div class="d-flex flex-column">
+                    <label class="form-label small-ad chevron text-white w-100" style="font-weight: 400;">
+                      Bairros
+                    </label>
+                    <span class="select-color " style="width: 90px; overflow: hidden;
+                      text-overflow: ellipsis; white-space: nowrap;" id="selected-bairros">Selecione</span>
+                  </div>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-edit" style="">
+                  <div class="drop-down-items-container" style="width: 129px; ">
+                    <li><a class="dropdown-item" style="text-wrap: wrap;" href="#">Orlando Dantas</a></li>
+                    <li><a class="dropdown-item" style="text-wrap: wrap;" href="#">Eduardo Gomes</a></li>
+                    <li><a class="dropdown-item" style="text-wrap: wrap;" href="#">Tijuquinha</a></li>
+                  </div>
+                </ul>
               </div>
-              <div class="col-md-4 col-lg-2 text-start d-flex justify-content-center align-items-start"
+              <!-- final do btn 3.1 -->
+              <!-- inicio btn 4  -->
+              <!-- <div class="col-md-4 col-lg-2 text-start d-flex justify-content-center align-items-start"
                 style="width: 138px;">
                 <div class="d-flex align-items-start ms-4 me-2 ">
                   <svg width="9" height="14" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -812,7 +916,51 @@
                   </label>
                   <span class="select-color">Selecione</span>
                 </button>
+              </div> -->
+              <!-- final btn 4 -->
+              <!-- inicio btn 4.1  -->
+              <div class="dropdown col-md-4 col-lg-2 text-start d-flex  justify-content-center align-items-start"
+                style="width: 138px;">
+                <button class="reset-btn hero-filter-label text-start d-flex w-100" data-bs-toggle="dropdown"
+                  aria-expanded="false" type="button" style="line-height: .8rem;">
+                  <div class="d-flex align-items-start ms-4 me-2 ">
+                    <svg width="9" height="14" fill="#F16024" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 9.93 14.13">
+                      <g id="Camada_2" data-name="Camada 2">
+                        <g id="Layer_1" data-name="Layer 1">
+                          <path class="cls-1"
+                            d="M4.86,14.13a1.88,1.88,0,0,1-.32-.31c-.83-1.19-1.67-2.37-2.48-3.58A14,14,0,0,1,.4,7.06,6.36,6.36,0,0,1,0,4.85,5,5,0,0,1,3.59.2c.3-.08.62-.12.93-.18l.09,0h.72c.27.05.54.08.81.14A5,5,0,0,1,9.89,4.29a6,6,0,0,1-.44,3,15.87,15.87,0,0,1-1.76,3.24c-.78,1.14-1.58,2.27-2.37,3.4a1.16,1.16,0,0,1-.24.2ZM5,13l0-.06c.69-1,1.4-2,2.08-3A13.73,13.73,0,0,0,8.74,6.84a5,5,0,0,0,.33-2.4A4.14,4.14,0,0,0,1,3.82a4.67,4.67,0,0,0,.13,2.79A11.43,11.43,0,0,0,2.48,9.37c.8,1.19,1.63,2.37,2.45,3.55Z">
+                          </path>
+                          <path class="cls-1"
+                            d="M7.45,5A2.49,2.49,0,1,1,5,2.48,2.49,2.49,0,0,1,7.45,5ZM6.62,5A1.66,1.66,0,1,0,5,6.62,1.66,1.66,0,0,0,6.62,5Z">
+                          </path>
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
+                  <div class="d-flex flex-column">
+                    <label class="form-label small-ad chevron text-white w-100" style="font-weight: 400;">
+                      Valor
+                    </label>
+                    <span class="select-color " style="width: 90px; overflow: hidden;
+                      text-overflow: ellipsis; white-space: nowrap;" id="selected-valor">Selecione</span>
+                  </div>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-edit" style=" padding-inline: 10px; ">
+                  <div class="drop-down-items-container d-flex flex-column  drop-down-selects"
+                    style="width: 100%; ">
+                    <select name="" id="">
+                      <option value="#">Valor De</option>
+                    </select>
+                    <select name="" id="">
+                      <option value="#">Valor Até</option>
+                    </select>
+                    <span class="valor-ok-btn" id="valor-ok">OK</span>
+                  </div>
+                </ul>
               </div>
+              <!-- final btn 4.1  -->
+
               <div class="col-md-4 col-lg-2 text-start mx-3 d-flex align-items-center codigo"
                 style="height: 100%; width: 122px ;">
                 <input type="text" placeholder="Código" name="codigo" class="">
@@ -1502,19 +1650,17 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script>
     let selectedTipos = document.getElementById('selected-tipos').textContent;
-  
+
     // codigo filter select checkbox 
-    document.addEventListener('DOMContentLoaded', function()
-    {
+    document.addEventListener('DOMContentLoaded', function () {
       const checkboxes = document.querySelectorAll('.tipos-checkbox');
-      checkboxes.forEach(function(checkbox)
-      {
+      checkboxes.forEach(function (checkbox) {
         checkboxes.preventDefault;
-        checkbox.addEventListener('click', function() {
-          if (selectedTipos.includes('Selecione')){
+        checkbox.addEventListener('click', function () {
+          if (selectedTipos.includes('Selecione')) {
             selectedTipos = '';
           }
-          if(selectedTipos.includes(this.textContent)){
+          if (selectedTipos.includes(this.textContent)) {
             selectedTipos = selectedTipos.replace(this.textContent + ', ', '');
             console.log('removidos:' + selectedTipos);
             document.getElementById('selected-tipos').textContent = selectedTipos.slice(0, -2);
@@ -1527,10 +1673,9 @@
 
         });
       });
-    }); 
-    function itsEmpty(string, id){
-      if(string.length === 0)
-      {
+    });
+    function itsEmpty(string, id) {
+      if (string.length === 0) {
         document.getElementById(id).textContent = 'Selecione';
       }
     }
