@@ -44,6 +44,9 @@
       .container-cards-imoveis{
         margin-inline: 0px !important;
       }
+      .container-destaques-title{
+        align-items: flex-start !important;
+      }
 
       /* filter  */
       .responsive-hero-btn{
@@ -73,6 +76,7 @@
       .codigo{
         width: 45% !important;
         height: 40px !important;
+        margin-left: 0px !important;
       }
       .codigo input{
         border-left: 0px !important;
@@ -90,6 +94,54 @@
         inset: 12px auto auto 0px !important;
       }
       /* filter fim  */
+
+      /* supremo card  */
+      .container-supremo-section{
+        padding-inline: 5% !important;
+      }
+      #supremo{
+        height: auto !important;
+        padding: 64px 0px !important;
+      }
+      .card-supremoCRM{
+        height: auto !important;
+        display: flex;
+        flex-direction: column;
+      }
+      .card-supremoCRM-text{
+          height: auto !important;
+          padding: 0px 0px !important;
+      }
+      .card-supremoCRM-paragraph{
+        width: 100% !important;
+        height: auto !important;
+      }
+      .img-supremoCRM{
+        position: static !important;
+        transform: none !important;
+        margin: 24px 0px 0px 0px !important;
+      }
+      .img-supremoCRM img{
+        width: 100% !important;
+        height: auto !important; 
+      }
+      /* supremo card fim  */
+
+      /* anuncie seu imovel  */
+      .cta-box{
+        width: 100% !important;
+        height: auto !important;
+      }
+      .cta-content{
+        padding: 24px 16px !important;
+      }
+      .container-cta-section{
+        padding-inline: 5% !important;
+      }
+      .container-cta-boxes{
+        gap:  32px !important;
+      }
+
     }
 
 
@@ -107,7 +159,7 @@
       --light-bg: #f8f9fa;
       --nav-links-color: #091F3D;
     }
-  
+    
     .drop-down-selects select {
       display: block;
       width: 100%;
@@ -291,7 +343,9 @@
       font-size: .85rem;
       color: #52606b;
     }
-
+    #supremp{
+      height: 606px; padding: 64px 0px;
+    }
     .card-supremoCRM {
       padding: 24px;
       box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.089);
@@ -299,7 +353,9 @@
       transition: transform 0.3s, box-shadow 0.3s;
       height: 458px;
     }
-
+    .card-supremoCRM-text{
+      height: 412px; padding: 0px 48px;
+    }
     .img-supremoCRM {
       top: 37% !important;
       right: -47px;
@@ -1250,9 +1306,9 @@
     </div>
   </section>
 
-  <section class="display-none-767 pt-2 pb-5 max__width-1200 justify-content-center mx-auto" id="lancamentos">
+  <section class=" pt-2 pb-5 max__width-1200 justify-content-center mx-auto" id="destaques">
     <div class="container">
-      <div class="d-flex justify-content-between align-items-center mb-4  " style="padding-inline: 50px;">
+      <div class="d-flex justify-content-between align-items-center mb-4 container-destaques-title " style="padding-inline: 50px;">
         <h2 class="fw-bold text-navy title-section-destaques">Destaques</h2>
         <a href="#" class="text-black text-decoration-none d-flex align-items-center  gap-2"> <span
             style="font-weight: 400;">Ver mais</span>
@@ -1355,7 +1411,7 @@
 
   <section class="display-none-767 pb-4" style="background-color: #2A3E59; padding-top: 3.5rem;" id="lancamentos">
     <div class="container max__width-1200">
-      <div class="d-flex justify-content-between align-items-center mb-4  " style="padding-inline: 50px;">
+      <div class="d-flex justify-content-between align-items-center mb-4 container-destaques-title" style="padding-inline: 50px;">
         <h2 class="fw-bold text-white title-section-destaques">Exclusivos</h2>
         <a href="#" class="text-white text-decoration-none d-flex align-items-center  gap-2"> <span
             style="font-weight: 400;">Ver mais</span>
@@ -1463,14 +1519,14 @@
   </section>
 
 
-  <section class="display-none-767 bg-light" style="height: 606px; padding: 64px 0px;" id="supremo">
-    <div class="container max__width-1200" style="padding-inline: 50px;">
+  <section class=" bg-light" style="" id="supremo">
+    <div class="container max__width-1200 container-supremo-section" style="padding-inline: 50px;">
 
       <div class="card-supremoCRM position-relative d-flex justify-content-between">
-        <div class="d-flex flex-column " style="height: 412px; padding: 0px 48px;">
+        <div class="d-flex flex-column card-supremoCRM-text" style="">
           <h3 class="text-orange m-0" style="font-size: 1rem; font-weight: 400;">Sobre Nós</h3>
           <h2 class="fw-bold" style="font-size: min(max(1.8rem, 4vw), 2.8rem);">Supremo CRM</h2>
-          <p class="mx-0 mb-3 mt-0" style="font-size: 16px; width: 592px; height: 270px;">
+          <p class="mx-0 mb-3 mt-0 card-supremoCRM-paragraph" style="font-size: 16px; width: 592px; height: 270px;">
             Nossa Missão é encontrar a melhor solução para os clientes no mercado imobiliário, proporcionando retorno
             financeiro e satisfação com o investimento realizado.
             <br>
@@ -1504,9 +1560,9 @@
   </section>
 
   <!-- https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1000&auto=format&fit=crop' -->
-  <section class="display-none-767 py-5">
-    <div class="container max__width-1200 justify-content-center" style="padding-inline: 50px;">
-      <div class="row gx-4">
+  <section class=" py-5">
+    <div class="container max__width-1200 justify-content-center container-cta-section" style="padding-inline: 50px;">
+      <div class="row gx-4 container-cta-boxes">
         <div class="col-md-6">
           <div class="cta-box" style="
               background-image: url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1000&auto=format&fit=crop');
@@ -1516,7 +1572,7 @@
               <div>
 
                 <span class="text-orange" style="font-size: 12.8px;">Anuncie</span>
-                <h3 class="fw-bold mb-3" style="font-size: 35.2px;">Seu Imóvel</h3>
+                <h3 class="fw-bold mb-3" style="font-size: min(max(1.5rem, 4vw), 2.2rem);">Seu Imóvel</h3>
               </div>
 
 
@@ -1544,7 +1600,7 @@
               <div>
 
                 <span class="text-orange" style="font-size: 12.8px;">Conheça a nossa</span>
-                <h3 class="fw-bold mb-3" style="font-size: 35.2px;">Equipe</h3>
+                <h3 class="fw-bold mb-3" style="font-size: min(max(1.5rem, 4vw), 2.2rem);">Equipe</h3>
               </div>
 
 
