@@ -185,8 +185,17 @@
       }
     }
 
-
-
+    .tipos-checkbox-active::before{
+      width: 13px;
+      position: absolute;
+      left: -13px;
+      top: 50%;
+      transform: translate(0, -50%);
+      content: '✓';
+    }
+    .tipos-checkbox{
+      position: relative;
+    }
 
 
 
@@ -1128,9 +1137,21 @@
                     style="width: 100%; ">
                     <select name="" id="">
                       <option value="#">Valor De</option>
+                      <option value="#">R$ 1.500.000</option>
+                      <option value="#">R$ 1.500.000</option>
+                      <option value="#">R$ 1.500.000</option>
+                      <option value="#">R$ 1.500.000</option>
+                      <option value="#">R$ 1.500.000</option>
+                      <option value="#">R$ 1.500.000</option>
                     </select>
                     <select name="" id="">
                       <option value="#">Valor Até</option>
+                      <option value="#">R$ 1.500.000</option>
+                      <option value="#">R$ 1.500.000</option>
+                      <option value="#">R$ 1.500.000</option>
+                      <option value="#">R$ 1.500.000</option>
+                      <option value="#">R$ 1.500.000</option>
+                      <option value="#">R$ 1.500.000</option>
                     </select>
                     <span class="valor-ok-btn" id="valor-ok">OK</span>
                   </div>
@@ -1837,12 +1858,14 @@
           }
           if (selectedTipos.includes(this.textContent)) {
             selectedTipos = selectedTipos.replace(this.textContent + ', ', '');
+            this.classList.toggle('tipos-checkbox-active');
             console.log('removidos:' + selectedTipos);
             document.getElementById('selected-tipos').textContent = selectedTipos.slice(0, -2);
             itsEmpty(selectedTipos, 'selected-tipos');
             return;
           }
           selectedTipos += this.textContent + ', ';
+          this.classList.toggle('tipos-checkbox-active');
           console.log('selecionados:' + selectedTipos);
           document.getElementById('selected-tipos').textContent = selectedTipos.slice(0, -2);
 
