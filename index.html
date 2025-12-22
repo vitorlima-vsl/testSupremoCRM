@@ -23,6 +23,9 @@
   <style>
     
     @media (max-width: 767px) {
+      .subtitle-imoveis{
+        padding: 0px 34px;
+      }
       .responsive-number
       {
         display: none;
@@ -54,7 +57,8 @@
         padding: 12.8px 16px;
       }
       .responsive-select-span-hero{
-        width: 70px !important;
+        min-width: 200px;
+        max-width: 100% !important;
       }
       .responsive-100w{
         width: 100% !important;
@@ -183,8 +187,16 @@
       footer{
         padding: 32px 0px !important;
       }
+      .property-icons span{
+          font-size: .8rem !important;
+      }
+
     }
       @media (max-width: 1199px) and (min-width: 768px) {
+        .property-icons span{
+          font-size: .8rem !important;
+        }
+   
       .responsive-number
       {
         display: none;
@@ -217,7 +229,8 @@
         padding: 12.8px 16px;
       }
       .responsive-select-span-hero{
-        width: 70px !important;
+        min-width: 200px;
+        max-width: 100% !important;
       }
       .responsive-100w{
         width: 100% !important;
@@ -909,7 +922,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      border-radius: 15px;
+      border-radius: 20px;
     }
 
     .cta-overlay {
@@ -2023,7 +2036,6 @@
           if (selectedTipos.includes(this.textContent)) {
             selectedTipos = selectedTipos.replace(this.textContent + ', ', '');
             this.classList.toggle('tipos-checkbox-active');
-            console.log('removidos:' + selectedTipos);
             document.getElementById('selected-tipos').textContent = selectedTipos.slice(0, -2);
             itsEmpty(selectedTipos, 'selected-tipos');
             return;
@@ -2032,7 +2044,6 @@
           this.classList.toggle('tipos-checkbox-active');
           console.log('selecionados:' + selectedTipos);
           document.getElementById('selected-tipos').textContent = selectedTipos.slice(0, -2);
-
         });
       });
     });
