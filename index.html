@@ -1286,15 +1286,15 @@
                     <label class="form-label small-ad chevron text-white w-100" style="font-weight: 400;">
                       Bairros
                     </label>
-                    <span class="select-color " style="width: 90px; overflow: hidden;
+                    <span class="select-color responsive-select-span-hero" style="width: 90px; overflow: hidden;
                       text-overflow: ellipsis; white-space: nowrap;" id="selected-bairros">Selecione</span>
                   </div>
                 </button>
                 <ul class="dropdown-menu dropdown-menu-edit" style="">
                   <div class="drop-down-items-container" style="width: 129px; ">
-                    <li><a class="dropdown-item" style="text-wrap: wrap;" href="#">Orlando Dantas</a></li>
-                    <li><a class="dropdown-item" style="text-wrap: wrap;" href="#">Eduardo Gomes</a></li>
-                    <li><a class="dropdown-item" style="text-wrap: wrap;" href="#">Tijuquinha</a></li>
+                    <li><a class="dropdown-item bairros-checkbox" style="text-wrap: wrap;" href="#">Orlando Dantas</a></li>
+                    <li><a class="dropdown-item bairros-checkbox" style="text-wrap: wrap;" href="#">Eduardo Gomes</a></li>
+                    <li><a class="dropdown-item bairros-checkbox" style="text-wrap: wrap;" href="#">Tijuquinha</a></li>
                   </div>
                 </ul>
               </div>
@@ -2061,8 +2061,22 @@
   <script>
     let selectedTipos = document.getElementById('selected-tipos').textContent;
     let selectedCidades = document.getElementById('selected-cidades').textContent;
+    let selectedBairros = document.getElementById('selected-bairros').textContent;
     // codigo filter select checkbox 
-    document.addEventListener('DOMContentLoaded', function () {
+    document.addEventListener('DOMContentLoaded', function ()
+    {
+      
+      // tiposcheckbox 
+      tiposCheckboxes();
+      // cidades 
+      cidadesCheckboxes();
+      //bairros
+      bairrosCheckboxes();
+      
+    });
+
+
+    function tiposCheckboxes(){
       const checkboxes = document.querySelectorAll('.tipos-checkbox');
       checkboxes.forEach(function (checkbox) {
         checkboxes.preventDefault;
@@ -2079,18 +2093,15 @@
           }
           selectedTipos += this.textContent + ', ';
           this.classList.toggle('tipos-checkbox-active');
-          console.log('selecionados:' + selectedTipos);
           document.getElementById('selected-tipos').textContent = selectedTipos.slice(0, -2);
         });
       });
-    });
-
-    const cidadesCheckboxes = document.querySelectorAll('.cidades-checkbox');
-    cidadesCheckboxes.forEach(function (checkbox) {
+    }
+  
+    function cidadesCheckboxes () {
+      const cidadesCheckboxes = document.querySelectorAll('.cidades-checkbox');
+      cidadesCheckboxes.forEach(function (checkbox) {
       checkbox.addEventListener('click', function () {
-        console.log('Cidades selecionada: ' + this.textContent);
-        console.log('Cidades selecionadas até agora: ' + selectedCidades);
-      
         if(selectedCidades.includes(this.textContent)){
           this.classList.toggle('tipos-checkbox-active');
           selectedCidades = '';
@@ -2100,13 +2111,38 @@
         this.classList.toggle('tipos-checkbox-active');
         selectedCidades = this.textContent;
         cidadesCheckboxes.forEach(function(otherCheckbox) {
-          if(otherCheckbox !== checkbox){
+        if(otherCheckbox !== checkbox){
             otherCheckbox.classList.remove('tipos-checkbox-active');
           }
         });
         document.getElementById('selected-cidades').textContent = selectedCidades;
       });
     });
+    }
+    function bairrosCheckboxes () {
+      const bairrosCheckboxes = document.querySelectorAll('.bairros-checkbox');
+      bairrosCheckboxes.forEach(function (checkbox) {
+         checkbox.addEventListener('click', function () {
+          if (selectedBairros.includes('Selecione')) {
+            selectedBairros = '';
+          }
+          if (selectedBairros.includes(this.textContent)) {
+            selectedBairros = selectedBairros.replace(this.textContent + ', ', '');
+            this.classList.toggle('tipos-checkbox-active');
+            document.getElementById('selected-bairros').textContent = selectedBairros.slice(0, -2);
+            itsEmpty(selectedBairros, 'selected-bairros');
+            return;
+          }
+          selectedBairros += this.textContent + ', ';
+          this.classList.toggle('tipos-checkbox-active');
+
+          document.getElementById('selected-bairros').textContent = selectedBairros.slice(0, -2);
+        });
+      });
+    }
+
+
+
     function itsEmpty(string, id) {
       if (string.length === 0) {
         document.getElementById(id).textContent = 'Selecione';
