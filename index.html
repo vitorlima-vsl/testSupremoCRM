@@ -2098,26 +2098,29 @@
       });
     }
   
-    function cidadesCheckboxes () {
+    function cidadesCheckboxes ()
+    {
       const cidadesCheckboxes = document.querySelectorAll('.cidades-checkbox');
-      cidadesCheckboxes.forEach(function (checkbox) {
-      checkbox.addEventListener('click', function () {
-        if(selectedCidades.includes(this.textContent)){
-          this.classList.toggle('tipos-checkbox-active');
-          selectedCidades = '';
-          itsEmpty(selectedCidades, 'selected-cidades');
-          return;
-        }
-        this.classList.toggle('tipos-checkbox-active');
-        selectedCidades = this.textContent;
-        cidadesCheckboxes.forEach(function(otherCheckbox) {
-        if(otherCheckbox !== checkbox){
-            otherCheckbox.classList.remove('tipos-checkbox-active');
+      cidadesCheckboxes.forEach(function (checkbox)
+      {
+        checkbox.addEventListener('click', function ()
+        {
+          if(selectedCidades.includes(this.textContent)){
+            this.classList.toggle('tipos-checkbox-active');
+            selectedCidades = '';
+            itsEmpty(selectedCidades, 'selected-cidades');
+            return;
           }
+          this.classList.toggle('tipos-checkbox-active');
+          selectedCidades = this.textContent;
+          cidadesCheckboxes.forEach(function(otherCheckbox) {
+          if(otherCheckbox !== checkbox){
+              otherCheckbox.classList.remove('tipos-checkbox-active');
+            }
+          });
+          document.getElementById('selected-cidades').textContent = selectedCidades;
         });
-        document.getElementById('selected-cidades').textContent = selectedCidades;
       });
-    });
     }
     function bairrosCheckboxes () {
       const bairrosCheckboxes = document.querySelectorAll('.bairros-checkbox');
