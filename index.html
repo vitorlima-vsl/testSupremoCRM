@@ -361,7 +361,9 @@
         padding: 32px 0px !important;
       }
     }
-
+    .tipos-checkbox-active{
+      position: relative;
+    }
     .tipos-checkbox-active::before{
       width: 13px;
       position: absolute;
@@ -370,9 +372,7 @@
       transform: translate(0, -50%);
       content: '✓';
     }
-    .tipos-checkbox{
-      position: relative;
-    }
+  
     
     .category-overlay:hover .btn{
       color: #000;
@@ -2090,13 +2090,20 @@
       checkbox.addEventListener('click', function () {
         console.log('Cidades selecionada: ' + this.textContent);
         console.log('Cidades selecionadas até agora: ' + selectedCidades);
-
+      
         if(selectedCidades.includes(this.textContent)){
+          this.classList.toggle('tipos-checkbox-active');
           selectedCidades = '';
           itsEmpty(selectedCidades, 'selected-cidades');
           return;
         }
+        this.classList.toggle('tipos-checkbox-active');
         selectedCidades = this.textContent;
+        cidadesCheckboxes.forEach(function(otherCheckbox) {
+          if(otherCheckbox !== checkbox){
+            otherCheckbox.classList.remove('tipos-checkbox-active');
+          }
+        });
         document.getElementById('selected-cidades').textContent = selectedCidades;
       });
     });
