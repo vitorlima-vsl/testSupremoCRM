@@ -20,6 +20,9 @@
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
+  <!-- swiper  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
   <style>
     
     @media (max-width: 767px) {
@@ -677,10 +680,6 @@
 
     /* 1. Header / Hero Section */
     .hero-section {
-      /* background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2073&auto=format&fit=crop"); */
-      background-image: url('https://www.adamantenegocios.com.br/fotos/original/fundo.jpg?token=UnU4WkVNa3N0ZWRTdk85SGhXRjVQSFB3cCtpVnNJN01FY1k4cWQ4VXN3dlpMM2JEMkJ2R3d5NG5BVXlMZ2dldzJBeUNUaGxWb0ROeEE3eExlMWxMZlE9PQ==');
-      background-size: cover;
-      background-position: center;
       height: 100vh;
       min-height: 600px;
       position: relative;
@@ -695,19 +694,31 @@
 
     .hero-overlay {
       position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        /* background: linear-gradient(
-          to bottom,
-          rgba(175, 2, 2, 0),
-          rgba(16, 2, 2, 0)
-        ); */
-        /* background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)); */
-        background-color: #000000;
-        opacity: 0.6;
-        z-index: 1;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+    .hero-overlay__color-bg{
+      background-color: #000;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.6;
+      z-index: 1;
+    }
+
+    .hero-overlay .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .hero-overlay .swiper-slide {
+      background-size: cover;
+      background-position: center;
     }
 
     .hero-content {
@@ -1138,7 +1149,15 @@
 
 
   <header class="hero-section position-relative">
-    <div class="hero-overlay"></div>
+    <div class="hero-overlay">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2073&auto=format&fit=crop');"></div>
+          <div class="swiper-slide" style="background-image: url('https://www.adamantenegocios.com.br/fotos/original/fundo.jpg?token=UnU4WkVNa3N0ZWRTdk85SGhXRjVQSFB3cCtpVnNJN01FY1k4cWQ4VXN3dlpMM2JEMkJ2R3d5NG5BVXlMZ2dldzJBeUNUaGxWb0ROeEE3eExlMWxMZlE9PQ==');"></div>
+        </div>
+      </div>
+      <div class="hero-overlay__color-bg"></div>
+    </div>
     <div class="container hero-content text-center">
       <h1 class="hero-title text-white mb-3 text-start" style="line-height: 3.175rem;">
         Imóveis na Praia Brava e Fazenda em Itajaí
@@ -1383,9 +1402,9 @@
                 style="height: 100%; width: 122px ;">
                 <input type="text" placeholder="Código" name="codigo" class="">
               </div>
-              <div class="col-md-4 col-lg-2 responsive-search-hero" style="height: 100%; width: 14px;">
+              <div class="col-md-4 col-lg-2 responsive-search-hero" style="height: 100%; width: 145.8px;">
                 <button type="button" class="btn btn-orange  h-100" style="width: 145.8px; border-radius: 13px;">
-                  <i class="fa-solid fa-magnifying-glass me-2 fs-3"></i>
+                  <i class="fa-solid fa-magnifying-glass  fs-3"></i>
                 </button>
               </div>
             </form>
@@ -1394,7 +1413,7 @@
             style="">
             <span class="small-ad" style="font-weight: 400;">Busca Avançada</span>
             <button class="btn btn-outline-light btn-noHover fw-bold d-flex align-items-center "
-              style="width: 40px; height: 23px; line-height:"> <svg width="22" height="12" viewBox="0 0 22 12"
+              style="width: 40px; height: 23px;"> <svg width="22" height="12" viewBox="0 0 22 12"
                 fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M22 5.65811C21.631 6.04511 21.269 6.43811 20.892 6.81711C19.595 8.12011 18.291 9.41811 16.993 10.7191C16.749 10.9641 16.474 11.1971 16.16 10.8851C15.838 10.5671 16.04 10.2781 16.308 10.0131C17.614 8.72311 18.912 7.42711 20.186 6.01211C20.002 6.01211 19.82 6.01211 19.637 6.01211C13.405 6.01211 7.171 6.01211 0.938 6.01311C0.577 6.01311 0.215 6.03411 0 5.65811C0 5.55911 0 5.46211 0 5.36411C0.193 5.03311 0.512 5.01611 0.846 5.01611C3.289 5.01911 5.733 5.01811 8.176 5.01811C12.005 5.01811 15.833 5.01811 19.662 5.01811C19.837 5.01811 20.012 5.01811 20.288 5.01811C20.116 4.83311 20.016 4.71811 19.907 4.61011C18.711 3.41011 17.51 2.21511 16.32 1.00711C16.182 0.867113 16.049 0.669114 16.025 0.483114C15.977 0.113114 16.346 -0.111886 16.682 0.0571137C16.794 0.114114 16.893 0.207114 16.985 0.298114C18.553 1.86211 20.121 3.42911 21.685 4.99711C21.798 5.11111 21.895 5.24111 21.999 5.36311C22 5.46211 22 5.56011 22 5.65811Z"
@@ -2064,6 +2083,18 @@
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <script>
+    let swiper = new Swiper(".mySwiper", {
+      loop: true,
+      effect: "fade",
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+    });
+  </script>
   <script>
     let selectedTipos = document.getElementById('selected-tipos').textContent;
     let selectedCidades = document.getElementById('selected-cidades').textContent;
