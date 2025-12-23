@@ -700,6 +700,17 @@
       height: 100%;
       z-index: 1;
     }
+    .hero__video-static{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+    }
+
     .hero-overlay__color-bg{
       background-color: #000;
       position: absolute;
@@ -1149,8 +1160,8 @@
 
 
   <header class="hero-section position-relative overflow-hidden">
-    <div class="hero-overlay ">
-        <video class="" style="" autoplay muted loop playsinline>
+    <div class="hero-overlay">
+        <video class="hero__video-static" style="" autoplay muted loop playsinline>
           <source src="videoplayback.webm" type="video/webm">
         </video>
       <div class="hero-overlay__color-bg"></div>
