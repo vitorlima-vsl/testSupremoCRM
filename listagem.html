@@ -21,10 +21,19 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
   <style>
+    .btn-no-style{
+      text-align: center;
+      display: inline-flex;
+      font-size: .8rem;
+      align-items: center;
+      gap: .5rem;
+      padding: .5rem 0;
+      background: none;
+      border: none;
+    }
 
     input[name="quartos"]{
       opacity: 0;
-   
       width: 25px;
       height: 25px;
     }
@@ -1187,7 +1196,7 @@
 
 
  <header>
-    <div class="row justify-content-center" style="background-color: #2a3e59;">
+    <div class="row justify-content-center align-items-center" style="background-color: #2a3e59; height: 90px;">
         <div class="col-lg-12 py-1 d-flex justify-content-center max__width-1200">
           <div class="search-box-container bg-transparent mt-0" style=" border-radius: 13px;">
             <form class="row  align-items-center responsive-filters-form" style="height: 80%;">
@@ -1422,7 +1431,6 @@
                         <input type="radio" id="2_vaga" name="quartos" value="2">
                         <label for="2_vaga">2+</label>
                       </li>
-                     
                       <li class="li-quartos" style="width: 33.3%; border: 0;">
                         <input type="radio" id="3_vaga" name="quartos" value="4">
                         <label for="3_vaga" style="border-radius: 0px 6px 6px 0px;">3+</label>
@@ -1433,521 +1441,26 @@
                 style="height: 100%;">
                 <input type="text" placeholder="Código" name="codigo" class="">
                 <div class=" px-0 responsive-search-hero" style="height: 100%; ">
-                  <button type="button" class="btn btn-orange  h-100" style=" border-radius: 13px;">
-                    <i class="fa-solid fa-magnifying-glass me-2 fs-3"></i>
+                  <button type="button" class="btn btn-orange w-50 d-flex justify-content-center  h-100" style="border-radius: 13px;">
+                    <i class="fa-solid fa-magnifying-glass me-1 fs-5"></i>
                   </button>
                 </div>
               </div>
+
+
+              <!-- teste -->
             </form>
           </div>
         </div>
     </div>
  </header>
 
-  <section class="py-5" id="imoveis">
-    <div class="container">
-      <div class="row mb-4">
-        <div class="col-12 text-center" style="height: 89px;">
-          <h2 class="fw-bold text-navy h2-imoveis">Conheça nossos imóveis</h2>
-          <h3 class="text-orange subtitle-imoveis">O que nossos visitantes mais procuram em nosso site.</h3>
-        </div>
-      </div>
-
-      <div class="row justify-content-center max__width-1200 container-cards-imoveis" style="margin-inline: 3rem;">
-        <!-- card 1 -->
-        <div class="col-md-4 category-card-container">
-          <div class="category-card" style=" 
-                background-image: url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1000&auto=format&fit=crop');
-              ">
-            <div class="category-overlay">
-              <h4 class="text-white fw-bold">Itajaí</h4>
-
-              <div class="d-flex justify-content-between align-items-center w-100 mt-3">
-
-                <span class="text-white d-flex align-items-center gap-3" style="font-size: 13.6px;">
-                  <svg width="10" height="15" viewBox="0 0 13 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M6.68604 19.3697C6.58204 19.1767 6.48604 18.9947 6.38804 18.8127C5.46304 17.1137 4.53304 15.4177 3.61504 13.7147C2.99404 12.5647 2.40004 11.4017 1.88704 10.1967C1.57504 9.46668 1.28504 8.72568 1.10404 7.94868C1.03704 7.66268 1.00704 7.36268 1.00204 7.06768C0.996038 6.64068 1.00104 6.21068 1.04804 5.78768C1.11304 5.20368 1.31904 4.65368 1.59004 4.13468C2.36104 2.65768 3.55404 1.68768 5.15204 1.21868C5.67004 1.06668 6.20204 0.983682 6.74004 1.00268C8.35704 1.05768 9.74704 1.63168 10.864 2.82568C11.653 3.66868 12.134 4.66168 12.332 5.79468C12.405 6.21668 12.403 6.64668 12.388 7.07468C12.355 7.97268 12.053 8.80268 11.729 9.62468C11.215 10.9267 10.587 12.1747 9.92704 13.4067C9.02004 15.0977 8.09504 16.7787 7.17904 18.4647C7.03304 18.7357 6.88804 19.0037 6.74304 19.2737C6.72704 19.3017 6.70804 19.3307 6.68604 19.3697ZM2.20404 6.80768C2.20204 7.24868 2.26404 7.66168 2.39104 8.07168C2.65504 8.91568 3.01404 9.72168 3.38904 10.5217C4.28004 12.4237 5.29304 14.2637 6.32604 16.0917C6.42404 16.2667 6.52804 16.4377 6.62804 16.6097C6.66304 16.6727 6.70004 16.6737 6.73904 16.6157C6.78404 16.5457 6.83204 16.4747 6.87504 16.4017C7.80704 14.7737 8.71104 13.1307 9.54104 11.4477C10.038 10.4377 10.509 9.41668 10.892 8.35568C11.219 7.44168 11.269 6.51868 11.014 5.58568C10.414 3.39368 8.24904 2.00168 6.04804 2.32668C5.13504 2.46168 4.33504 2.84168 3.66004 3.46568C2.68804 4.36468 2.21804 5.48768 2.20404 6.80768Z"
-                      fill="#fff" stroke="#fff" stroke-width="0.5" stroke-miterlimit="10"></path>
-                  </svg> Santa Catarina
-                </span>
-
-                <button class="btn btn-outline-light fw-bold d-flex align-items-center justify-content-center"
-                  style="width: 40px; height: 23px; line-height: 1; border-width: 1px; font-size: 12px;">
-                  <i class="fa-solid fa-arrow-right"></i>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="mt-2">
-            <ul class="list-unstyled px-2 mt-4">
-              <li class="mb-2">
-                <a href="#" class="text-decoration-none seta-before" style="color:#091f3d;">
-                  Apartamentos com 3 quartos em Itajaí
-                </a>
-              </li>
-              <li class="mb-2">
-                <a href="#" class="text-decoration-none seta-before" style="color:#091f3d;">
-                  Apartamentos Mobiliados em Itajaí
-                </a>
-              </li>
-              <li class="mb-2">
-                <a href="#" class="text-decoration-none seta-before" style="color:#091f3d;">
-                  Apartamentos acima de 100m² em Itajaí
-                </a>
-              </li>
-              <li class="mb-2">
-                <a href="#" class="text-decoration-none seta-before" style="color:#091f3d;">
-                  Apartamentos no bairro Fazenda
-                </a>
-              </li>
-
-              <li class="">
-                <a href="#" class="text-decoration-none ver-todos-imv" style="color: #f95c02;">
-                  Ver todos imóveis
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <!-- card2 -->
-        <div class="col-md-4 category-card-container">
-          <div class="category-card" style="
-                background-image: url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1000&auto=format&fit=crop');
-              ">
-            <div class="category-overlay">
-              <h4 class="text-white fw-bold">Itajaí</h4>
-
-              <div class="d-flex justify-content-between align-items-center w-100 mt-3">
-
-                <span class="text-white d-flex align-items-center gap-3" style="font-size: 13.6px;">
-                  <svg width="10" height="15" viewBox="0 0 13 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M6.68604 19.3697C6.58204 19.1767 6.48604 18.9947 6.38804 18.8127C5.46304 17.1137 4.53304 15.4177 3.61504 13.7147C2.99404 12.5647 2.40004 11.4017 1.88704 10.1967C1.57504 9.46668 1.28504 8.72568 1.10404 7.94868C1.03704 7.66268 1.00704 7.36268 1.00204 7.06768C0.996038 6.64068 1.00104 6.21068 1.04804 5.78768C1.11304 5.20368 1.31904 4.65368 1.59004 4.13468C2.36104 2.65768 3.55404 1.68768 5.15204 1.21868C5.67004 1.06668 6.20204 0.983682 6.74004 1.00268C8.35704 1.05768 9.74704 1.63168 10.864 2.82568C11.653 3.66868 12.134 4.66168 12.332 5.79468C12.405 6.21668 12.403 6.64668 12.388 7.07468C12.355 7.97268 12.053 8.80268 11.729 9.62468C11.215 10.9267 10.587 12.1747 9.92704 13.4067C9.02004 15.0977 8.09504 16.7787 7.17904 18.4647C7.03304 18.7357 6.88804 19.0037 6.74304 19.2737C6.72704 19.3017 6.70804 19.3307 6.68604 19.3697ZM2.20404 6.80768C2.20204 7.24868 2.26404 7.66168 2.39104 8.07168C2.65504 8.91568 3.01404 9.72168 3.38904 10.5217C4.28004 12.4237 5.29304 14.2637 6.32604 16.0917C6.42404 16.2667 6.52804 16.4377 6.62804 16.6097C6.66304 16.6727 6.70004 16.6737 6.73904 16.6157C6.78404 16.5457 6.83204 16.4747 6.87504 16.4017C7.80704 14.7737 8.71104 13.1307 9.54104 11.4477C10.038 10.4377 10.509 9.41668 10.892 8.35568C11.219 7.44168 11.269 6.51868 11.014 5.58568C10.414 3.39368 8.24904 2.00168 6.04804 2.32668C5.13504 2.46168 4.33504 2.84168 3.66004 3.46568C2.68804 4.36468 2.21804 5.48768 2.20404 6.80768Z"
-                      fill="#fff" stroke="#fff" stroke-width="0.5" stroke-miterlimit="10"></path>
-                  </svg> Santa Catarina
-                </span>
-
-                <button class="btn btn-outline-light fw-bold d-flex align-items-center justify-content-center"
-                  style="width: 40px; height: 23px; line-height: 1; border-width: 1px; font-size: 12px;">
-                  <i class="fa-solid fa-arrow-right"></i>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="mt-2">
-            <ul class="list-unstyled px-2 mt-4" style="">
-              <li class="mb-2 ">
-                <a href="#" class="text-decoration-none seta-before" style="color:#091f3d;">
-                  Apartamentos com 3 quartos em Itajaí
-                </a>
-              </li>
-              <li class="mb-2">
-                <a href="#" class="text-decoration-none seta-before" style="color:#091f3d;">
-                  Apartamentos Mobiliados em Itajaí
-                </a>
-              </li>
-              <li class="mb-2">
-                <a href="#" class="text-decoration-none seta-before" style="color:#091f3d;">
-                  Apartamentos acima de 100m² em Itajaí
-                </a>
-              </li>
-              <li class="mb-2">
-                <a href="#" class="text-decoration-none seta-before" style="color:#091f3d;">
-                  Apartamentos no bairro Fazenda
-                </a>
-              </li>
-
-              <li class="">
-                <a href="#" class="text-decoration-none ver-todos-imv" style="color: #f95c02;">
-                  Ver todos imóveis
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <!-- card3 -->
-        <div class="col-md-4 category-card-container">
-          <div class="category-card" style="
-                background-image: url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1000&auto=format&fit=crop');
-              ">
-            <div class="category-overlay">
-              <h4 class="text-white fw-bold">Itajaí</h4>
-
-              <div class="d-flex justify-content-between align-items-center w-100 mt-3">
-
-                <span class="text-white d-flex align-items-center gap-3" style="font-size: 13.6px;">
-                  <svg width="10" height="15" viewBox="0 0 13 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M6.68604 19.3697C6.58204 19.1767 6.48604 18.9947 6.38804 18.8127C5.46304 17.1137 4.53304 15.4177 3.61504 13.7147C2.99404 12.5647 2.40004 11.4017 1.88704 10.1967C1.57504 9.46668 1.28504 8.72568 1.10404 7.94868C1.03704 7.66268 1.00704 7.36268 1.00204 7.06768C0.996038 6.64068 1.00104 6.21068 1.04804 5.78768C1.11304 5.20368 1.31904 4.65368 1.59004 4.13468C2.36104 2.65768 3.55404 1.68768 5.15204 1.21868C5.67004 1.06668 6.20204 0.983682 6.74004 1.00268C8.35704 1.05768 9.74704 1.63168 10.864 2.82568C11.653 3.66868 12.134 4.66168 12.332 5.79468C12.405 6.21668 12.403 6.64668 12.388 7.07468C12.355 7.97268 12.053 8.80268 11.729 9.62468C11.215 10.9267 10.587 12.1747 9.92704 13.4067C9.02004 15.0977 8.09504 16.7787 7.17904 18.4647C7.03304 18.7357 6.88804 19.0037 6.74304 19.2737C6.72704 19.3017 6.70804 19.3307 6.68604 19.3697ZM2.20404 6.80768C2.20204 7.24868 2.26404 7.66168 2.39104 8.07168C2.65504 8.91568 3.01404 9.72168 3.38904 10.5217C4.28004 12.4237 5.29304 14.2637 6.32604 16.0917C6.42404 16.2667 6.52804 16.4377 6.62804 16.6097C6.66304 16.6727 6.70004 16.6737 6.73904 16.6157C6.78404 16.5457 6.83204 16.4747 6.87504 16.4017C7.80704 14.7737 8.71104 13.1307 9.54104 11.4477C10.038 10.4377 10.509 9.41668 10.892 8.35568C11.219 7.44168 11.269 6.51868 11.014 5.58568C10.414 3.39368 8.24904 2.00168 6.04804 2.32668C5.13504 2.46168 4.33504 2.84168 3.66004 3.46568C2.68804 4.36468 2.21804 5.48768 2.20404 6.80768Z"
-                      fill="#fff" stroke="#fff" stroke-width="0.5" stroke-miterlimit="10"></path>
-                  </svg> Santa Catarina
-                </span>
-
-                <button class="btn btn-outline-light fw-bold d-flex align-items-center justify-content-center"
-                  style="width: 40px; height: 23px; line-height: 1; border-width: 1px; font-size: 12px;">
-                  <i class="fa-solid fa-arrow-right"></i>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="mt-2">
-            <ul class="list-unstyled px-2 mt-4">
-              <li class="mb-2">
-                <a href="#" class="text-decoration-none seta-before" style="color:#091f3d;">
-                  Apartamentos com 3 quartos em Itajaí
-                </a>
-              </li>
-              <li class="mb-2">
-                <a href="#" class="text-decoration-none seta-before" style="color:#091f3d;">
-                  Apartamentos Mobiliados em Itajaí
-                </a>
-              </li>
-              <li class="mb-2">
-                <a href="#" class="text-decoration-none seta-before" style="color:#091f3d;">
-                  Apartamentos acima de 100m² em Itajaí
-                </a>
-              </li>
-              <li class="mb-2">
-                <a href="#" class="text-decoration-none seta-before" style="color:#091f3d;">
-                  Apartamentos no bairro Fazenda
-                </a>
-              </li>
-
-              <li class="">
-                <a href="#" class="text-decoration-none ver-todos-imv" style="color: #f95c02;">
-                  Ver todos imóveis
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="mx-auto mt-4" style="height: 2px; width: 90%; background-color: #F2F2F2;"></div>
-      </div>
-    </div>
-  </section>
-
-  <section class=" pt-2 pb-5 max__width-1200 justify-content-center mx-auto" id="destaques">
-    <div class="container">
-      <div class="d-flex justify-content-between align-items-center mb-4 container-destaques-title " style="padding-inline: 50px;">
-        <h2 class="fw-bold text-navy title-section-destaques">Destaques</h2>
-        <a href="#" class="text-black text-decoration-none d-flex align-items-center  gap-2 ver-mais-destaques"> <span
-            style="font-weight: 400;">Ver mais</span>
-
-          <button class=" btn btn-outline-dark btn-hover-grey d-flex align-items-center"
-            style="width: 40px; height: 30px; border: 0.1rem solid #808080 ;"> <svg width="22" height="12"
-              viewBox="0 0 22 12" fill="#808080 " xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M22 5.65811C21.631 6.04511 21.269 6.43811 20.892 6.81711C19.595 8.12011 18.291 9.41811 16.993 10.7191C16.749 10.9641 16.474 11.1971 16.16 10.8851C15.838 10.5671 16.04 10.2781 16.308 10.0131C17.614 8.72311 18.912 7.42711 20.186 6.01211C20.002 6.01211 19.82 6.01211 19.637 6.01211C13.405 6.01211 7.171 6.01211 0.938 6.01311C0.577 6.01311 0.215 6.03411 0 5.65811C0 5.55911 0 5.46211 0 5.36411C0.193 5.03311 0.512 5.01611 0.846 5.01611C3.289 5.01911 5.733 5.01811 8.176 5.01811C12.005 5.01811 15.833 5.01811 19.662 5.01811C19.837 5.01811 20.012 5.01811 20.288 5.01811C20.116 4.83311 20.016 4.71811 19.907 4.61011C18.711 3.41011 17.51 2.21511 16.32 1.00711C16.182 0.867113 16.049 0.669114 16.025 0.483114C15.977 0.113114 16.346 -0.111886 16.682 0.0571137C16.794 0.114114 16.893 0.207114 16.985 0.298114C18.553 1.86211 20.121 3.42911 21.685 4.99711C21.798 5.11111 21.895 5.24111 21.999 5.36311C22 5.46211 22 5.56011 22 5.65811Z"
-                fill="#808080 " stroke="#808080" stroke-width="1"></path>
-            </svg></button></a>
-      </div>
-
-      <div class="row g-4 max__width-1200 justify-content-center">
-        <!-- imv 1 -->
-        <div class="col-md-4 property-card-container">
-          <div class="card property-card">
-            <div class="property-img-wrapper">
-              <span class="badge bg-orange position-absolute top-0 start-0 m-3 z-3">EXCLUSIVO</span>
-              <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=1000&auto=format&fit=crop"
-                alt="Imóvel" />
-            </div>
-          </div>
-          <div class="">
-            <div class="d-flex justify-content-between mt-3 ">
-              <h4 class="" style="font-size: 1.2rem; font-weight: 900;">R$ 6.450.000</h4> <span
-                style="font-size: .8rem;">Cód. 16</span>
-            </div>
-            <p class="" style="font-size: .9rem; font-weight: 400; color:#151515;">Sailor's Bay <span class=""
-                style="font-size: 10px; margin-inline: 2px;">●</span> Apartamento
-              Rua Juvêncio Tavares do Amaral - Cabeçudas, Itajaí</p>
-            <div class="property-icons d-flex justify-content-between">
-              <span class="fw-bold right-ball">145m²</span>
-              <span class="fw-bold right-ball"> 3 Quartos </span>
-              <span class="fw-bold right-ball"> 1 Suíte</span>
-              <span class="fw-bold "> 2 Vagas</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- imv 2 -->
-        <div class="col-md-4 property-card-container">
-          <div class="card property-card">
-            <div class="property-img-wrapper">
-              <span class="badge bg-orange position-absolute top-0 start-0 m-3 z-3">EXCLUSIVO</span>
-              <img
-                src="https://images.unsplash.com/photo-1560448205-17d3a46c84de?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="Imóvel" />
-            </div>
-          </div>
-          <div class="">
-            <div class="d-flex justify-content-between mt-3 ">
-              <h4 class="" style="font-size: 1.2rem; font-weight: 900;">R$ 6.450.000</h4> <span
-                style="font-size: .8rem;">Cód. 16</span>
-            </div>
-            <p class="" style="font-size: .9rem; font-weight: 400; color:#151515;">Sailor's Bay <span class=""
-                style="font-size: 10px; margin-inline: 2px;">●</span> Apartamento
-              Rua Juvêncio Tavares do Amaral - Cabeçudas, Itajaí</p>
-            <div class="property-icons d-flex justify-content-between">
-              <span class="fw-bold right-ball">145m²</span>
-              <span class="fw-bold right-ball"> 3 Quartos </span>
-              <span class="fw-bold right-ball"> 1 Suíte</span>
-              <span class="fw-bold "> 2 Vagas</span>
-            </div>
-          </div>
-        </div>
-
-
-        <!-- imv3 -->
-        <div class="col-md-4 property-card-container">
-          <div class="card property-card">
-            <div class="property-img-wrapper">
-              <span class="badge bg-orange position-absolute top-0 start-0 m-3 z-3">MOBILIADO</span>
-              <img
-                src="https://images.unsplash.com/photo-1631049307379-e96858bda538?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="Imóvel" />
-
-            </div>
-          </div>
-          <div class="">
-            <div class="d-flex justify-content-between mt-3 ">
-              <h4 class="" style="font-size: 1.2rem; font-weight: 900;">R$ 6.450.000</h4> <span
-                style="font-size: .8rem;">Cód. 16</span>
-            </div>
-            <p class="" style="font-size: .9rem; font-weight: 400; color:#151515;">Sailor's Bay <span class=""
-                style="font-size: 10px; margin-inline: 2px;">●</span> Apartamento
-              Rua Juvêncio Tavares do Amaral - Cabeçudas, Itajaí</p>
-            <div class="property-icons d-flex justify-content-between">
-              <span class="fw-bold right-ball">145m²</span>
-              <span class="fw-bold right-ball"> 3 Quartos </span>
-              <span class="fw-bold right-ball"> 1 Suíte</span>
-              <span class="fw-bold "> 2 Vagas</span>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <section class="pb-4" style="background-color: #2A3E59; padding-top: 3.5rem;" id="lancamentos">
-    <div class="container max__width-1200">
-      <div class="d-flex justify-content-between align-items-center mb-4 container-destaques-title" style="padding-inline: 50px;">
-        <h2 class="fw-bold text-white title-section-destaques">Exclusivos</h2>
-        <a href="#" class="text-white text-decoration-none d-flex align-items-center  gap-2 ver-mais-group"> <span
-            style="font-weight: 400;">Ver mais</span>
-
-          <button class=" btn btn-outline-dark btn-hover-grey2 d-flex align-items-center"
-            style="width: 40px; height: 30px; border: 0.1rem solid #fff !important;"> <svg width="22" height="12"
-              viewBox="0 0 22 12" fill="# " xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M22 5.65811C21.631 6.04511 21.269 6.43811 20.892 6.81711C19.595 8.12011 18.291 9.41811 16.993 10.7191C16.749 10.9641 16.474 11.1971 16.16 10.8851C15.838 10.5671 16.04 10.2781 16.308 10.0131C17.614 8.72311 18.912 7.42711 20.186 6.01211C20.002 6.01211 19.82 6.01211 19.637 6.01211C13.405 6.01211 7.171 6.01211 0.938 6.01311C0.577 6.01311 0.215 6.03411 0 5.65811C0 5.55911 0 5.46211 0 5.36411C0.193 5.03311 0.512 5.01611 0.846 5.01611C3.289 5.01911 5.733 5.01811 8.176 5.01811C12.005 5.01811 15.833 5.01811 19.662 5.01811C19.837 5.01811 20.012 5.01811 20.288 5.01811C20.116 4.83311 20.016 4.71811 19.907 4.61011C18.711 3.41011 17.51 2.21511 16.32 1.00711C16.182 0.867113 16.049 0.669114 16.025 0.483114C15.977 0.113114 16.346 -0.111886 16.682 0.0571137C16.794 0.114114 16.893 0.207114 16.985 0.298114C18.553 1.86211 20.121 3.42911 21.685 4.99711C21.798 5.11111 21.895 5.24111 21.999 5.36311C22 5.46211 22 5.56011 22 5.65811Z"
-                fill="# " stroke="#" stroke-width="1"></path>
-            </svg></button></a>
-      </div>
-
-
-      <div class="row g-4 max__width-1200 justify-content-center">
-        <!-- imv 1 -->
-        <div class="col-md-4 text-white property-card-container">
-          <div class="card property-card">
-            <div class="property-img-wrapper">
-              <span class="badge bg-orange position-absolute top-0 start-0 m-3 z-3">EXCLUSIVO</span>
-              <img
-                src="https://images.unsplash.com/photo-1560448205-17d3a46c84de?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="Imóvel" />
-
-            </div>
-          </div>
-          <div class="">
-            <div class="d-flex justify-content-between mt-3">
-              <h4 class="" style="font-size: 1.2rem; font-weight: 900;">R$ 2.400.000</h4> <span
-                style="font-size: 12px;">Cod. 16</span>
-            </div>
-            <p class="" style="font-size: .9rem; font-weight: 400;">Torres da Brava Sirena <span class=""
-                style="font-size: 10px; margin-inline: 2px;">●</span> Apartamento Rua Luci Canziani - Praia Brava,
-              Itajaí</p>
-
-
-            <div class="property-icons d-flex justify-content-between">
-              <span class="fw-bold text-light right-ball">145m²</span>
-              <span class="fw-bold text-light right-ball"> 3 Quartos </span>
-              <span class="fw-bold text-light right-ball"> 1 Suíte</span>
-              <span class="fw-bold text-light"> 2 Vagas</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- imv 2 -->
-        <div class="col-md-4 text-white property-card-container">
-          <div class="card property-card">
-            <div class="property-img-wrapper">
-              <span class="badge bg-orange position-absolute top-0 start-0 m-3 z-3">EXCLUSIVO</span>
-              <img
-                src="https://images.unsplash.com/photo-1631049307379-e96858bda538?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="Imóvel" />
-            </div>
-          </div>
-          <div class="">
-            <div class="d-flex justify-content-between mt-3">
-              <h4 class="" style="font-size: 1.2rem; font-weight: 900;">R$ 2.400.000</h4> <span
-                style="font-size: 12px;">Cod. 16</span>
-            </div>
-            <p class="" style="font-size: .9rem; font-weight: 400;">Torres da Brava Sirena <span class=""
-                style="font-size: 10px; margin-inline: 2px;">●</span> Apartamento Rua Luci Canziani - Praia Brava,
-              Itajaí</p>
-
-
-            <div class="property-icons d-flex justify-content-between">
-              <span class="fw-bold text-light right-ball">145m²</span>
-              <span class="fw-bold text-light right-ball"> 3 Quartos </span>
-              <span class="fw-bold text-light right-ball"> 1 Suíte</span>
-              <span class="fw-bold text-light"> 2 Vagas</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- imv3 -->
-        <div class="col-md-4 text-white property-card-container">
-          <div class="card property-card">
-            <div class="property-img-wrapper">
-              <span class="badge bg-orange position-absolute top-0 start-0 m-3 z-3">MOBILIADO</span>
-              <img
-                src="https://images.unsplash.com/photo-1560448205-17d3a46c84de?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="Imóvel" />
-            </div>
-          </div>
-          <div class="">
-            <div class="d-flex justify-content-between mt-3">
-              <h4 class="" style="font-size: 1.2rem; font-weight: 900;">R$ 2.400.000</h4> <span
-                style="font-size: 12px;">Cod. 16</span>
-            </div>
-            <p class="" style="font-size: .9rem; font-weight: 400;">Torres da Brava Sirena <span class=""
-                style="font-size: 10px; margin-inline: 2px;">●</span> Apartamento Rua Luci Canziani - Praia Brava,
-              Itajaí</p>
-
-
-            <div class="property-icons d-flex justify-content-between">
-              <span class="fw-bold text-light right-ball">145m²</span>
-              <span class="fw-bold text-light right-ball"> 3 Quartos </span>
-              <span class="fw-bold text-light right-ball"> 1 Suíte</span>
-              <span class="fw-bold text-light"> 2 Vagas</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <section class=" bg-light" style="" id="supremo">
-    <div class="container max__width-1200 container-supremo-section" style="padding-inline: 50px;">
-
-      <div class="card-supremoCRM position-relative d-flex justify-content-between">
-        <div class="d-flex flex-column card-supremoCRM-text" style="">
-          <h3 class="text-orange m-0" style="font-size: 1rem; font-weight: 400;">Sobre Nós</h3>
-          <h2 class="fw-bold" style="font-size: min(max(1.8rem, 4vw), 2.8rem);">Supremo CRM</h2>
-          <p class="mx-0 mb-3 mt-0 card-supremoCRM-paragraph" style="font-size: 16px; width: 592px; height: 270px;">
-            Nossa Missão é encontrar a melhor solução para os clientes no mercado imobiliário, proporcionando retorno
-            financeiro e satisfação com o investimento realizado.
-            <br>
-            <br>
-            Localizada na belíssima Praia Brava, em Itajaí/SC, a Adamante Negócios é uma imobiliária focada nas pessoas,
-            em seus desejos e em maximizar o retorno para seus investimentos. Proporciona consultoria personalizada e
-            abre caminhos para a realização de negócios imobiliários surpreendentes. Conhecimento do mercado, segurança,
-            confiança e transparência, estão sempre presentes na busca pela excelência na realização de cada negócio.
-            Venha nos conhecer e entender como podemos fazer a diferença na sua aquisição imobiliária no litoral
-            catarinense.
-          </p>
-          <a href="#" class="text-black text-decoration-none d-flex align-items-center mt-4  gap-2 ver-mais-destaques"> <span
-              style="font-weight: 400;">Ver mais</span>
-
-            <button class=" btn btn-outline-dark btn-hover-grey d-flex align-items-center"
-              style="width: 40px; height: 30px; border: 0.1rem solid #808080 ;"> <svg width="22" height="12"
-                viewBox="0 0 22 12" fill="#808080 " xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M22 5.65811C21.631 6.04511 21.269 6.43811 20.892 6.81711C19.595 8.12011 18.291 9.41811 16.993 10.7191C16.749 10.9641 16.474 11.1971 16.16 10.8851C15.838 10.5671 16.04 10.2781 16.308 10.0131C17.614 8.72311 18.912 7.42711 20.186 6.01211C20.002 6.01211 19.82 6.01211 19.637 6.01211C13.405 6.01211 7.171 6.01211 0.938 6.01311C0.577 6.01311 0.215 6.03411 0 5.65811C0 5.55911 0 5.46211 0 5.36411C0.193 5.03311 0.512 5.01611 0.846 5.01611C3.289 5.01911 5.733 5.01811 8.176 5.01811C12.005 5.01811 15.833 5.01811 19.662 5.01811C19.837 5.01811 20.012 5.01811 20.288 5.01811C20.116 4.83311 20.016 4.71811 19.907 4.61011C18.711 3.41011 17.51 2.21511 16.32 1.00711C16.182 0.867113 16.049 0.669114 16.025 0.483114C15.977 0.113114 16.346 -0.111886 16.682 0.0571137C16.794 0.114114 16.893 0.207114 16.985 0.298114C18.553 1.86211 20.121 3.42911 21.685 4.99711C21.798 5.11111 21.895 5.24111 21.999 5.36311C22 5.46211 22 5.56011 22 5.65811Z"
-                  fill="#808080 " stroke="#808080" stroke-width="1"></path>
-              </svg></button></a>
-        </div>
-        <div class="position-absolute img-supremoCRM  translate-middle-y me-5">
-          <img src="https://www.adamantenegocios.com.br/assets/site/img/adamante.png" alt="Supremo CRM"
-            style="width: 340px; height:512px ; border-radius: 20px;" />
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-  <!-- https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1000&auto=format&fit=crop' -->
-  <section class=" py-5">
-    <div class="container max__width-1200 justify-content-center container-cta-section" style="padding-inline: 50px;">
-      <div class="row gx-4 container-cta-boxes">
-        <div class="col-md-6">
-          <div class="cta-box" style="
-          background-image: url('./card1.jpg');
-              /* background-image: url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1000&auto=format&fit=crop'); */
-            ">
-            <div class="cta-overlay"></div>
-            <div class="cta-content text-start w-100 px-5 h-100 d-flex flex-column justify-content-between">
-              <div>
-
-                <span class="text-orange" style="font-size: 12.8px;">Anuncie</span>
-                <h3 class="fw-bold mb-3" style="font-size: min(max(1.5rem, 4vw), 2.2rem);">Seu Imóvel</h3>
-              </div>
-
-
-              <a href="#" class="text-light text-decoration-none d-flex gap-2 cta-group" style=""> <span
-                  style="font-weight: 400;">Anunciar</span>
-                <button class=" btn btn-outline-light fill-svg-black-hov  btn-hover-grey d-flex align-items-center"
-                  style="width: 40px; height: 30px; line-height: 1;">
-                  <svg width="22" height="12" viewBox="0 0 22 12" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M22 5.65811C21.631 6.04511 21.269 6.43811 20.892 6.81711C19.595 8.12011 18.291 9.41811 16.993 10.7191C16.749 10.9641 16.474 11.1971 16.16 10.8851C15.838 10.5671 16.04 10.2781 16.308 10.0131C17.614 8.72311 18.912 7.42711 20.186 6.01211C20.002 6.01211 19.82 6.01211 19.637 6.01211C13.405 6.01211 7.171 6.01211 0.938 6.01311C0.577 6.01311 0.215 6.03411 0 5.65811C0 5.55911 0 5.46211 0 5.36411C0.193 5.03311 0.512 5.01611 0.846 5.01611C3.289 5.01911 5.733 5.01811 8.176 5.01811C12.005 5.01811 15.833 5.01811 19.662 5.01811C19.837 5.01811 20.012 5.01811 20.288 5.01811C20.116 4.83311 20.016 4.71811 19.907 4.61011C18.711 3.41011 17.51 2.21511 16.32 1.00711C16.182 0.867113 16.049 0.669114 16.025 0.483114C15.977 0.113114 16.346 -0.111886 16.682 0.0571137C16.794 0.114114 16.893 0.207114 16.985 0.298114C18.553 1.86211 20.121 3.42911 21.685 4.99711C21.798 5.11111 21.895 5.24111 21.999 5.36311C22 5.46211 22 5.56011 22 5.65811Z"
-                      stroke-width="1px"></path>
-                  </svg>
-                </button>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 d-flex justify-content-end" style=" ">
-          <div class="cta-box" style="
-              background-image: url('./card1.jpg');
-              /* background-image: url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1000&auto=format&fit=crop'); */
-            ">
-            <div class="cta-overlay"></div>
-            <div class="cta-content text-start w-100 px-5 h-100 d-flex flex-column justify-content-between">
-              <div>
-
-                <span class="text-orange" style="font-size: 12.8px;">Conheça a nossa</span>
-                <h3 class="fw-bold mb-3" style="font-size: min(max(1.5rem, 4vw), 2.2rem);">Equipe</h3>
-              </div>
-
-
-              <a href="#" class="text-light text-decoration-none d-flex gap-2 cta-group" style=""> <span
-                  style="font-weight: 400;">Acessar</span>
-                <button class=" btn btn-outline-light fill-svg-black-hov  btn-hover-grey d-flex align-items-center"
-                  style="width: 40px; height: 30px; line-height: 1;">
-                  <svg class="" width="22" height="12" viewBox="0 0 22 12" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M22 5.65811C21.631 6.04511 21.269 6.43811 20.892 6.81711C19.595 8.12011 18.291 9.41811 16.993 10.7191C16.749 10.9641 16.474 11.1971 16.16 10.8851C15.838 10.5671 16.04 10.2781 16.308 10.0131C17.614 8.72311 18.912 7.42711 20.186 6.01211C20.002 6.01211 19.82 6.01211 19.637 6.01211C13.405 6.01211 7.171 6.01211 0.938 6.01311C0.577 6.01311 0.215 6.03411 0 5.65811C0 5.55911 0 5.46211 0 5.36411C0.193 5.03311 0.512 5.01611 0.846 5.01611C3.289 5.01911 5.733 5.01811 8.176 5.01811C12.005 5.01811 15.833 5.01811 19.662 5.01811C19.837 5.01811 20.012 5.01811 20.288 5.01811C20.116 4.83311 20.016 4.71811 19.907 4.61011C18.711 3.41011 17.51 2.21511 16.32 1.00711C16.182 0.867113 16.049 0.669114 16.025 0.483114C15.977 0.113114 16.346 -0.111886 16.682 0.0571137C16.794 0.114114 16.893 0.207114 16.985 0.298114C18.553 1.86211 20.121 3.42911 21.685 4.99711C21.798 5.11111 21.895 5.24111 21.999 5.36311C22 5.46211 22 5.56011 22 5.65811Z"
-                      stroke="#fff" stroke-width="1px"></path>
-                  </svg>
-                </button>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    </div>
-
-  </section>
-
-
+ <section class="max__width-1200 mx-auto" style="height: 60vh;">
+  <div class="container">
+    
+    <div class="d-flex justify-content-center align-items-center gap-2"><button class="btn-no-style">Limpar Filtros</button> <span>|</span> <button class="btn-no-style">Mais Filtros <i class="fas fa-arrow-up"></i> </button> </div>
+  </div>
+ </section>
 
   <footer class="pt-5 pb-2 text-white" style="background-color: #091F3D;">
     <div class="container p4-5 max__width-1200 footer-container" style="padding-inline: 50px;">
