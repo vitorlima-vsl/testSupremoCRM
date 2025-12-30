@@ -28,8 +28,8 @@
       width: 25px;
       height: 25px;
     }
-    input[name="quartos"]:checked{
-      opacity: 100;
+    input[name="quartos"]:checked + label{
+ 
     }
     input[name="quartos"] + label {
       position: absolute;
@@ -38,7 +38,11 @@
       transform: translate(-50%, -50%);
       width: 100%;
       height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       background-color: var(--primary-orange-hover);
+      
     }
     .hero__logo {
       width: 200px;
@@ -52,11 +56,17 @@
           border-radius: 8px;
           display: flex;
           background: #52606b;
+          border: 2px solid #2a3e59;
+          border-radius: 8px;
     }
     .li-quartos{
       position: relative;
       display: flex;
       align-items: center;
+      border-right: 1px solid #2a3e59;
+      width: 25%;
+      
+      
     }
     @media (max-width: 767px) {
       .subtitle-imoveis{
@@ -1381,10 +1391,10 @@
               <!-- final btn 4.2 -->
                 <div class="col-lg-2 col-sm-6 col-12 px-2 text-white d-flex justify-content-center flex-column align-items-center" style="min-width: 146.8px; font-size: .75rem;">
                     <span class="" ><img class="lazy loaded me-2" width="16" alt="Quartos" src="https://www.adamantenegocios.com.br/assets/site/img/quartos.svg" height="14"> Quartos</span>
-                    <ul class="d-flex gap-2 p-0 ul-quartos" style="" >
+                    <ul class="d-flex p-0 ul-quartos" style="" >
                       <li class="li-quartos">
                         <input class="" type="radio" id="1_dorm" name="quartos" value="1">
-                        <label for="1_dorm">1+</label>
+                        <label for="1_dorm" style="border-radius: 7px 0px 0px 7px;">1+</label>
                       </li>
                       <li class="li-quartos">
                         <input type="radio" id="2_dorm" name="quartos" value="2">
@@ -1396,7 +1406,7 @@
                       </li>
                       <li class="li-quartos">
                         <input type="radio" id="4_dorm" name="quartos" value="4">
-                        <label for="4_dorm">4+</label>
+                        <label for="4_dorm" style="border-radius: 0px 6px 6px 0px;">4+</label>
                       </li>
                     </ul>
               </div>
